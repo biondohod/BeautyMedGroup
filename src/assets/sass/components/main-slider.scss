@@ -1,0 +1,122 @@
+.main-slider {
+    position: relative;
+    padding: 176px 22px 0 0;
+
+    &__btns {
+        position: absolute;
+        top: 60px;
+        left: 247px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 210px;
+    }
+
+    &__btn {
+        width: 80px;
+        height: 40px;
+        background-size: 80px 40px;
+        border: none;
+        cursor: pointer;
+
+        &--prev {
+            background: url('../assets/img/arrow-prev.svg') no-repeat center;
+        }
+
+        &--next {
+            background: url('../assets/img/arrow-next.svg') no-repeat center;
+        }
+    }
+}
+
+.product {
+    &__text-info {
+        width: 87%;
+        height: 380px;
+        padding: 50px 0 162px 64px;
+        background-color: #FFF1F4;
+    }
+
+    &__name {
+        max-width: 365px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        max-width: 140px;
+        padding: 16px 22.5px;
+        border: none;
+        outline: 1px solid #000000;
+        border-radius: 4px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.6s, color 0.4s;
+
+        &:hover {
+            color: #FFFFFF;
+            outline: none;
+            background: #F08597;
+            box-shadow: 0px 0px 50px #FFBCC7;
+        }
+    }
+
+    &__img--preview {
+        position: absolute;
+        z-index: 10;
+        left: 33.1%;
+        top: 260px;
+    }
+
+    &__img--decorative {
+        position: absolute;
+        top: 0;
+        left: 39.6%;
+    }
+
+    &__decorative-block {
+        position: absolute;
+        left: 753px;
+        top: 60px;
+        width: 47.4%;
+        height: 556px;
+        border-radius: 4px;
+        background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;
+    }
+}
+
+.pagination {
+    &__list {
+        position: absolute;
+        top: 574px;
+        left: 862px;
+        display: flex;
+        justify-content: space-between;
+        width: 196px;
+    }
+
+    &__btn {
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+        background: #FFFFFF;
+        cursor: pointer;
+
+        &--current {
+            width: 18px;
+            height: 18px;
+            background: #F08597;
+        }
+    }
+}

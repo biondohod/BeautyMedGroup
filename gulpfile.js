@@ -3,7 +3,6 @@ import plumber from 'gulp-plumber';
 import srcmap from 'gulp-sourcemaps';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-const sass = gulpSass(dartSass);
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import sync from 'browser-sync';
@@ -12,6 +11,8 @@ import rename from 'gulp-rename';
 import webp from 'gulp-webp';
 import del from 'del';
 import htmlmin from 'gulp-htmlmin';
+
+const sass = gulpSass(dartSass);
 
 //Styles
 
@@ -43,14 +44,14 @@ gulp.task('htmlmin', async () => {
 
 // Watcher
 
-gulp.task("watch", () => {
+gulp.task("watch", async () => {
     sync.init({
 		server: "./build/",
 		port: 80,
 		notify: true
     });
 
-    gulp.watch("./src/**/*", gulp.parallel("build")).on('change', sync.reload);
+    gulp.watch("./src/**/*", gulp.parallel("build")).on('end', sync.reload);
 });
 
 // Webp
@@ -58,7 +59,7 @@ gulp.task("watch", () => {
 gulp.task("webpimg", async () => {
   return gulp.src("./src/assets/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("./build/img"));
+    .pipe(gulp.dest("./build/assets/img"));
 })
 
 
@@ -85,11 +86,6 @@ gulp.task("clean", async () => {
 })
 
 
-gulp.task('build', gulp.parallel("clean", "copy", "styles", "htmlmin", "webpimg"))
+gulp.task('build', gulp.parallel("copy", "styles", "htmlmin", "webpimg"))
 
 gulp.task("default", gulp.parallel("watch", "build"));
-
-
-gulp.task('start', async () => {
-  styles, server, watcher
-})

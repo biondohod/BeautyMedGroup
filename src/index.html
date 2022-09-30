@@ -1,9 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="./css/style.min.css">
-    </head>
-    <body>
-        <h1>Текст текст текст</h1>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>БьютиМедГрупп</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__row header__row--first">
+                <select name="city" id="city" class="first-row__city-select">
+                    <option value="Moscow">Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Yekaterinburg">Екатеринбург</option>
+                    <option value="City1">Город1</option>
+                </select>
+                <ul class="first-row__site-navigation">
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">О компании</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Блог</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Доставка</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Оплата</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Контакты</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Обучение</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Отзывы</a>
+                    </li>
+                </ul>
+                <div class="first-row__schedule">Пн-Пт: 9:00 - 19:00, Сб: 10 - 14</div>
+                <a href="#" class="first-row__personal-area">Личный кабинет<a />
+            </div>
+            <div class="header__row header__row--second">
+                <a href="#" class="second-row__main-link">
+                    <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                        width="261px" height="42px">
+                </a>
+                <div class="second-row__address">
+                    Москва, ул. Прянишникова, д. 23А
+                    пом. XLVIII, к. 5–8
+                </div>
+                <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                <div class="second-row__contacts">
+                    <div class="contacts__phone">
+                        <a href="tel:88000000000" class="contacts__phone--link">8 (800) 000-00-00</a>
+                        <button class="contacts__phone--btn">Заказать звонок</button>
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link contacts__link--telegram">
+                            <span class="visually-hidden">Телеграм.</span>
+                        </a>
+                        <a href="#" class="contacts__link contacts__link--whatsapp">
+                            <span class="visually-hidden">Whatsapp.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__row header__row header__row--third">
+                <ul class="third-row__products-navigation">
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Лицо</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Тело</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Для мужчин</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Распродажа</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Pro</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Бренд_1</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Бренд_2</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Професионалам</a>
+                    </li>
+                    <li class="products-navigation__item">
+                        <a href="#" class="products-navigation__link">Стать партнером</a>
+                    </li>
+                </ul>
+                <ul class="third-row__user-navigation">
+                    <li class="user-navigation__item">
+                        <a href="#" class="user-navigation__link user-navigation__link--favorite">
+                            <span class="visually-hidden">Избранное.</span>
+                        </a>
+                    </li>
+                    <li class="user-navigation__item">
+                        <a href="#" class="user-navigation__link user-navigation__link--cart">
+                            <span class="visually-hidden">Корзина.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">БьютиМедГрупп</h1>
+        <section class="main-slider">
+            <div class="main-slider__btns">
+                <button class="main-slider__btn main-slider__btn--prev">
+                    <span class="visually-hidden">Предыдущий слайд.</span>
+                </button>
+                <button class="main-slider__btn main-slider__btn--next">
+                    <span class="visually-hidden">Следующий слайд.</span>
+                </button>
+            </div>
+            <div class="main-slider__product">
+                <div class="product__text-info">
+                    <h2 class="product__name">Velit aliquet sagittis id consectetur</h2>
+                    <a href="#" class="product__more">Подробнее</a>
+                </div>
+                <div class="product__decorative-block"></div>
+                <div class="product__imgs">
+                    <img src="./assets/img/product-preview.webp" alt="Товар." class="product__img--preview" width="261px" height="212px">
+                    <img src="./assets/img/product-decorative.webp" alt="Пример использования товара." class="product__img--decorative">
+                </div>
+            </div>
+            <div class="main-slider__pagination">
+                <ol class="pagination__list">
+                    <li class="pagination__item">
+                        <button class="pagination__btn pagination__btn--current">
+                            <span class="visually-hidden">Текущий слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">2 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">3 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">4 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">5 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">6 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">7 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button class="pagination__btn">
+                            <span class="visually-hidden">8 слайд.</span>
+                        </button>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="main-catalog">
+            <h2 class="main-catalog__title">Каталог товаров</h2>
+            <ul class="main-catalog__list">
+                <li class="main-catalog__item">
+                    <h3 class="main-catalog__name"><a href="#">Филлеры</a></h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
 </html>

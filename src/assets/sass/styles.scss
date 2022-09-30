@@ -1,3 +1,4 @@
-body {
-    background-color: bisque;
-}
+@import './global/global.scss';
+
+@import './components/header.scss';
+@import './components/main-slider.scss';
