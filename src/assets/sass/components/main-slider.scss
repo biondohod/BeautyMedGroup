@@ -27,13 +27,19 @@
             background: url('../assets/img/arrow-next.svg') no-repeat center;
         }
     }
+
+    &__product {
+        display: flex;
+    }
 }
 
 .product {
-    &__text-info {
-        width: 87%;
+
+    &__info {
+        display: flex;
+        max-width: 1174px;
         height: 380px;
-        padding: 50px 0 162px 64px;
+        padding: 50px 0 162px 16%;
         background-color: #FFF1F4;
     }
 
@@ -72,23 +78,28 @@
     }
 
     &__img--preview {
-        position: absolute;
+        position: relative;
+        top: 34px;
+        left: -42px;
         z-index: 10;
-        left: 33.1%;
-        top: 260px;
     }
 
     &__img--decorative {
         position: absolute;
-        top: 0;
-        left: 39.6%;
+        bottom: 0;
+        left: 0;
+        width: 96.2%;
+        max-width: 867px;
+        height: auto;
     }
 
     &__decorative-block {
-        position: absolute;
-        left: 753px;
-        top: 60px;
-        width: 47.4%;
+        position: relative;
+        margin-left: -173px;
+        top: -116px;
+        align-self: flex-start;
+        flex-grow: 1;
+        max-width: 901px;
         height: 556px;
         border-radius: 4px;
         background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;
