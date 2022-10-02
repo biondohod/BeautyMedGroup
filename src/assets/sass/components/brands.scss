@@ -1,0 +1,31 @@
+.main-brands {
+    padding: 0 22px;
+    margin-bottom: 120px;
+
+    &__title {
+        margin-bottom: 48px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    &__content {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 90px;
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+
+        &__item,
+        &__img {
+            width: 100%;
+            height: 100%;
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+}

@@ -42,7 +42,7 @@
             height: 4px;
             background-color: #FFD9DF;
             border-radius: 4px;
-            transition: height 0.4s, linear 0.4s;
+            transition: height 0.3s, linear 0.3s;
             content: "";
         }
 
@@ -62,7 +62,7 @@
         z-index: 2;
         display: block;
         margin: 0 auto;
-        transition: transform 0.4s;
+        transition: transform 0.3s;
     }
 
     &__name {
