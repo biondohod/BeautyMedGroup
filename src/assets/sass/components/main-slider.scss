@@ -1,5 +1,7 @@
 .main-slider {
     position: relative;
+    height: 616px;
+    margin-bottom: 40px;
     padding: 176px 22px 0 0;
 
     &__btns {
@@ -30,6 +32,7 @@
 
     &__product {
         display: flex;
+        height: 380px;
     }
 }
 
@@ -38,7 +41,7 @@
     &__info {
         display: flex;
         max-width: 1174px;
-        height: 380px;
+
         padding: 50px 0 162px 16%;
         background-color: #FFF1F4;
     }
@@ -49,6 +52,7 @@
         font-weight: 400;
         font-size: 48px;
         margin-bottom: 50px;
+        padding-right: 45px;
     }
 
     &__more {

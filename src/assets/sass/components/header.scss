@@ -49,9 +49,9 @@
     }
 
     &__site-navigation {
-        width: 475px;
+        // width: 475px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
     }
 
@@ -74,6 +74,10 @@
 }
 
 .site-navigation {
+
+    &__item:not(:last-child) {
+        margin-right: 16px;
+    }
 
     &__link {
         display: flex;
@@ -223,6 +227,7 @@
         color: #878787;
         text-transform: uppercase;
         text-decoration: none;
+        transition: filter 0.4s, color 0.4s;
 
         &:hover {
             color: #000000;

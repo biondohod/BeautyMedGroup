@@ -9,6 +9,14 @@
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
+    font-weight: 300;
+    src: url("../assets/fonts/montserrat300.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 400;
     src: url("../assets/fonts/montserrat400.woff2") format("woff2");
     font-display: swap;
@@ -17,10 +25,11 @@
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 300;
-    src: url("../assets/fonts/montserrat300.woff2") format("woff2");
+    font-weight: 500;
+    src: url("../assets/fonts/montserrat500.woff2") format("woff2");
     font-display: swap;
 }
+
 
 @font-face {
     font-family: "Montserrat";
@@ -44,7 +53,6 @@ li {
 }
 
 html {
-    width: 100vw;
     height: 100%;
 }
 

@@ -38,7 +38,8 @@ gulp.task('htmlmin', async () => {
   return gulp.src('./src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true,
     removeComments: true }))
-    .pipe(gulp.dest('./build'));
+    .pipe(gulp.dest('./build'))
+    .pipe(sync.stream());
 });
 
 
