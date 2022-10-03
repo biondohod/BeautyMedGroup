@@ -13,6 +13,7 @@
 
     &__content {
         display: flex;
+        align-items: flex-start;
         max-width: 1408px;
         margin: 0 auto;
     }
@@ -24,7 +25,6 @@
         padding-top: 8px;
 
         &--text {
-            align-self: flex-start;
             display: grid;
             row-gap: 24px;
             max-width: 328px;
