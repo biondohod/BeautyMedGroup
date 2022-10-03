@@ -35,6 +35,7 @@
 
         &__label {
             position: absolute;
+            z-index: 2;
             left: 0px;
             top: 0px;
             display: flex;
@@ -54,6 +55,7 @@
 
         &__favorite {
             position: absolute;
+            z-index: 2;
             right: 0px;
             top: 0px;
             width: 24px;

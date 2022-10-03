@@ -1,0 +1,128 @@
+.main-faq {
+    margin-bottom: 145px;
+    padding: 0 22px;
+
+    &__title {
+        margin-bottom: 48px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        max-width: 929px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 89px 32px 0;
+
+        &::before {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #E9E9E9;
+            content: "";
+        }
+
+        &::after {
+            position: absolute;
+            z-index: 1;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #E9E9E9;
+            content: "";
+        }
+
+        &--active {
+            &::before {
+                z-index: 2;
+                height: 4px;
+                background-color: #FFD9DF;
+            }
+
+            &::after {
+                z-index: 2;
+                height: 4px;
+                background-color: #FFD9DF;
+            }
+        }
+    }
+
+    &__question {
+        font-size: 16px;
+        line-height: 20px;
+        color: #4F4F4F;
+
+        &--active {
+            margin-bottom: 19px;
+            font-weight: 700;
+            color: #000000;
+        }
+    }
+
+    &__answer {
+        display: none;
+        line-height: 22px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 27.5px;
+        right: 25.5px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 15px;
+            transform: translateX(-50%)  translateY(-50%);
+            background-color: #F08597;
+            content: "";
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 15px;
+            transform: translateX(-50%)  translateY(-50%) rotate(90deg);
+            background-color: #F08597;
+            content: "";
+        }
+
+        &--active {
+            &::before {
+                content: none;
+            }
+
+            &::after {
+                background: #888888;
+            }
+        }
+    }
+}

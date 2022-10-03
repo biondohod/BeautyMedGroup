@@ -1,0 +1,131 @@
+.main-banner {
+    margin-bottom: 120px;
+    padding: 0 22px;
+
+    &__content {
+        position: relative;
+        display: flex;
+        max-width: 1408px;
+        min-height: 200px;
+        margin: 0 auto;
+        padding: 34px 450px 31px 120px;
+        background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
+        border-radius: 4px;
+    }
+
+    &__wrapper {
+        margin-right: 103px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 328px;
+    }
+
+    &__tel-input {
+        order: 0;
+        margin-bottom: 11px;
+        padding: 10px 82px;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        border-radius: 4px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #888888;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            border: 1px solid #888888;
+            color: #000000;
+        }
+    }
+
+    &__btn {
+        max-width: 328px;
+        margin-bottom: 11px;
+        padding: 16px 86.5px;
+        outline: 1px solid #000000;
+        border: none;
+        border-radius: 4px;
+        background: none;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.6s, color 0.3s;
+
+        &:hover {
+            color: #FFFFFF;
+            outline: none;
+            background: #F08597;
+            box-shadow: 0px 0px 50px #FFBCC7;
+        }
+    }
+
+    &__checkbox {
+        &__mark {
+            position: relative;
+            display: flex;
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+            background: #FFFFFF;
+            border-radius: 2px;
+        }
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &__text {
+            max-width: 289px;
+            font-size: 8px;
+            line-height: 10px;
+            user-select: none;
+        }
+
+        &:checked {
+            + .main-banner__checkbox__mark:after {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 6px;
+                height: 6px;
+                background-color: #F08597;
+                border-radius: 1px;
+                content: "";
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -25px;
+        right: 109px;
+        width: 290px;
+        height: 251px;
+        background: url('../assets/img/phone.svg') no-repeat;
+    }
+
+}

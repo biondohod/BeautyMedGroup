@@ -1,0 +1,142 @@
+.main-stock {
+    max-width: 1410px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 0 22px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 78px 32px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        min-height: 180px;
+        padding: 24px;
+        padding-top: 32px;
+        outline: 1px solid #E9E9E9;
+        border-radius: 4px;
+
+        &:nth-child(3) {
+            img {
+                left: 22px;
+            }
+        }
+
+        &:nth-child(4) {
+            img {
+                left: 23px;
+                bottom: 27px;
+            }
+        }
+
+        &:nth-child(5) {
+            img {
+                left: 29px;
+            }
+        }
+
+        &--special {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            grid-row: 1 / 3;
+        }
+    }
+
+    &__info {
+        &--special {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            max-height: 348px;
+            max-width: 646px;
+            padding: 38px 50px 44px 35px;
+            background-color: #FFF1F4;
+            border-radius: 4px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: 31px;
+        bottom: 16px;
+
+        &--special {
+            position: absolute;
+            z-index: 2;
+            top: 38px;
+            right: 50px;
+
+            &--decorative {
+                position: absolute;
+                bottom: 0;
+                left: -41px;
+            }
+        }
+    }
+
+    &__name {
+        max-width: 150px;
+        margin-bottom: 32px;
+        padding-right: 33px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+
+        &--special {
+            font-family: 'Tenor Sans';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        width: 150px;
+        height: 48px;
+        outline: 1px solid #000000;
+        border-radius: 4px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+
+        transition: all 0.6s, color 0.3s;
+
+        &:hover {
+            color: #FFFFFF;
+            outline: none;
+            background: #F08597;
+            box-shadow: 0px 0px 50px #FFBCC7;
+        }
+    }
+
+    &__decorative--special {
+        position: absolute;
+        left: -42px;
+        bottom: 108px;
+        width: 100%;
+        height: 100%;
+        max-width: 569px;
+        max-height: 372px;
+        background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;
+        background-size: 304px 332px;
+        border-radius: 4px;
+    }
+}
