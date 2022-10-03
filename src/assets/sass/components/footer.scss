@@ -1,7 +1,5 @@
 .footer {
     padding: 0 22px;
-    background: url('../assets/img/footer-rose.svg') no-repeat bottom 10px right -265px;
-    background-size: 631px 502px ;
 
     &__content {
         display: grid;
@@ -121,7 +119,7 @@
 
     &__list {
         display: grid;
-        row-gap: 8px;
+        row-gap: 4px;
 
         &--catalog {
             width: 100%;
