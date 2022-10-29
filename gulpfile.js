@@ -35,9 +35,10 @@ gulp.task('styles', async () => {
 //HTML minify
 
 gulp.task('htmlmin', async () => {
-  return gulp.src('./src/*.html')
+  return gulp.src('./src/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true,
     removeComments: true }))
+    .pipe(rename({dirname: ''}))
     .pipe(gulp.dest('./build'))
     .pipe(sync.stream());
 });
@@ -71,6 +72,9 @@ gulp.task("copy", async () => {
     "./src/assets/fonts/**/*.{woff,woff2}",
     "./src/assets/img/**/*.svg",
     "./src/*.ico",
+    // "./src/js/*.js",
+    // "./src/robots.txt",
+    // "./src/assets/videos/*.webm"
   ], {
     base: "src"
   })

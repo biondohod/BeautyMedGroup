@@ -23,6 +23,113 @@
         margin: 0 auto;
     }
 
+    &__item {
+        &:nth-child(1) {
+            img {
+                width: 88px;
+                height: 200px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 101px;
+                    height: 230px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            img {
+                width: 55px;
+                height: 132px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 64px;
+                    height: 154px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            img {
+                width: 33px;
+                height: 156px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 36px;
+                    height: 170px;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            img {
+                width: 120px;
+                height: 92px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 147px;
+                    height: 113px;
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            img {
+                width: 112px;
+                height: 98px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 132px;
+                    height: 115px;
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            img {
+                width: 81px;
+                height: 205px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 90px;
+                    height: 228px;
+                }
+            }
+        }
+
+        &:nth-child(7) {
+            img {
+                width: 33px;
+                height: 209px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 38px;
+                    height: 240px;
+                }
+            }
+        }
+
+        &:nth-child(8) {
+            img {
+                width: 78px;
+                height: 200px;
+            }
+            .main-catalog__preview:hover {
+                img {
+                    width: 88px;
+                    height: 226px;
+                }
+            }
+        }
+
+    }
+
     &__preview {
         position: relative;
         display: flex;
@@ -51,9 +158,6 @@
                 height: 100%;
                 background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
             }
-            img {
-                transform: scale(1.16);
-            }
         }
     }
 
@@ -62,7 +166,7 @@
         z-index: 2;
         display: block;
         margin: 0 auto;
-        transition: transform 0.3s;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
     }
 
     &__name {

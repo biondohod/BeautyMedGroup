@@ -53,10 +53,11 @@ li {
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 1900px;
@@ -87,33 +88,4 @@ main {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.decorative__img {
-    position: absolute;
-    right: 0;
-    z-index: -2;
-    width: 209px;
-    height: 623px;
-    background: url('../assets/img/main-decorative.webp') no-repeat;
-
-    &--first {
-        top: 394px;
-    }
-
-    &--second {
-        top: 3172px;
-    }
-
-    &--third {
-        top: 6357px;
-    }
-
-    &--fourth {
-        top: 7230px;
-        right: 0px;
-        width: 366px;
-        height: 502px;
-        background-image: url('../assets/img/footer-rose.svg');
-    }
 }

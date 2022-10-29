@@ -1,0 +1,50 @@
+.decorative {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+    width: 209px;
+    height: 623px;
+    background: url('../assets/img/main-decorative.webp') no-repeat;
+
+    &__right {
+        right: 0;
+
+        &--main {
+            &-top {
+                top: 394px;
+            }
+
+            &-middle {
+                top: 3172px;
+            }
+
+            &-bottom {
+                bottom: 782px;
+            }
+        }
+
+        &--bottom {
+            bottom: 10px;
+            right: 0px;
+            width: 366px;
+            height: 502px;
+            background-image: url('../assets/img/footer-rose.svg');
+        }
+    }
+
+    &__left {
+        left: 0;
+        transform: rotate(180deg);
+
+        &--main {
+            &-top {
+                top: 1467px;
+            }
+
+            &-middle {
+                bottom: 2249px;
+            }
+        }
+    }
+
+}

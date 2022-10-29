@@ -22,6 +22,10 @@
         &--first {
             justify-content: space-between;
             margin-bottom: 32px;
+
+            #city {
+                display: none;
+            }
         }
 
         &--third {
@@ -32,20 +36,34 @@
 }
 
 .first-row {
+
     &__city-select {
         display: flex;
         align-items: center;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        border: none;
         position: relative;
-        outline: none;
         margin-right: 133px;
         padding: 1px 0;
         padding-left: 24px;
         background: url('../assets/img/address.svg') no-repeat center left;
         background-size: 16px;
         cursor: pointer;
+
+        &__selected,
+        &__option {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #535353;
+            text-decoration: none;
+        }
+
+        &__options {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            display: none;
+        }
     }
 
     &__site-navigation {
@@ -189,6 +207,7 @@
         width: 16px;
         height: 16px;
         background-size: 16px;
+
         &--telegram {
             background: url('../assets/img/telegram_ico.svg') no-repeat center;
         }

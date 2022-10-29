@@ -10,7 +10,15 @@
     <header class="header">
         <div class="header__wrapper">
             <div class="header__row header__row--first">
-                <select name="city" id="city" class="first-row__city-select">
+                <div class="first-row__city-select">
+                    <a class="first-row__city-select__selected">Москва</a>
+                    <div class="first-row__city-select__options">
+                        <a href="#" class="first-row__city-select__option" data-value="Moscow">Санкт-Петербург</a>
+                        <a href="#" class="first-row__city-select__option" data-value="Yekaterinburg">Екатеринбург</a>
+                        <a href="#" class="first-row__city-select__option" data-value="City1">Город1</option>
+                    </div>
+                </div>
+                <select name="city" id="city">
                     <option value="Moscow">Москва</option>
                     <option value="Saint-Petersburg">Санкт-Петербург</option>
                     <option value="Yekaterinburg">Екатеринбург</option>
@@ -115,6 +123,8 @@
 
     <main>
         <h1 class="visually-hidden">БьютиМедГрупп</h1>
+
+        <!-- слайдер -->
         <section class="main-slider">
             <div class="main-slider__btns">
                 <button type="button" class="main-slider__btn main-slider__btn--prev">
@@ -130,8 +140,8 @@
                         <h2 class="product__name">Velit aliquet sagittis id consectetur</h2>
                         <a href="#" class="product__more">Подробнее</a>
                     </div>
-                    <img src="./assets/img/product-preview.webp" alt="Товар." class="product__img--preview"
-                        width="261" height="212">
+                    <img src="./assets/img/product-preview.webp" alt="Товар." class="product__img--preview" width="261"
+                        height="212">
                 </div>
                 <div class="product__decorative-block">
                     <img src="./assets/img/product-decorative.webp" alt="Пример использования товара."
@@ -184,6 +194,7 @@
             </div>
         </section>
 
+        <!-- каталог товаров -->
         <section class="main-catalog">
             <h2 class="main-catalog__title">Каталог товаров</h2>
             <ul class="main-catalog__list">
@@ -238,6 +249,7 @@
             </ul>
         </section>
 
+        <!-- категории товаров -->
         <section class="main-categories">
             <h2 class="visually-hidden">Категории товаров</h2>
             <div class="main__tabs main__tabs--categories">
@@ -257,11 +269,11 @@
                     <li class="main-categories__content__item">
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -298,8 +310,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -311,11 +323,11 @@
                     <li class="main-categories__content__item">
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -352,8 +364,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -366,11 +378,11 @@
 
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -407,8 +419,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -421,11 +433,11 @@
 
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -462,8 +474,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -475,11 +487,11 @@
                     <li class="main-categories__content__item">
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -516,8 +528,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -529,11 +541,11 @@
                     <li class="main-categories__content__item">
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -570,63 +582,8 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
-                            </div>
-                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                            <div class="main-categories__card__availability">
-                                <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                <div class="main-categories__card__stock">В наличии</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-categories__content__item">
-
-                        <div class="main-categories__card">
-                            <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
-                                    Хит
-                                </div>
-                                <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
-                                </button>
-                                <div class="main-categories__card__slider">
-                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                    <ol class="card__slider__pagination">
-                                        <li class="card__slider__btn card__slider__btn--current">
-                                            <span class="visually-hidden">Текущий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Второй слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Третий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Четвертый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Пятый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Шестой слайд.</span>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="main-categories__card__summary">
-                                <div class="main-categories__card__rating">
-                                    <span class="visually-hidden">4 звезды.</span>
-                                </div>
-                                <span class="main-categories__card__code">Код товара: 25122383</span>
-                            </div>
-                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                Alpine Organics 50 мл</span>
-                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
-                                Alpine Organics</span>
-                            <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -639,11 +596,11 @@
 
                         <div class="main-categories__card">
                             <div class="main-categories__card__preview">
-                                <div class="main-categories__card__label">
+                                <noindex class="main-categories__card__label">
                                     Хит
-                                </div>
+                                </noindex>
                                 <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
                                 </button>
                                 <div class="main-categories__card__slider">
                                     <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
@@ -680,8 +637,63 @@
                             <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
                                 Alpine Organics</span>
                             <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
+                            </div>
+                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
+                            <div class="main-categories__card__availability">
+                                <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
+                                <div class="main-categories__card__stock">В наличии</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-categories__content__item">
+
+                        <div class="main-categories__card">
+                            <div class="main-categories__card__preview">
+                                <noindex class="main-categories__card__label">
+                                    Хит
+                                </noindex>
+                                <button type="button" class="main-categories__card__favorite">
+                                    <noindex class="visually-hidden">В Избранное.</noindex>
+                                </button>
+                                <div class="main-categories__card__slider">
+                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
+                                    <ol class="card__slider__pagination">
+                                        <li class="card__slider__btn card__slider__btn--current">
+                                            <span class="visually-hidden">Текущий слайд.</span>
+                                        </li>
+                                        <li class="card__slider__btn">
+                                            <span class="visually-hidden">Второй слайд.</span>
+                                        </li>
+                                        <li class="card__slider__btn">
+                                            <span class="visually-hidden">Третий слайд.</span>
+                                        </li>
+                                        <li class="card__slider__btn">
+                                            <span class="visually-hidden">Четвертый слайд.</span>
+                                        </li>
+                                        <li class="card__slider__btn">
+                                            <span class="visually-hidden">Пятый слайд.</span>
+                                        </li>
+                                        <li class="card__slider__btn">
+                                            <span class="visually-hidden">Шестой слайд.</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="main-categories__card__summary">
+                                <div class="main-categories__card__rating">
+                                    <span class="visually-hidden">4 звезды.</span>
+                                </div>
+                                <span class="main-categories__card__code">Код товара: 25122383</span>
+                            </div>
+                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
+                                Alpine Organics 50 мл</span>
+                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной мятой
+                                Alpine Organics</span>
+                            <div class="main-categories__card__price">
+                                <noindex class="main-categories__card__price--new">1 939 ₽</noindex>
+                                <noindex class="main-categories__card__price--old">2 093 ₽</noindex>
                             </div>
                             <button type="button" class="main-categories__card__to-cart">В корзину</button>
                             <div class="main-categories__card__availability">
@@ -694,6 +706,7 @@
             </div>
         </section>
 
+        <!-- бренды -->
         <section class="main-brands">
             <h2 class="main-brands__title">Наши бренды</h2>
             <div class="main__tabs main__tabs--brands">
@@ -706,46 +719,74 @@
             <div class="main-brands__content">
                 <ul class="main-brands__content__list">
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/clinique.webp" alt="Логтип clinique." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/clinique.webp" alt="Логтип clinique." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/nyx.webp" alt="Логтип nyx." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/nyx.webp" alt="Логтип nyx." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/kanebo.webp" alt="Логтип kanebo." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/kanebo.webp" alt="Логтип kanebo." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/artdeco.webp" alt="Логтип artdeco." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/artdeco.webp" alt="Логтип artdeco."
+                                class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
                         <img src="./assets/img/maxfactor.webp" alt="Логтип maxfactor."
                             class="main-brands__content__img">
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/joico.webp" alt="Логтип joico." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/joico.webp" alt="Логтип joico." class="main-brands__content__img">
+                        </a>
+
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/rimmel.webp" alt="Логтип rimmel." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/rimmel.webp" alt="Логтип rimmel." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/bioderma.webp" alt="Логтип bioderma." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/bioderma.webp" alt="Логтип bioderma."
+                                class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/kapous.webp" alt="Логтип kapous." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/kapous.webp" alt="Логтип kapous." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/syoss.webp" alt="Логтип syoss." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/syoss.webp" alt="Логтип syoss." class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/catrice.webp" alt="Логтип catrice." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/catrice.webp" alt="Логтип catrice."
+                                class="main-brands__content__img">
+                        </a>
                     </li>
                     <li class="main-brands__content__item">
-                        <img src="./assets/img/caudalie.webp" alt="Логтип caudalie." class="main-brands__content__img">
+                        <a>
+                            <img src="./assets/img/caudalie.webp" alt="Логтип caudalie."
+                                class="main-brands__content__img">
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
 
+        <!-- отзывы -->
         <section class="main-reviews">
             <h2 class="main-reviews__title">Отзывы клиентов и мастеров</h2>
             <ul class="main-reviews__list">
@@ -805,8 +846,8 @@
             <a href="#" class="main-reviews__show-all">Все отзывы</a>
         </section>
 
+        <!-- акции -->
         <section class="main-stock">
-            <h2 class="visually-hidden">Наши самые выгодные предложения.</h2>
             <ul class="main-stock__list">
                 <li class="main-stock__item--special">
                     <div class="main-stock__info--special">
@@ -821,27 +862,28 @@
                 </li>
                 <li class="main-stock__item">
                     <img src="./assets/img/stock1.webp" alt="Товар." class="main-stock__img">
-                    <span class="main-stock__name">Egestas tellus rutrum tellus</span>
-                    <a href="#" class="main-stock__detail">Подробнее</a>
+                    <h2 class="main-stock__name">Egestas tellus rutrum tellus</h2>
+                    <a href="#" rel="nofollow" class="main-stock__detail">Подробнее</a>
                 </li>
                 <li class="main-stock__item">
                     <img src="./assets/img/stock2.webp" alt="Товар." class="main-stock__img">
-                    <span class="main-stock__name">Egestas tellus rutrum tellus</span>
-                    <a href="#" class="main-stock__detail">Подробнее</a>
+                    <h2 class="main-stock__name">Egestas tellus rutrum tellus</h2>
+                    <a href="#" rel="nofollow" class="main-stock__detail">Подробнее</a>
                 </li>
                 <li class="main-stock__item">
                     <img src="./assets/img/stock3.webp" alt="Товар." class="main-stock__img">
-                    <span class="main-stock__name">Egestas tellus rutrum tellus</span>
-                    <a href="#" class="main-stock__detail">Подробнее</a>
+                    <h2 class="main-stock__name">Egestas tellus rutrum tellus</h2>
+                    <a href="#" rel="nofollow" class="main-stock__detail">Подробнее</a>
                 </li>
                 <li class="main-stock__item">
                     <img src="./assets/img/stock4.webp" alt="Товар." class="main-stock__img">
-                    <span class="main-stock__name">Egestas tellus rutrum tellus</span>
-                    <a href="#" class="main-stock__detail">Подробнее</a>
+                    <h2 class="main-stock__name">Egestas tellus rutrum tellus</h2>
+                    <a href="#" rel="nofollow" class="main-stock__detail">Подробнее</a>
                 </li>
             </ul>
         </section>
 
+        <!-- вопрос ответ -->
         <section class="main-faq">
             <h2 class="main-faq__title">Вопрос - ответ</h2>
             <ul class="main-faq__list">
@@ -895,6 +937,7 @@
             </ul>
         </section>
 
+        <!-- баннер остались вопросы? -->
         <section class="main-banner">
             <div class="main-banner__content">
                 <div class="main-banner__wrapper">
@@ -916,7 +959,7 @@
                         <span class="main-banner__checkbox__mark"></span>
                         <span class="main-banner__checkbox__text">
                             Нажимая «Оставить завку», я соглашаюсь c обработкой
-                            персональных данных на условиях Политики конфиденциальности.
+                            персональных данных на условиях <a href="#">Политики конфиденциальности.</a>
                         </span>
                     </label>
                 </form>
@@ -924,6 +967,7 @@
             </div>
         </section>
 
+        <!-- новости -->
         <section class="main-news">
             <h2 class="main-news__title">Новости и статьи</h2>
             <div class="main-news__content">
@@ -998,6 +1042,7 @@
             </div>
         </section>
 
+        <!-- текст -->
         <section class="main-textblock">
             <h2 class="visually-hidden">Текстовый блок.</h2>
             <div class="main-textblock--left">
@@ -1028,8 +1073,8 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__row footer__row--first">
-                <img src="./assets/img/main-logo.svg" alt="Логотип БьютиМедГрупп." class="footer__main-logo"
-                    width="222" height="100">
+                <img src="./assets/img/main-logo.svg" alt="Логотип БьютиМедГрупп." class="footer__main-logo" width="222"
+                    height="100">
                 <a href="tel:88000000000" class="footer__phone">
                     <svg class="footer__phone__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -1287,10 +1332,12 @@
         </div>
     </footer>
 
-    <div class="decorative__img decorative__img--first"></div>
-    <div class="decorative__img decorative__img--second"></div>
-    <div class="decorative__img decorative__img--third"></div>
-    <div class="decorative__img decorative__img--fourth"></div>
+    <div class="decorative decorative__right decorative__right--main-top"></div>
+    <div class="decorative decorative__left decorative__left--main-top"></div>
+    <div class="decorative decorative__right decorative__right--main-middle"></div>
+    <div class="decorative decorative__left decorative__left--main-middle"></div>
+    <div class="decorative decorative__right decorative__right--main-bottom"></div>
+    <div class="decorative decorative__right decorative__right--bottom"></div>
 </body>
 
 </html>

@@ -103,6 +103,11 @@
             font-size: 8px;
             line-height: 10px;
             user-select: none;
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
         }
 
         &:checked {
