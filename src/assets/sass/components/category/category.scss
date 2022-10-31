@@ -19,6 +19,7 @@
         justify-content: center;
         width: 100%;
         padding: 15px 20px;
+        background-color: transparent;
         border: 1px solid #000000;
         border-radius: 4px;
         font-family: 'Montserrat';
@@ -26,18 +27,28 @@
         font-size: 14px;
         line-height: 17px;
         cursor: pointer;
+        transition: background-color 0.4s, border-color 0.4s, box-shadow 0.4s, color 0.4s;
 
-        span {
-            position: relative;
-            left: 32px;
+        svg {
+            fill: #000000;
+            margin-right: 8px;
+            transition: fill 0.4s;
         }
 
         &--diagnostics {
-            background: url('../assets/img/category/diagnostics.svg') no-repeat center left 73.5px;
+            svg {
+                margin-right: 16px;
+            }
         }
 
-        &--advice {
-            background: url('../assets/img/category/advice.svg') no-repeat center left 76.5px;
+        &:hover {
+            color: #fff;
+            border-color: #f08597;
+            background-color: #f08597;
+            box-shadow: 0 0 50px #ffbcc7;
+            svg {
+                fill: #FFFFFF;
+            }
         }
     }
 
@@ -47,3 +58,4 @@
         margin: 24px 0;
     }
 }
+
