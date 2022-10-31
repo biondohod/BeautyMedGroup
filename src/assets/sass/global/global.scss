@@ -53,6 +53,7 @@ li {
 }
 
 html {
+    height: 1px;
     min-height: 100%;
 }
 
@@ -88,4 +89,20 @@ main {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.section__title {
+    margin-bottom: 40px;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+
+    &--smaller {
+        margin-bottom: 48px;
+        font-size: 32px;
+        line-height: 37px;
+    }
 }
