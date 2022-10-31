@@ -2,5 +2,48 @@
     &__wrapper {
         display: flex;
         gap: 32px;
+        justify-content: center;
+    }
+
+    &__left-column {
+        max-width: 328px;
+    }
+
+    &__right-column {
+        max-width: 1048px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+
+        span {
+            position: relative;
+            left: 32px;
+        }
+
+        &--diagnostics {
+            background: url('../assets/img/category/diagnostics.svg') no-repeat center left 73.5px;
+        }
+
+        &--advice {
+            background: url('../assets/img/category/advice.svg') no-repeat center left 76.5px;
+        }
+    }
+
+    &__filters-form {
+        display: grid;
+        gap: 17px;
+        margin: 24px 0;
     }
 }

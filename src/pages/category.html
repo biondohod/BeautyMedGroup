@@ -143,21 +143,25 @@
             <h1 class="section__title category__title">Уход за телом</h1>
             <div class="category__wrapper">
                 <div class="category__left-column">
-                    <button class="category__btn category__btn--diagnostics">Диагностика кожи</button>
+                    <button class="category__btn category__btn--diagnostics">
+                        <span>Диагностика кожи</span>
+                    </button>
                     <!-- фильтры -->
                     <form action="" method="post" class="category__filters-form">
                         <fieldset class="filter filter--price">
                             <legend class="filter__name">Цена</legend>
-                            <label class="filter__label">
-                                <span class="filter__text">от</span>
-                                <input type="number" name="price-start" id="price-start" min="0">
-                                <span class="filter__text">₽</span>
-                            </label>
-                            <label class="filter__label">
-                                <span class="filter__text">до</span>
-                                <input type="number" name="price-end" id="price-end" min="0">
-                                <span class="filter__text">₽</span>
-                            </label>
+                            <div class="price__wrapper">
+                                <label class="filter__label">
+                                    <span class="filter__text">от</span>
+                                    <input type="number" name="price-start" id="price-start" min="0" placeholder="2500">
+                                    <span class="filter__text">₽</span>
+                                </label>
+                                <label class="filter__label">
+                                    <span class="filter__text">до</span>
+                                    <input type="number" name="price-end" id="price-end" min="0" placeholder="9900">
+                                    <span class="filter__text">₽</span>
+                                </label>
+                            </div>
                         </fieldset>
                         <fieldset class="filter filter--opened">
                             <div class="filter__wrapper">
@@ -168,17 +172,17 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="50%" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="50%" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">-50%</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="40%">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="40%">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">-40%</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="gift">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="gift">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Подарок</span>
                                 </label>
@@ -193,22 +197,22 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="all-types" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="all-types" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Для всех типов кожи</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="dry-and-sensitive">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="dry-and-sensitive">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Для сухой и чувствительной</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="dry">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="dry">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Для сухой кожи</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="normal-and-dry">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="normal-and-dry">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Для нормальной и сухой кожи</span>
                                 </label>
@@ -223,22 +227,22 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="brand" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="brand" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Brand Company</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="brand">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="brand">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Brand Company</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="brand">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="brand">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Brand Company</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="brand">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="brand">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Brand Company</span>
                                 </label>
@@ -253,27 +257,27 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="ampoules" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="ampoules" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Ампулы</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="gel">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="gel">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Гель</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="capsules">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="capsules">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Капсулы</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="cream">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="cream">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Крем</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="mask">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="mask">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Маска</span>
                                 </label>
@@ -288,12 +292,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -308,12 +312,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -328,12 +332,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -348,12 +352,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -368,12 +372,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -388,12 +392,12 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
@@ -408,31 +412,35 @@
                             </div>
                             <div class="filter__list">
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter1" checked>
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter1" checked>
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр1</span>
                                 </label>
                                 <label class="filter__label">
-                                    <input class="visually-hidden" type="checkbox" name="filter2">
+                                    <input class="visually-hidden hidden-checkbox" type="checkbox" name="filter2">
                                     <span class="filter__checkbox"></span>
                                     <span class="filter__text">Фильтр2</span>
                                 </label>
                             </div>
                         </fieldset>
                     </form>
-                    <button class="category__btn category__btn--advice">Совет косметолога</button>
+                    <button class="category__btn category__btn--advice">
+                        <span>Совет косметолога</span>
+                    </button>
                     <!-- новости -->
-                    <section class="main-news main-news--categories">
+                    <aside class="main-news main-news--categories">
                         <h2 class="section__title--smaller section__title main-news__title">Новости и статьи</h2>
                         <div class="main-news__content">
                             <ul class="main-news__list">
                                 <li class="main-news__item">
-                                    <img src="./assets/img/news1.webp" alt="Превью новости." class="main-news__img"
+                                    <a href="#">
+                                        <img src="./assets/img/news1.webp" alt="Превью новости." class="main-news__img"
                                         width="328" height="240">
+                                    </a>
                                     <div class="main-news__textcontent">
                                         <span class="main-news__date">22.10.2021</span>
-                                        <span class="main-news__name">Odio morbi quis commodo odio aenean sed adipiscing
-                                            diam.</span>
+                                        <a href="#" class="main-news__name">Odio morbi quis commodo odio aenean sed adipiscing
+                                            diam.</a>
                                         <span class="main-news__description">Turpis nunc eget lorem dolor sed viverra.
                                             Ipsum dolor
                                             sit amet consectetur adipiscing.</span>
@@ -440,12 +448,14 @@
                                     </div>
                                 </li>
                                 <li class="main-news__item">
-                                    <img src="./assets/img/news2.webp" alt="Превью новости." class="main-news__img"
+                                    <a href="#">
+                                        <img src="./assets/img/news2.webp" alt="Превью новости." class="main-news__img"
                                         width="328" height="240">
+                                    </a>
                                     <div class="main-news__textcontent">
                                         <span class="main-news__date">22.10.2021</span>
-                                        <span class="main-news__name">Odio morbi quis commodo odio aenean sed adipiscing
-                                            diam.</span>
+                                        <a href="#" class="main-news__name">Odio morbi quis commodo odio aenean sed adipiscing
+                                            diam.</a>
                                         <span class="main-news__description">Turpis nunc eget lorem dolor sed viverra.
                                             Ipsum dolor
                                             sit amet consectetur adipiscing.</span>
@@ -454,7 +464,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </section>
+                    </aside>
                 </div>
                 <div class="category__right-column">
                     <!-- сортировка показа результатов -->
@@ -504,8 +514,8 @@
                                 <span class="category__display__text">Сортировать по</span>
                                 <select name="sort-by" id="sort-by">
                                     <option value="popular">популярности</option>
-                                    <option value="cheaper">дешевле</option>
-                                    <option value="expensive">дороже</option>
+                                    <option value="cheaper">цене по возрастанию</option>
+                                    <option value="expensive">цене по убыванию</option>
                                     <option value="rating">оценке</option>
                                 </select>
                             </div>

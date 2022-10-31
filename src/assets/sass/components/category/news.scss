@@ -1,0 +1,18 @@
+.main-news--categories {
+    margin-top: 80px;
+    padding: 0;
+
+    .main-news__title {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    .main-news__list {
+        grid-template-columns: 1fr;
+    }
+
+    .main-news__name {
+        color: #000000;
+        text-decoration: none;
+    }
+}
