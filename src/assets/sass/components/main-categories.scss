@@ -177,6 +177,7 @@
         position: absolute;
         bottom: 10px;
         display: flex;
+        align-items: center;
     }
 
     &__btn {
@@ -206,6 +207,14 @@
 
         &--brands {
             margin-bottom: 55px;
+        }
+
+        &--products {
+            margin-bottom: 77px;
+
+            .main__tabs__item--active::after {
+                width: 80px;
+            }
         }
 
         &__list,

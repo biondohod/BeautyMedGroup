@@ -28,6 +28,24 @@
         &--unactive {
             opacity: 0.5;
         }
+
+        &--vertical {
+            align-self: center;
+            width: 24px;
+            height: 24px;
+            background: url('../assets/img/category/arrow.svg') no-repeat center;
+            border: 0;
+            transform: rotate(90deg);
+            cursor: pointer;
+
+            &--prev {
+                transform: rotate(-90deg);
+            }
+
+            &--next {
+                margin-bottom: 10px;
+            }
+        }
     }
 
     &__carousel {
@@ -38,12 +56,28 @@
         margin-top: -15px;
         margin-left: -15px;
         overflow-x: hidden;
+
+        &--vertical {
+            width: 88px;
+            height: 376px;
+            padding: 0;
+            overflow-x: visible;
+            overflow-y: hidden;
+        }
     }
 
     &__content {
         position: relative;
         left: 0px;
         transition: left 0.6s;
+
+        &--vertical {
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            transition: top 0.6s;
+        }
     }
 
     &__item {
@@ -54,6 +88,26 @@
         &--reviews {
             min-width: 509px;
         }
+
+        &--product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            background-color: #FFF;
+            border: 1px solid #E9E9E9;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+
+    &--vertical {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 8px;
+        width: 88px;
     }
 }
 
