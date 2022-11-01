@@ -119,6 +119,9 @@
         }
 
         &__to-cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             margin-bottom: 14px;
             padding: 11px;
@@ -162,12 +165,9 @@
         }
 
         &__stock {
-            display: flex;
-            align-items: center;
-            padding-left: 24px;
-            background: url('../assets/img/check.svg') no-repeat center left;
-            font-size: 10px;
-            line-height: 12px;
+            width: 80px;
+            height: 16px;
+            background: url('../assets/img/available.webp') no-repeat center left;
         }
     }
 }

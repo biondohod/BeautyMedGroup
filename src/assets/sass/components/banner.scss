@@ -58,9 +58,10 @@
     }
 
     &__btn {
+        width: 100%;
         max-width: 328px;
         margin-bottom: 11px;
-        padding: 16px 86.5px;
+        padding: 16px;
         outline: 1px solid #000000;
         border: none;
         border-radius: 4px;
@@ -128,9 +129,34 @@
         position: absolute;
         top: -25px;
         right: 109px;
-        width: 290px;
+        width: 300px;
         height: 251px;
         background: url('../assets/img/phone.svg') no-repeat;
+    }
+
+    &--category {
+        padding: 0;
+
+        .main-banner__content {
+            padding-left: 30px;
+            padding-right: 338px;
+        }
+
+        .main-banner__wrapper {
+            margin-right: 41px;
+        }
+
+        .main-banner__form {
+            max-width: 262px;
+        }
+
+        .main-banner__tel-input {
+            padding: 10px 45.5px;
+        }
+
+        .main-banner__img {
+            right: 22.5px;
+        }
     }
 
 }
