@@ -38,7 +38,7 @@
 
     &__left {
         left: 0;
-        transform: rotate(180deg);
+        background: url('../assets/img/decorative-left.webp') no-repeat;
 
         &--main {
             &-top {
@@ -48,6 +48,10 @@
             &-middle {
                 bottom: 2249px;
             }
+        }
+
+        &--basket {
+            bottom: 73px;
         }
     }
 
