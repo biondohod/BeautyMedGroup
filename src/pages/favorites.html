@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Каталог</title>
+    <title>Избранное</title>
 </head>
 
 <body>
@@ -111,7 +111,7 @@
                     </ul>
                     <ul class="third-row__user-navigation">
                         <li class="user-navigation__item">
-                            <a href="favorites.html" class="user-navigation__link user-navigation__link--favorite">
+                            <a class="user-navigation__link user-navigation__link--favorite">
                                 <span class="visually-hidden">Избранное.</span>
                             </a>
                         </li>
@@ -133,65 +133,241 @@
                         <a href="index.html" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link--active">Каталог</a>
+                        <a class="breadcrumbs__link--active">Избранное</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- каталог товаров -->
-            <section class="main-catalog">
-                <h1 class="section__title main-catalog__title">Каталог товаров</h1>
-                <ul class="main-catalog__list">
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/филлеры.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Филлеры</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/биоревитализация.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Биоревитализация</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/биопрепаранты.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Биорепаранты</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/пилинги.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Пилинги</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/уход-за-лицом.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Уход за лицом</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/уход-за-телом.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Уход за телом</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/инъекции.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Инъекционные препараты</a></h3>
-                    </li>
-                    <li class="main-catalog__item">
-                        <a href="category.html" class="main-catalog__preview">
-                            <img src="./assets/img/загар.webp" alt="Товар." class="main-catalog__img">
-                        </a>
-                        <h3 class="main-catalog__name"><a href="category.html">Средства для загара</a></h3>
-                    </li>
-                </ul>
+            <section class="favorites">
+                <h1 class="section__title favorites__title">Избранное</h1>
+                <div class="products__you-like">
+                    <ul class="main-categories__content__list">
+                        <li class="main-categories__content__item">
+                            <div class="main-categories__card">
+                                <div class="main-categories__card__preview">
+                                    <span class="main-categories__card__label">
+                                        Хит
+                                    </span>
+                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
+                                        <span class="visually-hidden">Удалить из избранного.</span>
+                                    </button>
+                                    <div class="main-categories__card__slider">
+                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
+                                        <ol class="card__slider__pagination">
+                                            <li class="card__slider__btn card__slider__btn--current">
+                                                <span class="visually-hidden">Текущий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Второй слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Третий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Четвертый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Пятый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Шестой слайд.</span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="main-categories__card__summary">
+                                    <div class="main-categories__card__rating">
+                                        <span class="visually-hidden">4 звезды.</span>
+                                    </div>
+                                    <span class="main-categories__card__code">Код товара: 25122383</span>
+                                </div>
+                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
+                                    Alpine Organics 50 мл</span>
+                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
+                                    мятой
+                                    Alpine Organics</span>
+                                <div class="main-categories__card__price">
+                                    <span class="main-categories__card__price--new">1 939 ₽</span>
+                                    <span class="main-categories__card__price--old">2 093 ₽</span>
+                                </div>
+                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
+                                <div class="main-categories__card__availability">
+                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
+                                    <div class="main-categories__card__stock"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-categories__content__item">
+                            <div class="main-categories__card">
+                                <div class="main-categories__card__preview">
+                                    <span class="main-categories__card__label">
+                                        Хит
+                                    </span>
+                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
+                                        <span class="visually-hidden">Удалить из избранного.</span>
+                                    </button>
+                                    <div class="main-categories__card__slider">
+                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
+                                        <ol class="card__slider__pagination">
+                                            <li class="card__slider__btn card__slider__btn--current">
+                                                <span class="visually-hidden">Текущий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Второй слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Третий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Четвертый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Пятый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Шестой слайд.</span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="main-categories__card__summary">
+                                    <div class="main-categories__card__rating">
+                                        <span class="visually-hidden">4 звезды.</span>
+                                    </div>
+                                    <span class="main-categories__card__code">Код товара: 25122383</span>
+                                </div>
+                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
+                                    Alpine Organics 50 мл</span>
+                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
+                                    мятой
+                                    Alpine Organics</span>
+                                <div class="main-categories__card__price">
+                                    <span class="main-categories__card__price--new">1 939 ₽</span>
+                                    <span class="main-categories__card__price--old">2 093 ₽</span>
+                                </div>
+                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
+                                <div class="main-categories__card__availability">
+                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
+                                    <div class="main-categories__card__stock"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-categories__content__item">
+
+                            <div class="main-categories__card">
+                                <div class="main-categories__card__preview">
+                                    <span class="main-categories__card__label">
+                                        Хит
+                                    </span>
+                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
+                                        <span class="visually-hidden">Удалить из избранного.</span>
+                                    </button>
+                                    <div class="main-categories__card__slider">
+                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
+                                        <ol class="card__slider__pagination">
+                                            <li class="card__slider__btn card__slider__btn--current">
+                                                <span class="visually-hidden">Текущий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Второй слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Третий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Четвертый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Пятый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Шестой слайд.</span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="main-categories__card__summary">
+                                    <div class="main-categories__card__rating">
+                                        <span class="visually-hidden">4 звезды.</span>
+                                    </div>
+                                    <span class="main-categories__card__code">Код товара: 25122383</span>
+                                </div>
+                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
+                                    Alpine Organics 50 мл</span>
+                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
+                                    мятой
+                                    Alpine Organics</span>
+                                <div class="main-categories__card__price">
+                                    <span class="main-categories__card__price--new">1 939 ₽</span>
+                                    <span class="main-categories__card__price--old">2 093 ₽</span>
+                                </div>
+                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
+                                <div class="main-categories__card__availability">
+                                    <button class="main-categories__card__buy">Купить в 1 клик</button>
+                                    <div class="main-categories__card__stock"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-categories__content__item">
+
+                            <div class="main-categories__card">
+                                <div class="main-categories__card__preview">
+                                    <span class="main-categories__card__label">
+                                        Хит
+                                    </span>
+                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
+                                        <span class="visually-hidden">Удалить из избранного.</span>
+                                    </button>
+                                    <div class="main-categories__card__slider">
+                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
+                                        <ol class="card__slider__pagination">
+                                            <li class="card__slider__btn card__slider__btn--current">
+                                                <span class="visually-hidden">Текущий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Второй слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Третий слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Четвертый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Пятый слайд.</span>
+                                            </li>
+                                            <li class="card__slider__btn">
+                                                <span class="visually-hidden">Шестой слайд.</span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="main-categories__card__summary">
+                                    <div class="main-categories__card__rating">
+                                        <span class="visually-hidden">4 звезды.</span>
+                                    </div>
+                                    <span class="main-categories__card__code">Код товара: 25122383</span>
+                                </div>
+                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
+                                    Alpine Organics 50 мл</span>
+                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
+                                    мятой
+                                    Alpine Organics</span>
+                                <div class="main-categories__card__price">
+                                    <span class="main-categories__card__price--new">1 939 ₽</span>
+                                    <span class="main-categories__card__price--old">2 093 ₽</span>
+                                </div>
+                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
+                                <div class="main-categories__card__availability">
+                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
+                                    <div class="main-categories__card__stock"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
+
         </main>
 
         <footer class="footer">
@@ -458,8 +634,8 @@
         </footer>
     </div>
 
-    <div class="decorative decorative__right decorative__right--catalog"></div>
-    <div class="decorative decorative__left decorative__left--catalog"></div>
+    <div class="decorative decorative__right decorative__right--favorites"></div>
+    <div class="decorative decorative__left decorative__left--favorites"></div>
     <div class="decorative decorative__right decorative__right--bottom"></div>
 </body>
 

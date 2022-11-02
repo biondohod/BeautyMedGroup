@@ -62,6 +62,10 @@
             border: none;
             background: url('../assets/img/heart-gray.svg') no-repeat center;
             cursor: pointer;
+
+            &--selected {
+                background-image: url('../assets/img/heart-selected.svg');
+            }
         }
 
         &__slider {
