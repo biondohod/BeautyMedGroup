@@ -1,0 +1,28 @@
+.thanks-for-order {
+    margin-bottom: 48px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding-top: 162px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+
+        &:nth-child(1) {
+            background: url('../assets/img/thanks-for-order/phone.svg') no-repeat top center;
+        }
+
+        &:nth-child(2) {
+            background: url('../assets/img/thanks-for-order/computer.svg') no-repeat top center;
+        }
+
+        &:nth-child(3) {
+            background: url('../assets/img/thanks-for-order/mail.svg') no-repeat top center;
+        }
+    }
+}

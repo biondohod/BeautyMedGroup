@@ -1,0 +1,67 @@
+.order-info {
+    max-width: 688px;
+    margin: 0 auto;
+    margin-bottom: 156px;
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 242px 1fr 170px;
+        column-gap: 44px;
+        row-gap: 32px;
+        margin-bottom: 32px;
+        padding: 32px 0;
+        border-top: 1px solid #535353;
+        border-bottom: 1px solid #535353;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__payment-status {
+        position: relative;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+
+        &--not {
+            padding-right: 28px;
+            color: #FF0000;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                background: url('../assets/img/ico.svg') no-repeat center right;
+                transform: translateY(-50%);
+                content: "";
+            }
+        }
+    }
+
+    &__btn {
+        width: 272px;
+        margin: 0 auto;
+    }
+}
