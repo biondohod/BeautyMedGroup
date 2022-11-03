@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Корзина</title>
+    <title>Оформление заказа</title>
 </head>
 
 <body>
@@ -116,7 +116,7 @@
                             </a>
                         </li>
                         <li class="user-navigation__item">
-                            <a href="#" class="user-navigation__link user-navigation__link--cart">
+                            <a href="basket.html" class="user-navigation__link user-navigation__link--cart">
                                 <span class="visually-hidden">Корзина.</span>
                             </a>
                         </li>
@@ -133,15 +133,138 @@
                         <a href="index.html" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link--active">Корзина</a>
+                        <a href="basket.html" class="breadcrumbs__link">Корзина</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link--active">Оформление заказа</a>
                     </li>
                 </ul>
             </div>
 
-            <section class="basket">
-                <h1 class="section__title basket__title">Корзина</h1>
-                <div class="basket__wrapper">
-                    <ul class="basket__list">
+            <section class="making-order">
+                <h1 class="section__title">Оформление заказа</h1>
+                <div class="making-order__wrapper">
+                    <form action="" class="making-order__form">
+                        <fieldset class="making-order__customer">
+                            <legend class="making-order-form__name">Информация о покупателе</legend>
+                            <input type="text" name="full-name" id="full-name" class="making-order__input"
+                                placeholder="Фамилия Имя Отчество" autocomplete="off" required>
+                            <input type="tel" name="tel" id="tel" class="making-order__input"
+                                placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _" autocomplete="off">
+                            <input type="email" name="email" id="email" class="making-order__input"
+                                placeholder="Ваш E-mail" autocomplete="off">
+                        </fieldset>
+                        <fieldset class="making-order__delivery">
+                            <legend class="making-order-form__name">Доставка</legend>
+                            <div class="making-order__input making-order__city-select">
+                                <a class="making-order__city-select__selected">Москва</a>
+                                <div class="making-order__city-select__options">
+                                    <a href="#" class="making-order__city-select__option"
+                                        data-value="Moscow">Санкт-Петербург</a>
+                                    <a href="#" class="making-order__city-select__option"
+                                        data-value="Yekaterinburg">Екатеринбург</a>
+                                    <a href="#" class="making-order__city-select__option" data-value="City1">Город1
+                                        </option>
+                                </div>
+                            </div>
+                            <select name="city" id="customer-city">
+                                <option value="Moscow">Москва</option>
+                                <option value="Saint-Petersburg">Санкт-Петербург</option>
+                                <option value="Yekaterinburg">Екатеринбург</option>
+                                <option value="City1">Город1</option>
+                            </select>
+                            <span class="making-order-form__descr">
+                                Выберите область/регион для вычисления стоимости доставки
+                            </span>
+                            <div class="making-order-delivery__list">
+                                <label class="making-order-delivery__item">
+                                    <input type="radio" name="delivery" value="post-office" id="delivery-post-office"
+                                        class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-delivery__name">Почтой России - &nbsp;</span>
+                                    <span class="making-order-delivery__price">459 ₽</span>
+                                </label>
+                                <label class="making-order-delivery__item">
+                                    <input type="radio" name="delivery" value="post-office" id="delivery-post-office"
+                                        class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-delivery__name">Курьер СДЭК - &nbsp;</span>
+                                    <span class="making-order-delivery__price">849 ₽</span>
+                                </label>
+                                <label class="making-order-delivery__item">
+                                    <input type="radio" name="delivery" value="sdek-courier" id="delivery-sdek-courier"
+                                        class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-delivery__name">Курьером Почты России (EMS) - &nbsp;</span>
+                                    <span class="making-order-delivery__price">349 ₽</span>
+                                </label>
+                                <label class="making-order-delivery__item">
+                                    <input type="radio" name="delivery" value="pickup" id="delivery-pickup"
+                                        class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-delivery__name">Самовывоз</span>
+                                </label>
+                            </div>
+                            <div class="making-order-delivery__address">
+                                <input type="text" name="delivery-address" id="delivery-address"
+                                    value="г. Коммунар, 188321, Ленинградская область, г. Комменар, ул. Железнодорожная, д. 2" class="making-order__input">
+                                <span>Укажите адрес доставки</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="making-order__payment">
+                            <legend class="making-order-form__name">Оплата</legend>
+                            <div class="making-order-payment__list">
+                                <label class="making-order-payment__item">
+                                    <input type="radio" name="payment" value="online" id="payment-online" class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-payment__name">Банковской картой онлайн</span>
+                                </label>
+                                <label class="making-order-payment__item">
+                                    <input type="radio" name="payment" value="upon-receipt" id="payment-upon-receipt" class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-payment__name">Картой при&nbsp;получении</span>
+                                </label>
+                                <label class="making-order-payment__item">
+                                    <input type="radio" name="payment" value="cash" id="payment-cash" class="visually-hidden">
+                                    <span class="making-order__radio"></span>
+                                    <span class="making-order-payment__name">Наличными</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="making-order__comment">
+                            <legend class="making-order-form__name">Комментарии</legend>
+                            <textarea name="making-order-comment" id="making-order-comment"
+                                value="Расскажите о пожеланиях к заказу или как улучшить работу сайта" placeholder="Расскажите о пожеланиях к заказу или как улучшить работу сайта"></textarea>
+                        </fieldset>
+                        <div class="making-order__price-wrapper">
+                            <div class="making-order__price">
+                                <span class="making-order__price-text">Сумма товаров</span>
+                                <div class="making-order__price-digits">
+                                    <span class="making-order__price-old">1660 ₽</span>
+                                    <span class="making-order__price-new">1660 ₽</span>
+                                </div>
+                            </div>
+                            <div class="making-order__price">
+                                <span class="making-order__price-text">Доставка</span>
+                                <span class="making-order__price-new">+660 ₽</span>
+                            </div>
+                            <div class="making-order__price">
+                                <span class="making-order__price-text">Итоговая скидка</span>
+                                <span class="making-order__price-new">-66 ₽</span>
+                            </div>
+                            <div class="making-order__price making-order__price--final">
+                                <span class="making-order__price-text">Итого</span>
+                                <span class="making-order__price-new">1660 ₽</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="making-order__btn basket__buy">Оформить заказ</button>
+                        <span class="making-order__btn-descr">
+                            Я согласен с условиями предоставления услуг
+                            и&nbsp;обработкой моих персональных данных
+                            при&nbsp;нажатии "Оформить заказ"
+                        </span>
+                    </form>
+                    <ul class="basket__list basket__list--order">
                         <li class="basket__item">
                             <a href="product.html" class="basket__img">
                                 <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
@@ -149,23 +272,13 @@
                             <a href="product.html" class="basket__name">
                                 БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
                             </a>
-                            <div class="products__count">
-                                <input class="products-count__input" type="number" name="product-count"
-                                    id="product-count" value="1" min="1">
-                                <div class="products-count__btns">
-                                    <button class="products-count__btn products-count__btn--plus">
-                                        <span class="visually-hidden">Увеличить количество товара на 1.</span>
-                                    </button>
-                                    <button class="products-count__btn products-count__btn--minus">
-                                        <span class="visually-hidden">Уменьшить количество товара на 1.</span>
-                                    </button>
-                                </div>
-                            </div>
+                                <span class="products__count products__count--digit">
+                                    1 шт.
+                                </span>
                             <div class="basket__price-wrapper">
                                 <span class="basket__price">
                                     1 939 ₽
                                 </span>
-                                <button class="basket__delete">Удалить</button>
                             </div>
                         </li>
                         <li class="basket__item">
@@ -175,278 +288,49 @@
                             <a href="product.html" class="basket__name">
                                 БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
                             </a>
-                            <div class="products__count">
-                                <input class="products-count__input" type="number" name="product-count"
-                                    id="product-count" value="1" min="1">
-                                <div class="products-count__btns">
-                                    <button class="products-count__btn products-count__btn--plus">
-                                        <span class="visually-hidden">Увеличить количество товара на 1.</span>
-                                    </button>
-                                    <button class="products-count__btn products-count__btn--minus">
-                                        <span class="visually-hidden">Уменьшить количество товара на 1.</span>
-                                    </button>
-                                </div>
-                            </div>
+                                <span class="products__count products__count--digit">
+                                    1 шт.
+                                </span>
                             <div class="basket__price-wrapper">
                                 <span class="basket__price">
                                     1 939 ₽
                                 </span>
-                                <button class="basket__delete">Удалить</button>
+                            </div>
+                        </li>
+                        <li class="basket__item">
+                            <a href="product.html" class="basket__img">
+                                <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                            </a>
+                            <a href="product.html" class="basket__name">
+                                БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                            </a>
+                                <span class="products__count products__count--digit">
+                                    1 шт.
+                                </span>
+                            <div class="basket__price-wrapper">
+                                <span class="basket__price">
+                                    1 939 ₽
+                                </span>
+                            </div>
+                        </li>
+                        <li class="basket__item">
+                            <a href="product.html" class="basket__img">
+                                <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                            </a>
+                            <a href="product.html" class="basket__name">
+                                БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                            </a>
+                                <span class="products__count products__count--digit">
+                                    1 шт.
+                                </span>
+                            <div class="basket__price-wrapper">
+                                <span class="basket__price">
+                                    1 939 ₽
+                                </span>
                             </div>
                         </li>
                     </ul>
-                    <div class="basket__order">
-                        <div class="basket__promocode">
-                            <input type="text" name="promocode" id="promocode" class="basket__promocode-input" placeholder="Промокод">
-                            <button class="basket__promocode-btn">Получить</button>
-                        </div>
-                        <div class="basket__order-info">
-                            <span class="basket__total-products">
-                                Ваш заказ (<span id="total-products">2</span>)
-                            </span>
-                            <div class="basket__total-price">
-                                <span>Товаров на</span>
-                                <div></div>
-                                <span>2200 ₽</span>
-                            </div>
-                            <div class="basket__final-price">
-                                <span>Итого</span>
-                                <div></div>
-                                <span>2200 ₽</span>
-                            </div>
-                            <a href="making-order.html" class="basket__buy">Оформить заказ</a>
-                        </div>
-                    </div>
                 </div>
-            </section>
-
-            <!-- вам понравится -->
-            <section class="products__you-like">
-                <h2 class="products-you-like section__title section__title--smaller">C этим товаром часто смотрят</h2>
-                <ul class="main-categories__content__list">
-                    <li class="main-categories__content__item">
-                        <div class="main-categories__card">
-                            <div class="main-categories__card__preview">
-                                <span class="main-categories__card__label">
-                                    Хит
-                                </span>
-                                <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
-                                </button>
-                                <div class="main-categories__card__slider">
-                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                    <ol class="card__slider__pagination">
-                                        <li class="card__slider__btn card__slider__btn--current">
-                                            <span class="visually-hidden">Текущий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Второй слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Третий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Четвертый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Пятый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Шестой слайд.</span>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="main-categories__card__summary">
-                                <div class="main-categories__card__rating">
-                                    <span class="visually-hidden">4 звезды.</span>
-                                </div>
-                                <span class="main-categories__card__code">Код товара: 25122383</span>
-                            </div>
-                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                Alpine Organics 50 мл</span>
-                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                мятой
-                                Alpine Organics</span>
-                            <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
-                            </div>
-                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                            <div class="main-categories__card__availability">
-                                <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                <div class="main-categories__card__stock"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-categories__content__item">
-                        <div class="main-categories__card">
-                            <div class="main-categories__card__preview">
-                                <span class="main-categories__card__label">
-                                    Хит
-                                </span>
-                                <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
-                                </button>
-                                <div class="main-categories__card__slider">
-                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                    <ol class="card__slider__pagination">
-                                        <li class="card__slider__btn card__slider__btn--current">
-                                            <span class="visually-hidden">Текущий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Второй слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Третий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Четвертый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Пятый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Шестой слайд.</span>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="main-categories__card__summary">
-                                <div class="main-categories__card__rating">
-                                    <span class="visually-hidden">4 звезды.</span>
-                                </div>
-                                <span class="main-categories__card__code">Код товара: 25122383</span>
-                            </div>
-                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                Alpine Organics 50 мл</span>
-                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                мятой
-                                Alpine Organics</span>
-                            <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
-                            </div>
-                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                            <div class="main-categories__card__availability">
-                                <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                <div class="main-categories__card__stock"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-categories__content__item">
-
-                        <div class="main-categories__card">
-                            <div class="main-categories__card__preview">
-                                <span class="main-categories__card__label">
-                                    Хит
-                                </span>
-                                <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
-                                </button>
-                                <div class="main-categories__card__slider">
-                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                    <ol class="card__slider__pagination">
-                                        <li class="card__slider__btn card__slider__btn--current">
-                                            <span class="visually-hidden">Текущий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Второй слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Третий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Четвертый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Пятый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Шестой слайд.</span>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="main-categories__card__summary">
-                                <div class="main-categories__card__rating">
-                                    <span class="visually-hidden">4 звезды.</span>
-                                </div>
-                                <span class="main-categories__card__code">Код товара: 25122383</span>
-                            </div>
-                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                Alpine Organics 50 мл</span>
-                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                мятой
-                                Alpine Organics</span>
-                            <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
-                            </div>
-                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                            <div class="main-categories__card__availability">
-                                <button class="main-categories__card__buy">Купить в 1 клик</button>
-                                <div class="main-categories__card__stock"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-categories__content__item">
-
-                        <div class="main-categories__card">
-                            <div class="main-categories__card__preview">
-                                <span class="main-categories__card__label">
-                                    Хит
-                                </span>
-                                <button type="button" class="main-categories__card__favorite">
-                                    <span class="visually-hidden">В Избранное.</span>
-                                </button>
-                                <div class="main-categories__card__slider">
-                                    <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                    <ol class="card__slider__pagination">
-                                        <li class="card__slider__btn card__slider__btn--current">
-                                            <span class="visually-hidden">Текущий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Второй слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Третий слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Четвертый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Пятый слайд.</span>
-                                        </li>
-                                        <li class="card__slider__btn">
-                                            <span class="visually-hidden">Шестой слайд.</span>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="main-categories__card__summary">
-                                <div class="main-categories__card__rating">
-                                    <span class="visually-hidden">4 звезды.</span>
-                                </div>
-                                <span class="main-categories__card__code">Код товара: 25122383</span>
-                            </div>
-                            <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                Alpine Organics 50 мл</span>
-                            <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                мятой
-                                Alpine Organics</span>
-                            <div class="main-categories__card__price">
-                                <span class="main-categories__card__price--new">1 939 ₽</span>
-                                <span class="main-categories__card__price--old">2 093 ₽</span>
-                            </div>
-                            <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                            <div class="main-categories__card__availability">
-                                <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                <div class="main-categories__card__stock"></div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </section>
 
         </main>
@@ -715,8 +599,8 @@
         </footer>
     </div>
 
-    <div class="decorative decorative__right decorative__right--main-top"></div>
-    <div class="decorative decorative__left decorative__left--basket"></div>
+    <div class="decorative decorative__right decorative__right--making-order"></div>
+    <div class="decorative decorative__left decorative__left--making-order"></div>
     <div class="decorative decorative__right decorative__right--bottom"></div>
 </body>
 
