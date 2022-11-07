@@ -1,0 +1,130 @@
+.training {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 328px 1fr;
+        gap: 32px;
+    }
+
+    &__categories,
+    &__list {
+        border-top: 1px solid #E9E9E9;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 328px 1fr;
+        gap: 32px;
+        padding: 16px 0;
+        border-bottom: 1px solid #E9E9E9;
+
+        ul,
+        li {
+            list-style-type: disc;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    }
+}
+
+.training-categories {
+    &__item {
+        padding: 16px 0;
+        border-bottom: 1px solid #E9E9E9;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        cursor: pointer;
+    }
+}
+
+.training-item {
+    &__left-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-col {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__wrapper {
+        display: grid;
+        gap: 8px;
+    }
+
+    &__date {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
+        border-radius: 4px 4px 0px 0px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    &__img {
+        margin-bottom: -8px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    &__price-city {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+
+.price-city {
+    &__wrapper {
+        padding: 15px 12px 13px 12px;
+        border: 1px solid #E9E9E9;
+
+        &:nth-child(1) {
+            border-radius: 4px 0 0 4px;
+            border-right: none;
+        }
+
+        &:nth-child(2) {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    &__name {
+        margin-right: 8px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__value {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
