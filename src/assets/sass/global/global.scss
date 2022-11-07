@@ -68,9 +68,11 @@ body {
 }
 
 .body__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: 100%;
     min-width: 1408px;
     max-width: 1900px;
     margin: 0 auto;

@@ -1,7 +1,8 @@
 .main-slider {
-    position: relative;
+    position: absolute;
+    top: 190px;
+    left: 0;
     height: 616px;
-    margin-bottom: 40px;
     padding: 176px 22px 0 0;
 
     &__btns {
@@ -40,9 +41,9 @@
 
     &__info {
         display: flex;
-        max-width: 1174px;
+        width: 1174px;
 
-        padding: 50px 0 162px 16%;
+        padding: 50px 0 162px 307px;
         background-color: #FFF1F4;
     }
 
@@ -92,18 +93,17 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 96.2%;
-        max-width: 867px;
-        height: auto;
+        width: 900px;
+        height: 616px;
     }
 
     &__decorative-block {
         position: relative;
-        margin-left: -173px;
+        margin-left: -421px;
         top: -116px;
         align-self: flex-start;
         flex-grow: 1;
-        max-width: 901px;
+        min-width: 901px;
         height: 556px;
         border-radius: 4px;
         background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;

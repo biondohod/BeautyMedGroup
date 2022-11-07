@@ -1,4 +1,6 @@
 .basket {
+    max-width: 1408px;
+    margin: 0 auto;
     margin-bottom: 120px;
 
     &__wrapper {
@@ -73,6 +75,7 @@
         margin-left: 40px;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     &__price {

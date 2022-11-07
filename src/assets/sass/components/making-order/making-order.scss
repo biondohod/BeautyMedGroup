@@ -1,4 +1,8 @@
 .making-order {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
     &__wrapper {
         display: grid;
         grid-template-columns: 688px 688px;
@@ -135,6 +139,7 @@
             outline: 2px solid transparent;
             border: 1px solid #E9E9E9;
             border-radius: 4px;
+            font-family: 'Montserrat';
             font-weight: 300;
             font-size: 14px;
             line-height: 140%;
