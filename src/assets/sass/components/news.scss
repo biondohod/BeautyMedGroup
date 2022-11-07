@@ -21,6 +21,17 @@
             max-width: 328px;
             margin-right: 32px;
         }
+
+        &--blog {
+            .main-news__item {
+                max-width: none;
+            }
+
+            .main-news__item,
+            .main-news__item *{
+                width: 100%;
+            }
+        }
     }
 
     &__item {
