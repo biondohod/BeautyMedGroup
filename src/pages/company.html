@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Избранное</title>
+    <title>О компании</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                     </select>
                     <ul class="first-row__site-navigation">
                         <li class="site-navigation__item">
-                            <a href="company.html" class="site-navigation__link">О компании</a>
+                            <a class="site-navigation__link">О компании</a>
                         </li>
                         <li class="site-navigation__item">
                             <a href="#" class="site-navigation__link">Блог</a>
@@ -111,7 +111,7 @@
                     </ul>
                     <ul class="third-row__user-navigation">
                         <li class="user-navigation__item">
-                            <a class="user-navigation__link user-navigation__link--favorite">
+                            <a href="favorites.html" class="user-navigation__link user-navigation__link--favorite">
                                 <span class="visually-hidden">Избранное.</span>
                             </a>
                         </li>
@@ -133,238 +133,73 @@
                         <a href="index.html" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link--active">Избранное</a>
+                        <a class="breadcrumbs__link--active">О компании</a>
                     </li>
                 </ul>
             </div>
 
-            <section class="favorites">
-                <h1 class="section__title favorites__title">Избранное</h1>
-                <div class="products__you-like">
-                    <ul class="main-categories__content__list">
-                        <li class="main-categories__content__item">
-                            <div class="main-categories__card">
-                                <div class="main-categories__card__preview">
-                                    <span class="main-categories__card__label">
-                                        Хит
-                                    </span>
-                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
-                                        <span class="visually-hidden">Удалить из избранного.</span>
-                                    </button>
-                                    <div class="main-categories__card__slider">
-                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                        <ol class="card__slider__pagination">
-                                            <li class="card__slider__btn card__slider__btn--current">
-                                                <span class="visually-hidden">Текущий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Второй слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Третий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Четвертый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Пятый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Шестой слайд.</span>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="main-categories__card__summary">
-                                    <div class="main-categories__card__rating">
-                                        <span class="visually-hidden">4 звезды.</span>
-                                    </div>
-                                    <span class="main-categories__card__code">Код товара: 25122383</span>
-                                </div>
-                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                    Alpine Organics 50 мл</span>
-                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                    мятой
-                                    Alpine Organics</span>
-                                <div class="main-categories__card__price">
-                                    <span class="main-categories__card__price--new">1 939 ₽</span>
-                                    <span class="main-categories__card__price--old">2 093 ₽</span>
-                                </div>
-                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                                <div class="main-categories__card__availability">
-                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                    <div class="main-categories__card__stock"></div>
-                                </div>
+            <!-- о компании -->
+            <section class="about-us">
+                <h1 class="section__title">О компании</h1>
+                <span class="about-us__descr">
+                    Posuere ac ut consequat semper viverra nam libero justo. Elementum curabitur vitae nunc sed velit.
+                    Natoque penatibus et magnis dis parturient montes nascetur ridiculus. Justo eget magna fermentum
+                    iaculis eu non. Purus gravida quis blandit turpis cursus in hac habitasse. In fermentum posuere urna
+                    nec tincidunt praesent semper feugiat nibh. Sed augue lacus viverra vitae congue. Tellus elementum
+                    sagittis vitae et leo. At quis risus sed vulputate odio ut enim blandit. Eu tincidunt tortor aliquam
+                    nulla facilisi cras fermentum odio eu. Sit amet nulla facilisi morbi tempus iaculis urna. Egestas
+                    diam in arcu cursus euismod. Est ullamcorper eget nulla facilisi etiam dignissim. Nunc non blandit
+                    massa enim nec dui nunc mattis enim. Purus viverra accumsan in nisl nisi. Tortor at risus viverra
+                    adipiscing at. Et malesuada fames ac turpis egestas integer eget aliquet. Sed augue lacus viverra
+                    vitae congue eu.
+                </span>
+                <div class="about-us__slider">
+                    <div class="slider__btns slider__btns--company">
+                        <button class="slider__btn slider__btn--prev slider__btn--unactive">
+                            <span class="visually-hidden">Предыдущий слайд</span>
+                        </button>
+                        <button class="slider__btn slider__btn--next">
+                            <span class="visually-hidden">Следующий слайд</span>
+                        </button>
+                    </div>
+                    <div class="about-us-slider__content">
+                        <div class="about-us-slider__item">
+                            <div class="about-us-slider__decorative">
+                                <img src="./assets/img/about-us/slider.webp" alt="Офис компании." width="568" height="404">
                             </div>
-                        </li>
-                        <li class="main-categories__content__item">
-                            <div class="main-categories__card">
-                                <div class="main-categories__card__preview">
-                                    <span class="main-categories__card__label">
-                                        Хит
-                                    </span>
-                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
-                                        <span class="visually-hidden">Удалить из избранного.</span>
-                                    </button>
-                                    <div class="main-categories__card__slider">
-                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                        <ol class="card__slider__pagination">
-                                            <li class="card__slider__btn card__slider__btn--current">
-                                                <span class="visually-hidden">Текущий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Второй слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Третий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Четвертый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Пятый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Шестой слайд.</span>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="main-categories__card__summary">
-                                    <div class="main-categories__card__rating">
-                                        <span class="visually-hidden">4 звезды.</span>
-                                    </div>
-                                    <span class="main-categories__card__code">Код товара: 25122383</span>
-                                </div>
-                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                    Alpine Organics 50 мл</span>
-                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                    мятой
-                                    Alpine Organics</span>
-                                <div class="main-categories__card__price">
-                                    <span class="main-categories__card__price--new">1 939 ₽</span>
-                                    <span class="main-categories__card__price--old">2 093 ₽</span>
-                                </div>
-                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                                <div class="main-categories__card__availability">
-                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                    <div class="main-categories__card__stock"></div>
-                                </div>
+                            <div class="about-us-slider__text">
+                                <span>Congue nisi vitae suscipit tellus mauris a diam maecenas</span>
                             </div>
-                        </li>
-                        <li class="main-categories__content__item">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                            <div class="main-categories__card">
-                                <div class="main-categories__card__preview">
-                                    <span class="main-categories__card__label">
-                                        Хит
-                                    </span>
-                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
-                                        <span class="visually-hidden">Удалить из избранного.</span>
-                                    </button>
-                                    <div class="main-categories__card__slider">
-                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                        <ol class="card__slider__pagination">
-                                            <li class="card__slider__btn card__slider__btn--current">
-                                                <span class="visually-hidden">Текущий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Второй слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Третий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Четвертый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Пятый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Шестой слайд.</span>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="main-categories__card__summary">
-                                    <div class="main-categories__card__rating">
-                                        <span class="visually-hidden">4 звезды.</span>
-                                    </div>
-                                    <span class="main-categories__card__code">Код товара: 25122383</span>
-                                </div>
-                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                    Alpine Organics 50 мл</span>
-                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                    мятой
-                                    Alpine Organics</span>
-                                <div class="main-categories__card__price">
-                                    <span class="main-categories__card__price--new">1 939 ₽</span>
-                                    <span class="main-categories__card__price--old">2 093 ₽</span>
-                                </div>
-                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                                <div class="main-categories__card__availability">
-                                    <button class="main-categories__card__buy">Купить в 1 клик</button>
-                                    <div class="main-categories__card__stock"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="main-categories__content__item">
-
-                            <div class="main-categories__card">
-                                <div class="main-categories__card__preview">
-                                    <span class="main-categories__card__label">
-                                        Хит
-                                    </span>
-                                    <button type="button" class="main-categories__card__favorite main-categories__card__favorite--selected">
-                                        <span class="visually-hidden">Удалить из избранного.</span>
-                                    </button>
-                                    <div class="main-categories__card__slider">
-                                        <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img">
-                                        <ol class="card__slider__pagination">
-                                            <li class="card__slider__btn card__slider__btn--current">
-                                                <span class="visually-hidden">Текущий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Второй слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Третий слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Четвертый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Пятый слайд.</span>
-                                            </li>
-                                            <li class="card__slider__btn">
-                                                <span class="visually-hidden">Шестой слайд.</span>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="main-categories__card__summary">
-                                    <div class="main-categories__card__rating">
-                                        <span class="visually-hidden">4 звезды.</span>
-                                    </div>
-                                    <span class="main-categories__card__code">Код товара: 25122383</span>
-                                </div>
-                                <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной мятой
-                                    Alpine Organics 50 мл</span>
-                                <span class="main-categories__card__description">Крем для рук освежающий с лимонной
-                                    мятой
-                                    Alpine Organics</span>
-                                <div class="main-categories__card__price">
-                                    <span class="main-categories__card__price--new">1 939 ₽</span>
-                                    <span class="main-categories__card__price--old">2 093 ₽</span>
-                                </div>
-                                <button type="button" class="main-categories__card__to-cart">В корзину</button>
-                                <div class="main-categories__card__availability">
-                                    <button type="button" class="main-categories__card__buy">Купить в 1 клик</button>
-                                    <div class="main-categories__card__stock"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <!-- слово основателя -->
+            <section class="about-us about-us--director">
+                <h2 class="section__title about-us__title">Слово основателя</h2>
+                <span class="about-us__descr">
+                    Posuere ac ut consequat semper viverra nam libero justo. Elementum curabitur vitae nunc sed velit.
+                    Natoque penatibus et magnis dis parturient montes nascetur ridiculus. Justo eget magna fermentum
+                    iaculis eu non. Purus gravida quis blandit turpis cursus in hac habitasse. In fermentum posuere urna
+                    nec tincidunt praesent semper feugiat nibh. Sed augue lacus viverra vitae congue. Tellus elementum
+                    sagittis vitae et leo. At quis risus sed vulputate odio ut enim blandit. Eu tincidunt tortor aliquam
+                    nulla facilisi cras fermentum odio eu. Sit amet nulla facilisi morbi tempus iaculis urna. Egestas
+                    diam in arcu cursus euismod. Est ullamcorper eget nulla facilisi etiam dignissim. Nunc non blandit
+                    massa enim nec dui nunc mattis enim. Purus viverra accumsan in nisl nisi. Tortor at risus viverra
+                    adipiscing at. Et malesuada fames ac turpis egestas integer eget aliquet. Sed augue lacus viverra
+                    vitae congue eu.
+                </span>
+                <div class="about-us-slider__content">
+                    <div class="about-us-slider__item">
+                        <div class="about-us-slider__decorative">
+                            <img class="about-us__director-img" src="./assets/img/about-us/director.webp" alt="Основатель компании." width="317" height="424px">
+                        </div>
+                        <div class="about-us-slider__text">
+                            <span class="about-us-slider__name">Name Surname</span>
+                            <span>Congue nisi vitae suscipit tellus mauris a diam maecenas</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -416,7 +251,7 @@
                                 <h3 class="footer__title footer__title--list">О компании</h3>
                                 <ul class="footer__list">
                                     <li class="footer__item">
-                                        <a href="company.html" class="footer__link">О нас</a>
+                                        <a class="footer__link">О нас</a>
                                     </li>
                                     <li class="footer__item">
                                         <a href="category.html" class="footer__link">Обучение</a>

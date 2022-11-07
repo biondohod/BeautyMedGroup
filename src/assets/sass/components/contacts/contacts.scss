@@ -1,0 +1,172 @@
+.contacts {
+    margin-bottom: 218px;
+
+    &__descr {
+        display: block;
+        max-width: 572px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 448px);
+        column-gap: 32px;
+        row-gap: 48px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #E9E9E9;
+        padding-bottom: 24px;
+    }
+
+    &__mail-link,
+    .contacts-item__phone-link {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 150%;
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+.contacts-item {
+    &__name {
+        display: flex;
+        align-items: flex-end;
+        min-height: 48px;
+        margin-bottom: 24px;
+        padding-left: 64px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+
+        &--line {
+            background: url('../assets/img/contacts/line.svg') no-repeat center left;
+        }
+
+        &--mail {
+            margin-bottom: 28px;
+            background: url('../assets/img/contacts/mail.svg') no-repeat center left;
+        }
+
+        &--social {
+            margin-bottom: 33px;
+            background: url('../assets/img/contacts/social.svg') no-repeat center left;
+        }
+
+        &--phone {
+            background: url('../assets/img/contacts/phone.svg') no-repeat center left;
+        }
+
+        &--requisites {
+            background: url('../assets/img/contacts/requisites.svg') no-repeat center left;
+        }
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+
+        &--small {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &--big {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 150%;
+        }
+
+        &--bold {
+            margin: 16px 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &--line {
+            margin-bottom: 28px;
+        }
+    }
+
+    &-social {
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        &__link {
+            display: flex;
+            width: 24px;
+            height: 24px;
+
+            &--tg {
+                background: url('../assets/img/contacts/tg.svg') no-repeat;
+                background-size: 24px;
+            }
+
+            &--whatsapp {
+                width: 32px;
+                height: 32px;
+                background: url('../assets/img/contacts/whatsapp.svg') no-repeat;
+                background-size: 32px;
+            }
+
+            &--youtube {
+                background: url('../assets/img/contacts/youtube.svg') no-repeat;
+                background-size: 24px;
+            }
+
+            &--inst {
+                background: url('../assets/img/contacts/inst.svg') no-repeat;
+                background-size: 24px;
+            }
+
+            &--pinterest {
+                background: url('../assets/img/contacts/pinterest.svg') no-repeat;
+                background-size: 24px;
+            }
+
+            &--tiktok {
+                background: url('../assets/img/contacts/tiktok.svg') no-repeat;
+                background-size: 24px;
+            }
+
+            &--vk {
+                background: url('../assets/img/vk-icon.svg') no-repeat;
+                background-size: 24px;
+            }
+        }
+    }
+
+    &__phone-wrapper {
+        display: grid;
+        gap: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__form {
+        max-width: 323px;
+        margin-bottom: 27px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        text-transform: uppercase;
+    }
+}

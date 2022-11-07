@@ -1,0 +1,73 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    max-width: 688px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__descr {
+        margin-bottom: 48px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__slider {
+        position: relative;
+    }
+
+    &__director-img {
+        position: absolute;
+        top: -52px;
+        left: 70px;
+    }
+
+    &--director {
+        margin-bottom: 140px;
+
+        .about-us__descr {
+            margin-bottom: 100px;
+        }
+    }
+
+}
+
+.about-us-slider {
+    &__decorative {
+        position: relative;
+        z-index: 2;
+        min-height: 372px;
+        margin-right: 120px;
+        background: #e9e9e9 url('../assets/img/product-rose.svg') no-repeat right -30px bottom;
+        background-size: 332px 304px;
+        border-radius: 4px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 646px;
+        height: 348px;
+        margin-left: auto;
+        margin-top: -228px;
+        padding: 35px 47px;
+        background-color: #FFF1F4;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
