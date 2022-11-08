@@ -8,6 +8,40 @@
         flex-direction: column;
         max-width: 929px;
         margin: 0 auto;
+
+        &--webinar {
+            .main-faq__answer {
+                max-width: 568px;
+            }
+
+            .webinar-autor__advantages {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 696px;
+                margin-top: 24px;
+                display: none;
+
+                li {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+
+                &--active {
+                    display: flex;
+                }
+            }
+
+            .case-study {
+                position: absolute;
+                top: 22px;
+                right: 113.5px;
+                width: 180px;
+                padding: 12px;
+                margin: 0;
+            }
+        }
     }
 
     &__item {
@@ -56,7 +90,7 @@
     &__question {
         font-size: 16px;
         line-height: 20px;
-        color: #4F4F4F;
+        color: #888888;
 
         &--active {
             margin-bottom: 19px;
@@ -72,6 +106,7 @@
         &--active {
             display: block;
         }
+
     }
 
     &__btn {
@@ -90,7 +125,7 @@
             left: 50%;
             width: 5px;
             height: 15px;
-            transform: translateX(-50%)  translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
             background-color: #F08597;
             content: "";
         }
@@ -101,7 +136,7 @@
             left: 50%;
             width: 5px;
             height: 15px;
-            transform: translateX(-50%)  translateY(-50%) rotate(90deg);
+            transform: translateX(-50%) translateY(-50%) rotate(90deg);
             background-color: #F08597;
             content: "";
         }
@@ -116,4 +151,8 @@
             }
         }
     }
+}
+
+.main-faq#program {
+    margin-bottom: 120px;
 }

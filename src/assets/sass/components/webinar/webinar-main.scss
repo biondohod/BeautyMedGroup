@@ -1,0 +1,107 @@
+.webinar-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1654px;
+    margin-bottom: 120px;
+
+    &__pink {
+        display: grid;
+        gap: 32px;
+        min-width: 1174px;
+        padding: 60px;
+        padding-bottom: 32px;
+        padding-left: 246px;
+        background-color: #FFF1F4;
+    }
+
+    &__title {
+        max-width: 688px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    &__descr {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 156px);
+        row-gap: 32px;
+        column-gap: 84px;
+        margin-top: 8px;
+    }
+
+    &__item {
+        padding-left: 64px;
+        background: url('../assets/img/webinar/webinar-main.svg') no-repeat center left;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__decorative {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 688px;
+        height: 556px;
+        background: #e9e9e9 url('../assets/img/product-rose.svg') no-repeat bottom right;
+        background-size: 541px 494px;
+
+        img {
+            position: absolute;
+            top: -60px;
+            left: 87px;
+        }
+    }
+
+    &__white {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 1174px;
+        padding-left: 246px;
+    }
+
+    &__price {
+        margin-top: 53px;
+        margin-bottom: 45px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+
+        span {
+            margin-left: 24px;
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    &__btns {
+        display: grid;
+        grid-template-columns: 328px 328px;
+        gap: 32px;
+    }
+
+    &__enroll {
+        margin: 0;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-decoration: none;
+        color: #000000;
+    }
+}

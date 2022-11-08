@@ -1,0 +1,134 @@
+.webinar-autor {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__title {
+        text-align: left;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 688px 688px;
+        row-gap: 48px;
+        column-gap: 32px;
+    }
+
+    &__img {
+        position: relative;
+        top: 0;
+        left: 0;
+        align-self: flex-end;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+    }
+
+    &__portfolio {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 29px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+
+        a {
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        &-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            min-height: 32px;
+            padding-left: 48px;
+        }
+    }
+
+    &__vk {
+        background: url('../assets/img/vk-icon.svg') no-repeat center left;
+        background-size: 32px;
+    }
+
+    &__inst {
+        background: url('../assets/img/webinar/inst.svg') no-repeat center left;
+        background-size: 32px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 84px;
+        row-gap: 32px;
+    }
+
+    &__item {
+        padding-top: 96px;
+        background: url('../assets/img/webinar/icon.svg') no-repeat top left;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__banner {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 46px 64px;
+        padding-bottom: 25px;
+        background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
+        border-radius: 4px;
+    }
+
+    &__advantages {
+        display: grid;
+        gap: 24px;
+
+        li {
+            padding-left: 56px;
+            background: url('../assets/img/webinar/advantages.svg') no-repeat center left;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 140%;
+
+        &-text {
+            margin-bottom: -6px;
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.webinar-useful {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__title {
+        margin-bottom: 77px;
+        text-align: left;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 328px);
+        gap: 32px;
+    }
+
+    &__block {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 328px;
+        height: 171px;
+        padding: 20px 16px;
+        background-size: 221px 202px;
+        background-position: right -16px bottom -40px;
+
+        img {
+            top: -29px;
+            left: auto;
+            right: 15px;
+        }
+    }
+
+    &__name {
+        display: block;
+        max-width: 160px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
