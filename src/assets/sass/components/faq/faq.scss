@@ -1,0 +1,147 @@
+.faq {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 928px 328px;
+        gap: 152px;
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 688px;
+            gap: 24px;
+            min-height: 204px;
+            margin-bottom: 50px;
+            background: url('../assets/img/faq/faq.webp') no-repeat bottom right;
+            background-size: 204px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        display: grid;
+        gap: 24px;
+    }
+
+    &__question {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border: 1px solid #E9E9E9;
+        border-radius: 4px;
+
+        &--answer {
+            position: relative;
+            margin-left: 118px;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -94px;
+                width: 70px;
+                height: 54px;
+                background: url('../assets/img/faq/arrow.svg') no-repeat;
+                background-size: 70px 54px;
+                content: "";
+            }
+        }
+    }
+
+    &__name {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    &__info {
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #888888;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        width: 208px;
+        padding: 12px;
+        margin: 0;
+    }
+
+    &__assistant {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-assistant {
+        &__title {
+            font-family: 'Tenor Sans';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__decorative {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
+
+        &__name {
+            max-width: 132px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__func {
+            max-width: 132px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__descr {
+            margin-bottom: 16px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        &__btn {
+            margin: 0;
+        }
+    }
+}
