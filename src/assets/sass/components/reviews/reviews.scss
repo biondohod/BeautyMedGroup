@@ -1,0 +1,100 @@
+.reviews {
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+    &__title {
+        text-align: left;
+    }
+
+    &-clients {
+        &__list {
+            display: grid;
+            grid-template-columns: 688px 688px;
+            gap: 32px;
+        }
+
+        &__first-row {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__grade {
+            margin-top: 16px;
+        }
+
+        &__second-row {
+            display: flex;
+        }
+
+        &__product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 184px;
+            min-height: 184px;
+            margin-right: 24px;
+            border: 1px solid #E9E9E9;
+            border-radius: 4px;
+        }
+    }
+
+    &-service {
+        &__descr {
+            display: block;
+            margin-bottom: 48px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 160px;
+            row-gap: 48px;
+        }
+
+        &__item {
+            display: block;
+            min-width: 80px;
+            padding-top: 96px;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+            text-decoration: none;
+
+            &--otzovik {
+                background: url('../assets/img/reviews/otzovik.svg') no-repeat top left;
+                background-size: 80px;
+            }
+
+            &--irecommend {
+                background: url('../assets/img/reviews/irecommend.svg') no-repeat top left;
+                background-size: 80px;
+            }
+
+            &--yell {
+                background: url('../assets/img/reviews/yell.svg') no-repeat top left;
+                background-size: 80px;
+            }
+
+            &--pro {
+                background: url('../assets/img/reviews/pro.svg') no-repeat top left;
+                background-size: 80px;
+            }
+
+            &--zoon {
+                background: url('../assets/img/reviews/zoon.svg') no-repeat top left;
+                background-size: 80px;
+            }
+        }
+    }
+}
