@@ -1,0 +1,22 @@
+.page404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1408px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    &__code {
+        margin-right: 28px;
+        font-weight: 200;
+        font-size: 150px;
+        line-height: 130%;
+    }
+
+    &__title {
+        max-width: 273px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}

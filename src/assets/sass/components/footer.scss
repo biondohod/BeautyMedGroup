@@ -130,7 +130,7 @@
             width: 100%;
             max-width: 893px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 67px;
+            column-gap: 70px;
         }
     }
 
@@ -150,6 +150,10 @@
         line-height: 15px;
         color: #000000;
         text-decoration: none;
+
+        &:hover {
+            font-weight: 700;
+        }
     }
 
     &__different {
