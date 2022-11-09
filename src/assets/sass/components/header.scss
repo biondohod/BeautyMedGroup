@@ -138,8 +138,6 @@
 
     &__search {
         flex-grow: 1;
-        font-size: 12px;
-        line-height: 15px;
         max-width: 620px;
         margin-right: 16px;
         padding: 4px 30px 12px 2px;
@@ -147,6 +145,9 @@
         border-bottom: 1px solid #E9E9E9;
         background: url('../assets/img/search.svg') no-repeat center right;
         background-size: 24px;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 15px;
     }
 
     &__contacts {
