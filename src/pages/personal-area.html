@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Вход в личный кабинет</title>
+    <title>Личный кабинет</title>
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                     <div class="first-row__schedule">Пн-Пт: 9:00 - 19:00, Сб: 10 - 14</div>
-                    <a href="personal-area.html" class="first-row__personal-area">Личный кабинет</a>
+                    <a class="first-row__personal-area">Личный кабинет</a>
                 </div>
                 <div class="header__row header__row--second">
                     <a href="index.html" class="second-row__main-link">
@@ -138,54 +138,223 @@
                 </ul>
             </div>
 
-            <!-- Авторизация/Регистрация -->
-            <section class="log-in">
-                <div class="log-in__content">
-                    <h1 class="log-in__title section__title">Личный кабинет</h1>
-                    <div class="log-in__wrapper">
-                        <form action="" method="post" class="log-in__form">
-                            <span class="log-in__form-descr">
-                                Если вы ранее уже
-                                регистрировались на сайте
-                            </span>
-                            <input type="text" name="email-or-phone" id="email-or-phone" class="log-in__input" placeholder="Email или телефон" autocomplete="off">
-                            <input type="password" name="password" id="password" class="log-in__input log-in__input--password" placeholder="Пароль" value="abcdefg">
-                            <button type="submit" class="log-in__btn basket__buy">Войти</button>
-                            <button type="button" class="log-in__password-reset">Забыли пароль?</button>
-                        </form>
-                        <form action="" method="post" class="log-in__form log-in__form--register">
-                            <span class="log-in__form-descr">
-                                Если вы впервые на сайте
-                                пройдите регистрацию
-                            </span>
-                            <input type="tel" name="phone" id="phone" class="log-in__input" placeholder="Ваш телефон" autocomplete="off">
-                            <input type="text" name="name" id="name" class="log-in__input" placeholder="Ваше имя" autocomplete="off">
-                            <div class="log-in__radio-wrapper">
-                                <label>
-                                    <input type="radio" name="purchase" value="retail" id="purchase-retail" class="visually-hidden" checked>
-                                    <span class="log-in__radio"></span>
-                                    <span class="log-in__text">Розница</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="purchase" value="wholesale" id="purchase-wholesale" class="visually-hidden">
-                                    <span class="log-in__radio"></span>
-                                    <span class="log-in__text">Опт</span>
-                                </label>
+            <!-- Личный кабинет после авторизации -->
+            <section class="personal-area">
+                <h1 class="visually-hidden">Личный кабинет</h1>
+                <div class="personal-area__content">
+                    <div class="personal-area__tabs">
+                        <div class="pa-tabs__header">
+                            <div class="pa-tabs__wrapper">
+                                <h3 class="pa-tabs__title">Работа с заказом</h3>
+                                <ul class="pa-tabs__list">
+                                    <li class="pa-tabs__item" data-value="orders">
+                                        Мои заказы
+                                    </li>
+                                    <li class="pa-tabs__item" data-value="delivery">
+                                        Мои доставки
+                                    </li>
+                                    <li class="pa-tabs__item" data-value="return">
+                                        Оформить возрат
+                                    </li>
+                                </ul>
                             </div>
-                            <button type="submit" class="log-in__btn basket__buy">Зарегистрироваться</button>
-                            <label class="main-banner__checkbox-wrapper log-in__checkbox-wrapper">
-                                <input type="checkbox" class="main-banner__checkbox visually-hidden" name="agreement" checked="checked">
-                                 <span class="main-banner__checkbox__mark"></span>
-                                 <span class="main-banner__checkbox__text">
-                                    Я согласен с
-                                    <a href="#"> условиями предоставления услуг и обработкой моих персональных данных </a>
-                                    при нажатии "Зарегистрироваться"
-                                </span>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="log-in__decorative">
-                        <img src="./assets/img/personal-area/log-in.webp" alt="Декоративное изображение" aria-hidden="true" width="478" height="472">
+                            <div class="pa-tabs__wrapper">
+                                <h3 class="pa-tabs__title pa-tabs__title--active">Профиль</h3>
+                                <ul class="pa-tabs__list">
+                                    <li class="pa-tabs__item pa-tabs__item--active" data-value="personal-area">
+                                        Личный кабинет
+                                    </li>
+                                    <li class="pa-tabs__item" data-value="data">
+                                        Мои данные
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pa-tabs__content">
+                            <div class="pa-tabs__content-item" id="personal-area">
+                                <div class="personal-area__pa">
+                                    <div class="pa__left-column">
+                                        <div class="pa__basket">
+                                            <div class="pa-basket__title tabs-section__title">
+                                                <span>Моя корзина</span>
+                                                <a href="basket.html" class="footer__application">Подробнее</a>
+                                            </div>
+                                            <div class="pa-basket__price">
+                                                <span>У вас 1 товар на сумму</span>
+                                                <span id="basket-price">1660 ₽</span>
+                                            </div>
+                                            <ul class="pa-basket__list">
+                                                <li class="pa-basket__item">
+                                                    <div class="pa-basket__img">
+                                                        <img src="./assets/img/card.webp" alt="Товар." width="18"
+                                                            height="39">
+                                                    </div>
+                                                    <span class="pa-basket__name">
+                                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50
+                                                        мл
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="pa__delivery">
+                                            <div class="pa-delivery__title tabs-section__title">
+                                                <span>Мои доставки</span>
+                                                <a href="#" class="footer__application">Все заказы</a>
+                                            </div>
+                                            <div class="pa-delivery__list">
+                                                <div class="pa-delivery__plug">
+                                                    Доставка не планируется
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pa__links">
+                                            <div class="pa-links__link pa-links__link--orders tabs-section__title">
+                                                <span>Мои заказы</span>
+                                                <a href="#" class="footer__application">Подробнее</a>
+                                            </div>
+                                            <div class="pa-links__link pa-links__link--favorites tabs-section__title">
+                                                <span>Избранное</span>
+                                                <a href="favorites.html" class="footer__application">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pa__right-column">
+                                        <div class="pa__data">
+                                            <img src="./assets/img/personal-area/user.webp" alt="Фото пользователя."
+                                                class="pa-data__photo">
+                                            <span class="pa-data__name">Опарин Артём Эдуардовичь</span>
+                                            <div class="pa-data__wrapper">
+                                                <span class="pa-data__title">Email</span>
+                                                <span class="pa-data__info">rustle_92@yandex.ru</span>
+                                            </div>
+                                            <div class="pa-data__wrapper">
+                                                <span class="pa-data__title">Телефон</span>
+                                                <span class="pa-data__info">8 953 948 23 85</span>
+                                            </div>
+                                            <button class="footer__application">Изменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pa-tabs__content-item" id="data">
+                                <div class="personal-area__data">
+                                    <div class="data__left-column">
+                                        <div class="data__user data__section">
+                                            <span class="data__title tabs-section__title">Персональные данные</span>
+                                            <div class="data-user__wrapper">
+                                                <div class="data-user__photo-upload">
+                                                    <img src="./assets/img/personal-area/user.webp"
+                                                        alt="Фото пользователя." width="120" height="120">
+                                                    <input type="file" name="user-photo" id="user-photo"
+                                                        class="visually-hidden">
+                                                    <button class="data-user__photo-btn">
+                                                        <span class="visually-hidden">Загрузить новое фото</span>
+                                                    </button>
+                                                </div>
+                                                <ul class="data__list">
+                                                    <li class="data__item">
+                                                        <span>Опарин Артём Эдуардовичь</span>
+                                                        <div class="data__done"></div>
+                                                    </li>
+                                                    <li class="data__item data__item--border">
+                                                        <span>Дата рождения не указано</span>
+                                                        <button class="data__change">
+                                                            <span class="visually-hidden">Изменить</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="data__item">
+                                                        <span>Пол не указано</span>
+                                                        <button class="data__change">
+                                                            <span class="visually-hidden">Изменить</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="data__password data__section">
+                                            <span class="data__title tabs-section__title data-password__title">Пароль</span>
+                                            <span class="data-password__descr">Введите старый пароль</span>
+                                            <div class="data-password__wrapper">
+                                                <input type="password" name="old-pass" id="old-pass"
+                                                    class="data-password__input" placeholder="Пароль" value="abcdefg">
+                                                <button class="data-password__btn data-password__btn--hide">
+                                                    <span class="visually-hidden">Скрыть пароль</span>
+                                                </button>
+                                                <div class="data__done"></div>
+                                            </div>
+                                            <span class="data-password__descr">Введите новый пароль</span>
+                                            <div class="data-password__wrapper">
+                                                <input type="password" name="new-pass" id="new-pass"
+                                                    class="data-password__input" placeholder="Пароль" value="abcdefg">
+                                                <button class="data-password__btn data-password__btn--show">
+                                                    <span class="visually-hidden">Показать ь пароль</span>
+                                                </button>
+                                                <div class="data__done"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data__right-column">
+                                        <div class="data__section">
+                                            <span class="data__title tabs-section__title">Номер мобильного телефона</span>
+                                            <div class="data__item">
+                                                <span>8 953 948 23 85</span>
+                                                <div class="data__done"></div>
+                                            </div>
+                                        </div>
+                                        <div class="data__section">
+                                            <span class="data__title tabs-section__title">Адрес электронной почты</span>
+                                            <div class="data__item">
+                                                <span>rustle_92@yandex.ru</span>
+                                                <div class="data__not-confirmed">Не подтвержден</div>
+                                            </div>
+                                        </div>
+                                        <div class="data__section">
+                                            <span class="data__title tabs-section__title">Адрес доставки</span>
+                                            <div class="data__item">
+                                                <span>не указано</span>
+                                                <div class="data__change"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pa-tabs__content-item pa-tabs__content-item--active" id="delivery">
+                                <div class="personal-data__delivery">
+                                    <div class="delivery">
+                                        <ul class="delivery__list">
+                                            <li class="delivery__item delivery__item--header">
+                                                <span class="delivery__num">№ заказа</span>
+                                                <span class="delivery__date">Дата и время заказа</span>
+                                                <span class="delivery__status">Статус</span>
+                                                <span class="delivery__price">Сумма, ₽</span>
+                                                <span class="delivery__payment">Способ оплаты</span>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <span class="delivery__num">112866</span>
+                                                <span class="delivery__date">06.03.2020</span>
+                                                <span class="delivery__status">новый</span>
+                                                <span class="delivery__price">2 068</span>
+                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <span class="delivery__num">112866</span>
+                                                <span class="delivery__date">06.03.2020</span>
+                                                <span class="delivery__status">новый</span>
+                                                <span class="delivery__price">2 068</span>
+                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <span class="delivery__num">112866</span>
+                                                <span class="delivery__date">06.03.2020</span>
+                                                <span class="delivery__status">новый</span>
+                                                <span class="delivery__price">2 068</span>
+                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
