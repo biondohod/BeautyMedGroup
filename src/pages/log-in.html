@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Карта сайта</title>
+    <title>Вход в личный кабинет</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                             <a href="blog.html" class="site-navigation__link">Блог</a>
                         </li>
                         <li class="site-navigation__item">
-                            <a href="delivery.html" class="site-navigation__link">Доставка</a>
+                            <a href="purchase.html" class="site-navigation__link">Доставка</a>
                         </li>
                         <li class="site-navigation__item">
                             <a href="payment.html" class="site-navigation__link">Оплата</a>
@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                     <div class="first-row__schedule">Пн-Пт: 9:00 - 19:00, Сб: 10 - 14</div>
-                    <a href="log-in.html" class="first-row__personal-area">Личный кабинет</a>
+                    <a class="first-row__personal-area">Личный кабинет</a>
                 </div>
                 <div class="header__row header__row--second">
                     <a href="index.html" class="second-row__main-link">
@@ -133,157 +133,60 @@
                         <a href="index.html" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link--active">Карта сайта</a>
+                        <a class="breadcrumbs__link--active">Личный кабинет</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Карта сайта -->
-            <section class="site-map">
-                <h1 class="site-map__title section__title">Карта сайта</h1>
-                <div class="site-map__content">
-                    <div class="site-map__wrapper">
-                        <span class="site-map__name">Для душа и ванны</span>
-                        <ul class="site-map__list">
-                            <li>
-                                <a href="category.html" class="site-map__link">Гели</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Скрабы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Мыло</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Соли</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Масла</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Молочко</a>
-                            </li>
-                        </ul>
+            <!-- Авторизация/Регистрация -->
+            <section class="log-in">
+                <div class="log-in__content">
+                    <h1 class="log-in__title section__title">Личный кабинет</h1>
+                    <div class="log-in__wrapper">
+                        <form action="" method="post" class="log-in__form">
+                            <span class="log-in__form-descr">
+                                Если вы ранее уже
+                                регистрировались на сайте
+                            </span>
+                            <input type="text" name="email-or-phone" id="email-or-phone" class="log-in__input" placeholder="Email или телефон" autocomplete="off">
+                            <input type="password" name="password" id="password" class="log-in__input log-in__input--password" placeholder="Пароль" value="abcdefg">
+                            <button type="submit" class="log-in__btn basket__buy">Войти</button>
+                            <button type="button" class="log-in__password-reset">Забыли пароль?</button>
+                        </form>
+                        <form action="" method="post" class="log-in__form log-in__form--register">
+                            <span class="log-in__form-descr">
+                                Если вы впервые на сайте
+                                пройдите регистрацию
+                            </span>
+                            <input type="tel" name="phone" id="phone" class="log-in__input" placeholder="Ваш телефон" autocomplete="off">
+                            <input type="text" name="name" id="name" class="log-in__input" placeholder="Ваше имя" autocomplete="off">
+                            <div class="log-in__radio-wrapper">
+                                <label>
+                                    <input type="radio" name="purchase" value="retail" id="purchase-retail" class="visually-hidden" checked>
+                                    <span class="log-in__radio"></span>
+                                    <span class="log-in__text">Розница</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="purchase" value="wholesale" id="purchase-wholesale" class="visually-hidden">
+                                    <span class="log-in__radio"></span>
+                                    <span class="log-in__text">Опт</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="log-in__btn basket__buy">Зарегистрироваться</button>
+                            <label class="main-banner__checkbox-wrapper log-in__checkbox-wrapper">
+                                <input type="checkbox" class="main-banner__checkbox visually-hidden" name="agreement" checked="checked">
+                                 <span class="main-banner__checkbox__mark"></span>
+                                 <span class="main-banner__checkbox__text">
+                                    Я согласен с условиями предоставления услуг и обработкой моих персональных данных при нажатии "Зарегистрироваться"
+                                </span>
+                            </label>
+                        </form>
                     </div>
-                    <div class="site-map__wrapper">
-                        <span class="site-map__name">Для рук</span>
-                        <ul class="site-map__list">
-                            <li>
-                                <a href="category.html" class="site-map__link">Гели</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Скрабы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Мыло</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Соли</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Масла</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Молочко</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="site-map__wrapper">
-                        <span class="site-map__name">Уход за телом</span>
-                        <ul class="site-map__list">
-                            <li>
-                                <a href="category.html" class="site-map__link">Кремы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Гели</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Масла</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Молочко</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Наборы для ухода</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Спреи</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Бальзамы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Лосьоны</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Маски</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Пилинги</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Эмульсии</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="site-map__wrapper">
-                        <span class="site-map__name">Солнце</span>
-                        <ul class="site-map__list">
-                            <li>
-                                <a href="category.html" class="site-map__link">Солнцезащитные</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">После загара</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Для детей</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Для усиления</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="site-map__wrapper">
-                        <span class="site-map__name">Бренды</span>
-                        <ul class="site-map__list">
-                            <li>
-                                <a href="category.html" class="site-map__link">Кремы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Гели</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Масла</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Молочко</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Наборы для ухода</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Спреи</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Бальзамы</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Лосьоны</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Маски</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Пилинги</a>
-                            </li>
-                            <li>
-                                <a href="category.html" class="site-map__link">Эмульсии</a>
-                            </li>
-                        </ul>
+                    <div class="log-in__decorative">
+                        <img src="./assets/img/personal-area/log-in.webp" alt="Декоративное изображение" aria-hidden="true" width="478" height="472">
                     </div>
                 </div>
             </section>
-
         </main>
 
         <footer class="footer">
@@ -338,7 +241,7 @@
                                         <a href="training.html" class="footer__link">Обучение</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a href="delivery.html" class="footer__link">Доставка</a>
+                                        <a href="purchase.html" class="footer__link">Доставка</a>
                                     </li>
                                     <li class="footer__item">
                                         <a href="payment.html" class="footer__link">Оплата</a>
@@ -536,7 +439,7 @@
                     </div>
                     <div class="footer__different">
                         <a href="#" class="footer__offer">Публичная оферта</a>
-                        <a  class="footer__map">Карта сайта</a>
+                        <a href="site-map.html" class="footer__map">Карта сайта</a>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">
