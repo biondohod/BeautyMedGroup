@@ -14,12 +14,67 @@
             <div class="header__wrapper">
                 <div class="header__row header__row--first">
                     <div class="first-row__city-select">
-                        <a class="first-row__city-select__selected">Москва</a>
-                        <div class="first-row__city-select__options">
-                            <a href="#" class="first-row__city-select__option" data-value="Moscow">Санкт-Петербург</a>
-                            <a href="#" class="first-row__city-select__option"
-                                data-value="Yekaterinburg">Екатеринбург</a>
-                            <a href="#" class="first-row__city-select__option" data-value="City1">Город1</option>
+                        <span class="first-row__city-select__selected">Москва</span>
+                        <div class="modal-city">
+                            <div class="modal-city__wrapper">
+                                <span>Ваш город: Санкт-Петербург?</span>
+                                <button class="modal-city__btn basket__buy">Да</button>
+                            </div>
+                            <input type="text" id="city" class="second-row__search" placeholder="Ваш город">
+                            <span class="modal-city__descr">Поиск по адресу, назаванию или почтовому индексу</span>
+                            <ul class="modal-city__list">
+                                <li class="modal-city__item modal-city__item--selected">
+                                    Санкт-Петербург
+                                </li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                            </ul>
                         </div>
                     </div>
                     <select name="city" id="city">
@@ -63,7 +118,94 @@
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                    <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                    <div class="second-row__search-wrapper">
+                        <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                        <div class="modal-search">
+                            <span class="modal-search__title">
+                                По запросу сум найдено 907 товара
+                            </span>
+                            <ul class="basket__list basket__list--order basket__list--thanks">
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="second-row__contacts">
                         <div class="contacts__phone">
                             <a href="tel:88000000000" class="contacts__phone--link">8 (800) 000-00-00</a>
@@ -820,6 +962,91 @@
         </footer>
     </div>
 
+    <div class="modal modal--education">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <span class="modal__title">Записаться на обучение</span>
+            <span class="modal__descr">
+                Заполните форму и мы Вам перезвоним
+            </span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="text" class="modal__input" name="patronymic" placeholder="Отчество">
+                <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
+                <input type="email" class="modal__input" name="email" placeholder="Email">
+                <input type="tel" class="modal__input" name="tel" placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _">
+                <div class="modal--education__social">
+                    <ul class="modal--education__list">
+                        <li>
+                            <label class="modal--education__item modal--education__item--tg">
+                                <span>Телеграм</span>
+                                <input type="checkbox" class="modal__checkbox visually-hidden" name="telegram">
+                                <span class="modal--education__checkbox modal__checkbox__mark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="modal--education__item modal--education__item--whatsapp">
+                                <span>WhatsApp</span>
+                                <input type="checkbox" class="modal__checkbox visually-hidden" name="telegram">
+                                <span class="modal--education__checkbox modal__checkbox__mark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="modal--education__item modal--education__item--skype">
+                                <span>Skype</span>
+                                <input type="checkbox" class="modal__checkbox visually-hidden" name="telegram">
+                                <span class="modal--education__checkbox modal__checkbox__mark"></span>
+                            </label>
+
+                        </li>
+                    </ul>
+                </div>
+                <textarea name="theme" class="modal__textarea" placeholder="Тема"></textarea>
+                <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <script>
+        const createModal = (triggersSelector, modalSelector, closeSelector) => {
+            document.querySelectorAll(triggersSelector).forEach(trigger => {
+                trigger.addEventListener('click', (evt) => {
+                    evt.preventDefault();
+                    document.querySelector(modalSelector).style.display = 'flex';
+                });
+            });
+
+            document.querySelector(closeSelector).addEventListener('click', () => {
+                document.querySelector(modalSelector).style.display = 'none';
+            });
+        };
+
+        createModal('.webinar-main__enroll', '.modal--education', '.modal--education .modal__close');
+
+        document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-search').style.display = 'block';
+        });
+        document.querySelector('.modal-search').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-search').style.display = 'none';
+        });
+
+        document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-city').style.display = 'flex';
+        });
+        document.querySelector('.modal-city').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-city').style.display = 'none';
+        });
+    </script>
     <div class="decorative decorative__right decorative__right--main-top"></div>
     <div class="decorative decorative__left decorative__left--main-top"></div>
     <div class="decorative decorative__right decorative__right--webinar-middle"></div>

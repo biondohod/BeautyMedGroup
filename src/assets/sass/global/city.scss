@@ -1,0 +1,76 @@
+.modal-city {
+    position: absolute;
+    z-index: 100;
+    top: 150%;
+    left: -24px;
+    display: none;
+    flex-direction: column;
+    width: 420px;
+    max-height: 1080px;
+    padding: 32px;
+    background-color: #FFF;
+    box-shadow: 2px 10px 10px black;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 300;
+        margin-bottom: 26px;
+    }
+
+    .basket__buy {
+        margin-top: 0;
+        padding: 12px 22px;
+    }
+
+    &__descr {
+        margin: 24px 0;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: #3F4C51
+    }
+
+    &__list {
+        overflow: auto;
+        display: grid;
+        gap: 8px;
+        max-height: 860px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #E9E9E9;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #F08597;
+            border-radius: 100px;
+        }
+    }
+
+    &__item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 500;
+        }
+
+        &--selected {
+            font-weight: 600;
+            cursor: default;
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+
+}

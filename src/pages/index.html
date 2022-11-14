@@ -14,20 +14,69 @@
             <div class="header__wrapper">
                 <div class="header__row header__row--first">
                     <div class="first-row__city-select">
-                        <a class="first-row__city-select__selected">Москва</a>
-                        <div class="first-row__city-select__options">
-                            <a href="#" class="first-row__city-select__option" data-value="Moscow">Санкт-Петербург</a>
-                            <a href="#" class="first-row__city-select__option"
-                                data-value="Yekaterinburg">Екатеринбург</a>
-                            <a href="#" class="first-row__city-select__option" data-value="City1">Город1</option>
+                        <span class="first-row__city-select__selected">Москва</span>
+                        <div class="modal-city">
+                            <div class="modal-city__wrapper">
+                                <span>Ваш город: Санкт-Петербург?</span>
+                                <button class="modal-city__btn basket__buy">Да</button>
+                            </div>
+                            <input type="text" id="city" class="second-row__search" placeholder="Ваш город">
+                            <span class="modal-city__descr">Поиск по адресу, назаванию или почтовому индексу</span>
+                            <ul class="modal-city__list">
+                                <li class="modal-city__item modal-city__item--selected">
+                                    Санкт-Петербург
+                                </li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                            </ul>
                         </div>
                     </div>
-                    <select name="city" id="city">
-                        <option value="Moscow">Москва</option>
-                        <option value="Saint-Petersburg">Санкт-Петербург</option>
-                        <option value="Yekaterinburg">Екатеринбург</option>
-                        <option value="City1">Город1</option>
-                    </select>
                     <ul class="first-row__site-navigation">
                         <li class="site-navigation__item">
                             <a href="company.html" class="site-navigation__link">О компании</a>
@@ -63,7 +112,94 @@
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                    <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                    <div class="second-row__search-wrapper">
+                        <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                        <div class="modal-search">
+                            <span class="modal-search__title">
+                                По запросу сум найдено 907 товара
+                            </span>
+                            <ul class="basket__list basket__list--order basket__list--thanks">
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="second-row__contacts">
                         <div class="contacts__phone">
                             <a href="tel:88000000000" class="contacts__phone--link">8 (800) 000-00-00</a>
@@ -103,10 +239,10 @@
                             <a href="category.html" class="products-navigation__link">Бренд_2</a>
                         </li>
                         <li class="products-navigation__item">
-                            <a href="#" class="products-navigation__link">Професионалам</a>
+                            <a href="#" id="vacancy" class="products-navigation__link">Професионалам</a>
                         </li>
                         <li class="products-navigation__item">
-                            <a href="#" class="products-navigation__link">Стать партнером</a>
+                            <a href="#" id="partner" class="products-navigation__link">Стать партнером</a>
                         </li>
                     </ul>
                     <ul class="third-row__user-navigation">
@@ -1401,6 +1537,279 @@
             </div>
         </footer>
     </div>
+
+    <div class="modal modal--call">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <span class="modal__title">Заказать звонок</span>
+            <span class="modal__descr">
+                Заполните форму и мы свяжемся с Вами
+            </span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="name-patronymic" placeholder="Имя Отчество">
+                <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
+                <input type="text" class="modal__input" name="city" placeholder="Город">
+                <input type="tel" class="modal__input" name="tel" placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _">
+                <button type="submit" class="modal__btn basket__buy">Заказать обратный звонок</button>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <div class="modal modal--partner">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <span class="modal__title">Стать партнёром</span>
+            <span class="modal__descr">
+                Заполните форму и мы Вам перезвоним
+            </span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="text" class="modal__input" name="patronymic" placeholder="Отчество">
+                <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
+                <input type="text" class="modal__input" name="speciality" placeholder="Специальность">
+                <input type="email" class="modal__input" name="email" placeholder="Email">
+                <input type="tel" class="modal__input" name="tel" placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _">
+                <div class="modal--partner__upload-wrapper">
+                    <span>
+                        Подготовьте документы, подтверждающие Вашу специализацию или вид деятельности организации
+                    </span>
+                    <input type="file" class="visually-hidden">
+                    <div class="modal--partner__upload">Загрузить документы</div>
+                </div>
+                <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <div class="modal modal--1click">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <span class="modal__title">Купить в 1 клик</span>
+            <span class="modal__descr">
+                Заполните форму и мы свяжемся с Вами, чтобы уточнить детали заказа.
+            </span>
+            <form action="" class="modal__form">
+                <div class="modal--1click__product">
+                    <div class="modal--1click__img">
+                        <img src="./assets/img/card.webp" alt="Фото товара." width="29" height="65">
+                    </div>
+                    <div class="modal--1click__wrapper">
+                        <a href="product.html" class="modal--1click__name">
+                            БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                        </a>
+                        <div class="products__count">
+                            <input class="products-count__input" type="number" name="product-count" id="product-count"
+                                value="1" min="1">
+                            <div class="products-count__btns">
+                                <button type="button" class="products-count__btn products-count__btn--plus">
+                                    <span class="visually-hidden">Увеличить количество товара на 1.</span>
+                                </button>
+                                <button type="button" class="products-count__btn products-count__btn--minus">
+                                    <span class="visually-hidden">Уменьшить количество товара на 1.</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="modal--1click__price">1 939 ₽</span>
+                    </div>
+                </div>
+                <input type="text" class="modal__input" name="name-patronymic" placeholder="Имя Отчество">
+                <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
+                <input type="text" class="modal__input" name="city" placeholder="Город">
+                <input type="tel" class="modal__input" name="tel" placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _">
+                <button type="submit" class="modal__btn basket__buy">Быстрый заказ</button>
+                <label class="modal__checkbox-wrapper modal__checkbox-wrapper--aic">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="mailing" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Получать рассылки со скидками и акциями
+                    </span>
+                </label>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <div class="modal modal--basket">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <form action="" class="modal__form">
+                <div class="modal--1click__product">
+                    <div class="modal--1click__img">
+                        <img src="./assets/img/card.webp" alt="Фото товара." width="29" height="65">
+                    </div>
+                    <div class="modal--1click__wrapper">
+                        <a href="product.html" class="modal--1click__name">
+                            БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                        </a>
+                        <div class="products__count">
+                            <input class="products-count__input" type="number" name="product-count" id="product-count"
+                                value="1" min="1">
+                            <div class="products-count__btns">
+                                <button type="button" class="products-count__btn products-count__btn--plus">
+                                    <span class="visually-hidden">Увеличить количество товара на 1.</span>
+                                </button>
+                                <button type="button" class="products-count__btn products-count__btn--minus">
+                                    <span class="visually-hidden">Уменьшить количество товара на 1.</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="modal--1click__price">1 939 ₽</span>
+                    </div>
+                </div>
+                <div class="modal--1click__product">
+                    <div class="modal--1click__img">
+                        <img src="./assets/img/card.webp" alt="Фото товара." width="29" height="65">
+                    </div>
+                    <div class="modal--1click__wrapper">
+                        <a href="product.html" class="modal--1click__name">
+                            БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                        </a>
+                        <div class="products__count">
+                            <input class="products-count__input" type="number" name="product-count" id="product-count"
+                                value="1" min="1">
+                            <div class="products-count__btns">
+                                <button type="button" class="products-count__btn products-count__btn--plus">
+                                    <span class="visually-hidden">Увеличить количество товара на 1.</span>
+                                </button>
+                                <button type="button" class="products-count__btn products-count__btn--minus">
+                                    <span class="visually-hidden">Уменьшить количество товара на 1.</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="modal--1click__price">1 939 ₽</span>
+                    </div>
+                </div>
+                <div class="modal--1click__product">
+                    <div class="modal--1click__img">
+                        <img src="./assets/img/card.webp" alt="Фото товара." width="29" height="65">
+                    </div>
+                    <div class="modal--1click__wrapper">
+                        <a href="product.html" class="modal--1click__name">
+                            БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                        </a>
+                        <div class="products__count">
+                            <input class="products-count__input" type="number" name="product-count" id="product-count"
+                                value="1" min="1">
+                            <div class="products-count__btns">
+                                <button type="button" class="products-count__btn products-count__btn--plus">
+                                    <span class="visually-hidden">Увеличить количество товара на 1.</span>
+                                </button>
+                                <button type="button" class="products-count__btn products-count__btn--minus">
+                                    <span class="visually-hidden">Уменьшить количество товара на 1.</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="modal--1click__price">1 939 ₽</span>
+                    </div>
+                </div>
+                <div class="modal--basket__total-price">
+                    <span>Итого</span>
+                    <span>0000 ₽</span>
+                </div>
+                <button type="submit" class="modal__btn basket__buy">Оформить заказ</button>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <div class="modal modal--vacancy">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+            <span class="modal__title">Откликнуться на ваансию</span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="name" placeholder="Ваше имя">
+                <input type="text" class="modal__input" name="age" placeholder="Ваш возраст">
+                <div class="modal--partner__upload-wrapper">
+                    <input type="file" class="visually-hidden">
+                    <div class="modal--partner__upload">Загрузить фото</div>
+                </div>
+                <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                <label class="modal__checkbox-wrapper">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="agreement" checked="checked">
+                    <span class="modal__checkbox__mark"></span>
+                    <span class="modal__checkbox__text">
+                        Нажимая «Оставить завку», я соглашаюсь c обработкой персональных данных на условиях
+                        <a href="#">Политики конфиденциальности.</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+    <script>
+        const createModal = (triggersSelector, modalSelector, closeSelector) => {
+            document.querySelectorAll(triggersSelector).forEach(trigger => {
+                trigger.addEventListener('click', (evt) => {
+                    evt.preventDefault();
+                    document.querySelector(modalSelector).style.display = 'flex';
+                });
+            });
+
+            document.querySelector(closeSelector).addEventListener('click', () => {
+                document.querySelector(modalSelector).style.display = 'none';
+            });
+        };
+
+        createModal('.product__more', '.modal--call', '.modal--call .modal__close');
+        createModal('#partner', '.modal--partner', '.modal--partner .modal__close');
+        createModal('.main-categories__card__buy', '.modal--1click', '.modal--1click .modal__close');
+        createModal('.user-navigation__link--cart', '.modal--basket', '.modal--basket .modal__close');
+        createModal('#vacancy', '.modal--vacancy', '.modal--vacancy .modal__close');
+
+        document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-search').style.display = 'block';
+        });
+        document.querySelector('.modal-search').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-search').style.display = 'none';
+        });
+
+        document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-city').style.display = 'flex';
+        });
+        document.querySelector('.modal-city').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-city').style.display = 'none';
+        });
+    </script>
 
     <div class="decorative decorative__right decorative__right--main-top"></div>
     <div class="decorative decorative__left decorative__left--main-top"></div>

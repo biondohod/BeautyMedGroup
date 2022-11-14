@@ -50,24 +50,18 @@
         padding-left: 24px;
         background: url('../assets/img/address.svg') no-repeat center left;
         background-size: 16px;
-        cursor: pointer;
 
-        &__selected,
-        &__option {
+
+        &__selected {
             font-family: 'Montserrat';
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #535353;
             text-decoration: none;
+            cursor: pointer;
         }
 
-        &__options {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            display: none;
-        }
     }
 
     &__site-navigation {
@@ -139,7 +133,6 @@
     &__search {
         flex-grow: 1;
         max-width: 620px;
-        margin-right: 16px;
         padding: 4px 30px 12px 2px;
         border: none;
         border-bottom: 1px solid #E9E9E9;
@@ -148,6 +141,14 @@
         font-family: 'Montserrat';
         font-size: 12px;
         line-height: 15px;
+
+        &-wrapper {
+            position: relative;
+            flex-grow: 1;
+            display: flex;
+            max-width: 620px;
+            margin-right: 16px;
+        }
     }
 
     &__contacts {

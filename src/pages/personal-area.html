@@ -14,12 +14,67 @@
             <div class="header__wrapper">
                 <div class="header__row header__row--first">
                     <div class="first-row__city-select">
-                        <a class="first-row__city-select__selected">Москва</a>
-                        <div class="first-row__city-select__options">
-                            <a href="#" class="first-row__city-select__option" data-value="Moscow">Санкт-Петербург</a>
-                            <a href="#" class="first-row__city-select__option"
-                                data-value="Yekaterinburg">Екатеринбург</a>
-                            <a href="#" class="first-row__city-select__option" data-value="City1">Город1</option>
+                        <span class="first-row__city-select__selected">Москва</span>
+                        <div class="modal-city">
+                            <div class="modal-city__wrapper">
+                                <span>Ваш город: Санкт-Петербург?</span>
+                                <button class="modal-city__btn basket__buy">Да</button>
+                            </div>
+                            <input type="text" id="city" class="second-row__search" placeholder="Ваш город">
+                            <span class="modal-city__descr">Поиск по адресу, назаванию или почтовому индексу</span>
+                            <ul class="modal-city__list">
+                                <li class="modal-city__item modal-city__item--selected">
+                                    Санкт-Петербург
+                                </li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                                <li class="modal-city__item">Пушкин</li>
+                                <li class="modal-city__item">Петергоф</li>
+                                <li class="modal-city__item">Красное село</li>
+                                <li class="modal-city__item">Ломоносов</li>
+                                <li class="modal-city__item">Крондштат</li>
+                                <li class="modal-city__item">Сестрорецк</li>
+                                <li class="modal-city__item">Павловск</li>
+                                <li class="modal-city__item">Зеленогорск</li>
+                            </ul>
                         </div>
                     </div>
                     <select name="city" id="city">
@@ -63,7 +118,94 @@
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                    <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                    <div class="second-row__search-wrapper">
+                        <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                        <div class="modal-search">
+                            <span class="modal-search__title">
+                                По запросу сум найдено 907 товара
+                            </span>
+                            <ul class="basket__list basket__list--order basket__list--thanks">
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__img">
+                                        <img src="./assets/img/card.webp" alt="Товар." width="32" height="72">
+                                    </div>
+                                    <a href="product.html" class="basket__name">
+                                        БИО крем для рук освежающий с лимонной мятой Alpine Organics 50 мл
+                                    </a>
+                                    <div class="basket__price-wrapper">
+                                        <span class="basket__price">
+                                            1 939 ₽
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="second-row__contacts">
                         <div class="contacts__phone">
                             <a href="tel:88000000000" class="contacts__phone--link">8 (800) 000-00-00</a>
@@ -171,7 +313,7 @@
                             </div>
                         </div>
                         <div class="pa-tabs__content">
-                            <div class="pa-tabs__content-item" id="personal-area">
+                            <div class="pa-tabs__content-item pa-tabs__content-item--active" id="personal-area">
                                 <div class="personal-area__pa">
                                     <div class="pa__left-column">
                                         <div class="pa__basket">
@@ -231,7 +373,7 @@
                                                 <span class="pa-data__title">Телефон</span>
                                                 <span class="pa-data__info">8 953 948 23 85</span>
                                             </div>
-                                            <button class="footer__application">Изменить</button>
+                                            <button id="data-change" class="footer__application">Изменить</button>
                                         </div>
                                     </div>
                                 </div>
@@ -272,7 +414,8 @@
                                             </div>
                                         </div>
                                         <div class="data__password data__section">
-                                            <span class="data__title tabs-section__title data-password__title">Пароль</span>
+                                            <span
+                                                class="data__title tabs-section__title data-password__title">Пароль</span>
                                             <span class="data-password__descr">Введите старый пароль</span>
                                             <div class="data-password__wrapper">
                                                 <input type="password" name="old-pass" id="old-pass"
@@ -280,14 +423,14 @@
                                                 <button class="data-password__btn data-password__btn--hide">
                                                     <span class="visually-hidden">Скрыть пароль</span>
                                                 </button>
-                                                <div class="data__done"></div>
+                                                <div id="password-change" class="data__done"></div>
                                             </div>
                                             <span class="data-password__descr">Введите новый пароль</span>
                                             <div class="data-password__wrapper">
                                                 <input type="password" name="new-pass" id="new-pass"
                                                     class="data-password__input" placeholder="Пароль" value="abcdefg">
                                                 <button class="data-password__btn data-password__btn--show">
-                                                    <span class="visually-hidden">Показать ь пароль</span>
+                                                    <span class="visually-hidden">Показать пароль</span>
                                                 </button>
                                                 <div class="data__done"></div>
                                             </div>
@@ -295,10 +438,11 @@
                                     </div>
                                     <div class="data__right-column">
                                         <div class="data__section">
-                                            <span class="data__title tabs-section__title">Номер мобильного телефона</span>
+                                            <span class="data__title tabs-section__title">Номер мобильного
+                                                телефона</span>
                                             <div class="data__item">
                                                 <span>8 953 948 23 85</span>
-                                                <div class="data__done"></div>
+                                                <div id="phone-change" class="data__done"></div>
                                             </div>
                                         </div>
                                         <div class="data__section">
@@ -312,43 +456,165 @@
                                             <span class="data__title tabs-section__title">Адрес доставки</span>
                                             <div class="data__item">
                                                 <span>не указано</span>
-                                                <div class="data__change"></div>
+                                                <div id="delivery-change" class="data__change"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="pa-tabs__content-item pa-tabs__content-item--active" id="delivery">
-                                <div class="personal-data__delivery">
+                            <div class="pa-tabs__content-item" id="orders">
+                                <div class="personal-area__orders">
+                                    <div class="orders">
+                                        <ul class="delivery__list">
+                                            <li class="delivery__item delivery__item--header">
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">№ заказа</span>
+                                                    <span class="delivery__date">Дата и время заказа</span>
+                                                    <span class="delivery__status">Статус</span>
+                                                    <span class="delivery__price">Сумма, ₽</span>
+                                                    <span class="delivery__payment">Способ оплаты</span>
+                                                </div>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
+                                            </li>
+                                            <li class="delivery__item delivery__item--opened">
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
+                                                <div class="delivery__content">
+                                                    <div class="delivery-content__first-row">
+                                                        <div class="delivery-content__time">
+                                                            <span>Время последнего обновления:</span>
+                                                            <p>06.03.2020 23:44</p>
+                                                        </div>
+                                                        <div class="delivery-content__track">
+                                                            <span>Номер отслеживания:</span>
+                                                            <p>не доступен</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="delivery-content__product">
+                                                        <div class="basket__img">
+                                                            <img src="./assets/img/card.webp" alt="Товар." width="32"
+                                                                height="72">
+                                                        </div>
+                                                        <div class="delivery-product__info">
+                                                            <span class="delivery-product__name">
+                                                                БИО крем для рук освежающий с лимонной мятой Alpine
+                                                                Organics 50 мл
+                                                            </span>
+                                                            <span class="delivery-product__vendor">
+                                                                Артикул: 987 99 07
+                                                            </span>
+                                                        </div>
+                                                        <span class="delivery-product__count">1 шт.</span>
+                                                        <span class="delivery-product__price">121222 ₽</span>
+                                                        <button class="delivery-product__btn">Оставить отзыв к
+                                                            заказу</button>
+                                                    </div>
+                                                    <div class="delivery-content__info">
+                                                        <div class="delivery-info__left-column">
+                                                            <p>Получатель: rustle_92@yandex.ru</p>
+                                                            <p>Телефон: +79000886666</p>
+                                                            <p>Адрес доставки: <span>не указан</span></p>
+                                                            <p>Оплата: Наложенный платеж</p>
+                                                            <p>Способ доставки: Почтой России</p>
+                                                        </div>
+                                                        <div class="delivery-info__right-column">
+                                                            <div>
+                                                                <span>Общая сумма товаров: </span>
+                                                                <p>121222 ₽</p>
+                                                            </div>
+                                                            <div>
+                                                                <span>Стоимость доставки: </span>
+                                                                <p>422 ₽</p>
+                                                            </div>
+                                                            <div>
+                                                                <span>Итого: </span>
+                                                                <p>121222 ₽</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
+                                            </li>
+                                            <li class="delivery__item">
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pa-tabs__content-item" id="delivery">
+                                <div class="personal-area__delivery">
                                     <div class="delivery">
                                         <ul class="delivery__list">
                                             <li class="delivery__item delivery__item--header">
-                                                <span class="delivery__num">№ заказа</span>
-                                                <span class="delivery__date">Дата и время заказа</span>
-                                                <span class="delivery__status">Статус</span>
-                                                <span class="delivery__price">Сумма, ₽</span>
-                                                <span class="delivery__payment">Способ оплаты</span>
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">№ заказа</span>
+                                                    <span class="delivery__date">Дата и время заказа</span>
+                                                    <span class="delivery__status">Статус</span>
+                                                    <span class="delivery__price">Сумма, ₽</span>
+                                                    <span class="delivery__payment">Способ оплаты</span>
+                                                </div>
                                             </li>
                                             <li class="delivery__item">
-                                                <span class="delivery__num">112866</span>
-                                                <span class="delivery__date">06.03.2020</span>
-                                                <span class="delivery__status">новый</span>
-                                                <span class="delivery__price">2 068</span>
-                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
                                             </li>
                                             <li class="delivery__item">
-                                                <span class="delivery__num">112866</span>
-                                                <span class="delivery__date">06.03.2020</span>
-                                                <span class="delivery__status">новый</span>
-                                                <span class="delivery__price">2 068</span>
-                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
                                             </li>
                                             <li class="delivery__item">
-                                                <span class="delivery__num">112866</span>
-                                                <span class="delivery__date">06.03.2020</span>
-                                                <span class="delivery__status">новый</span>
-                                                <span class="delivery__price">2 068</span>
-                                                <span class="delivery__payment">Наложенный платеж	интернет-магазин</span>
+                                                <div class="delivery__wrapper">
+                                                    <span class="delivery__num">112866</span>
+                                                    <span class="delivery__date">06.03.2020</span>
+                                                    <span class="delivery__status">новый</span>
+                                                    <span class="delivery__price">2 068</span>
+                                                    <span class="delivery__payment">Наложенный платеж
+                                                        интернет-магазин</span>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -624,9 +890,195 @@
         </footer>
     </div>
 
+    <div class="modal modal--personal-data">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Закрыть модальное окно.</span>
+            </button>
+            <span class="modal__title">Персональные данные</span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="name" placeholder="Имя">
+                <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
+                <input type="text" class="modal__input" name="patronymic" placeholder="Отчество">
+                <input type="text" class="modal__input" name="birth-date" placeholder="Дата рождения" onclick="(this.type='date')" >
+                <div class="modal__radio-wrapper">
+                    <div class="modal__radio">
+                        <span>Пол</span>
+                        <span class="modal__radio-error">Не установлено</span>
+                    </div>
+                    <div class="log-in__radio-wrapper">
+                        <label>
+                            <input type="radio" name="sex" value="male" id="purchase-retail" class="visually-hidden"
+                                checked="checked">
+                            <span class="log-in__radio"></span>
+                            <span class="log-in__text">Мужчина</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="sex" value="female" id="purchase-wholesale"
+                                class="visually-hidden">
+                            <span class="log-in__radio"></span>
+                            <span class="log-in__text">Женщина</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal--partner__upload-wrapper">
+                    <input type="file" class="visually-hidden">
+                    <div class="modal--partner__upload">Загрузить фото</div>
+                </div>
+                <div class="modal__btns">
+                    <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                    <button type="button" class="modal__cancel footer__application">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+
+    <div class="modal modal--delivery">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Персональные данные</span>
+            </button>
+            <span class="modal__title">Адрес доставки</span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" name="index" placeholder="Индекс">
+                <input type="text" class="modal__input" name="address" placeholder="Адрес">
+                <div class="modal__btns">
+                    <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                    <button type="button" class="modal__cancel footer__application">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+
+    <div class="modal modal--phone">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Персональные данные</span>
+            </button>
+            <span class="modal__title">Изменить телефон</span>
+            <form action="" class="modal__form">
+                <input type="tel" class="modal__input" name="tel" placeholder="+7  ( _ _ _ )  _ _ _  -  _ _  -  _ _">
+                <div class="modal__btns">
+                    <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                    <button type="button" class="modal__cancel footer__application">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+
+    <div class="modal modal--password">
+        <div class="modal__content">
+            <button class="modal__close">
+                <span class="visually-hidden">Персональные данные</span>
+            </button>
+            <span class="modal__title">Изменение пароля</span>
+            <form action="" class="modal__form">
+                <div class="data__password data__section">
+                    <span class="data-password__descr">Введите старый пароль</span>
+                    <div class="data-password__wrapper">
+                        <input type="password" name="old-pass" id="modal-old-pass"
+                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <button class="data-password__btn data-password__btn--hide">
+                            <span class="visually-hidden">Скрыть пароль</span>
+                        </button>
+                    </div>
+                    <span class="data-password__descr">Введите новый пароль</span>
+                    <div class="data-password__wrapper">
+                        <input type="password" name="new-pass" id="modal-new-pass"
+                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <button class="data-password__btn data-password__btn--show">
+                            <span class="visually-hidden">Показать пароль</span>
+                        </button>
+                    </div>
+                    <span class="data-password__descr">Подтверждение пароля</span>
+                    <div class="data-password__wrapper">
+                        <input type="password" name="new-pass" id="modal-check-pass"
+                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <button class="data-password__btn data-password__btn--show">
+                            <span class="visually-hidden">Показать пароль</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal__btns">
+                    <button type="submit" class="modal__btn basket__buy">Отправить</button>
+                    <button type="button" class="modal__cancel footer__application">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__substrate"></div>
+    </div>
+
     <div class="decorative decorative__right decorative__right--favorites"></div>
-    <div class="decorative decorative__left decorative__left--favorites"></div>
+    <div class="decorative decorative__left decorative__left--pa"></div>
     <div class="decorative decorative__right decorative__right--bottom"></div>
+    <script>
+        const createModal = (triggersSelector, modalSelector, closeSelector) => {
+            document.querySelectorAll(triggersSelector).forEach(trigger => {
+                trigger.addEventListener('click', (evt) => {
+                    evt.preventDefault();
+                    document.querySelector(modalSelector).style.display = 'flex';
+                });
+            });
+
+            document.querySelector(closeSelector).addEventListener('click', () => {
+                document.querySelector(modalSelector).style.display = 'none';
+            });
+        };
+
+        createModal('#data-change', '.modal--personal-data', '.modal--personal-data .modal__close');
+        createModal('#delivery-change', '.modal--delivery', '.modal--delivery .modal__close');
+        createModal('#phone-change', '.modal--phone', '.modal--phone .modal__close');
+        createModal('#password-change', '.modal--password', '.modal--password .modal__close');
+
+
+        const personalArea = document.querySelector('.pa-tabs__item[data-value="personal-area"');
+        const data = document.querySelector('.pa-tabs__item[data-value="data"');
+        const orders = document.querySelector('.pa-tabs__item[data-value="orders"');
+        const delivery = document.querySelector('.pa-tabs__item[data-value="delivery"');
+        const tabsItems = document.querySelectorAll('.pa-tabs__content-item');
+
+        const showCurrentTab = (id) => {
+            tabsItems.forEach(item => {
+                if (item.id === id) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            })
+        };
+
+        personalArea.addEventListener('click', () => {
+            showCurrentTab(personalArea.getAttribute('data-value'))
+        });
+
+        data.addEventListener('click', () => {
+            showCurrentTab(data.getAttribute('data-value'))
+        });
+
+        orders.addEventListener('click', () => {
+            showCurrentTab(orders.getAttribute('data-value'))
+        });
+
+        delivery.addEventListener('click', () => {
+            showCurrentTab(delivery.getAttribute('data-value'))
+        });
+        document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-search').style.display = 'block';
+        });
+        document.querySelector('.modal-search').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-search').style.display = 'none';
+        });
+
+        document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
+            document.querySelector('.modal-city').style.display = 'flex';
+        });
+        document.querySelector('.modal-city').addEventListener('mouseleave', () => {
+            document.querySelector('.modal-city').style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>

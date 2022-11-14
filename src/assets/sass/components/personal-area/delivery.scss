@@ -5,8 +5,7 @@
     }
 
     &__item {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr 3fr;
+        width: 1035px;
         padding-bottom: 16px;
         border-bottom: 1px solid #E9E9E9;
         font-weight: 300;
@@ -18,6 +17,190 @@
             font-weight: 400;
             font-size: 10px;
             line-height: 12px;
+
+            .delivery__num {
+                margin-right: 71px;
+            }
+
+            .delivery__date {
+                margin-right: 125px;
+            }
+
+            .delivery__status {
+                margin-right: 184px;
+            }
+
+            .delivery__price {
+                margin-right: 104px;
+            }
+
+            .delivery__content {
+                padding: 16px 12px;
+                gap: 16px;
+            }
+        }
+
+        .delivery__content {
+            display: none;
+        }
+
+        &--opened {
+            position: relative;
+            left: -14px;
+            width: 1060px;
+            margin-top: -17px;
+            padding: 0;
+            border: none;
+            outline: 2px solid #F08597;
+            border-radius: 8px;
+
+            .delivery__content {
+                display: grid;
+            }
+
+            .delivery__wrapper {
+                padding: 16px 12px;
+                background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
+                border-radius: 8px;
+            }
+        }
+
+
+    }
+
+    &__wrapper {
+        // display: grid;
+        // grid-template-columns: 2fr 2fr 2fr 2fr 3fr;
+        display: flex;
+        align-items: center;
+    }
+
+    &__num {
+        margin-right: 82px;
+    }
+
+    &__date {
+        margin-right: 167px;
+    }
+
+    &__status {
+        margin-right: 177px;
+    }
+
+    &__price {
+        margin-right: 118px;
+    }
+
+    &__content {
+        padding: 16px 12px;
+        gap: 16px;
+    }
+
+    &-content {
+        &__first-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            padding-right: 90px;
+            border-bottom: 1px solid #E9E9E9;
+        }
+
+        &__time,
+        &__track {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &__track {
+            p {
+                font-size: 12px;
+                line-height: 15px;
+                color: #FF0000;
+            }
+        }
+
+        &__product {
+            display: flex;
+            align-items: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #E9E9E9;
+
+            .basket__img {
+                margin-right: 16px;
+            }
+        }
+
+        &__info {
+            display: grid;
+            grid-template-columns: 206px 265px;
+            gap: 154px;
+            align-items: start;
+        }
+    }
+
+    &-product {
+        &__info {
+            display: grid;
+            gap: 16px;
+            max-width: 288px;
+            margin-right: 88px;
+        }
+
+        &__vendor {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__count {
+            margin-right: 62px;
+        }
+
+        &__price {
+            margin-right: 104px;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            min-height: 24px;
+            padding-left: 32px;
+            border: none;
+            background: url('../assets/img/personal-area/review.svg') no-repeat center left;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            cursor: pointer;
+        }
+    }
+
+    &-info {
+        &__left-column {
+            display: grid;
+            gap: 8px;
+
+            span {
+                font-size: 12px;
+                line-height: 15px;
+                color: #FF0000;
+            }
+        }
+
+        &__right-column {
+            display: grid;
+            gap: 8px;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            p {
+                font-weight: 500;
+            }
         }
     }
 }
