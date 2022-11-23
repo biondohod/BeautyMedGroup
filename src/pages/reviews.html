@@ -110,9 +110,19 @@
                     <a href="log-in.html" class="first-row__personal-area">Личный кабинет</a>
                 </div>
                 <div class="header__row header__row--second">
+                    <button class="second-row__burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="visually-hidden">Открыть бургер меню</p>
+                    </button>
                     <a href="index.html" class="second-row__main-link">
-                        <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42">
+                        <picture>
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="261" height="42" media="(min-width: 760px)">
+                            <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="149" height="24">
+                           </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -956,34 +966,48 @@
         <div class="modal__substrate"></div>
     </div>
     <script>
-        const createModal = (triggersSelector, modalSelector, closeSelector) => {
-            document.querySelectorAll(triggersSelector).forEach(trigger => {
-                trigger.addEventListener('click', (evt) => {
-                    evt.preventDefault();
-                    document.querySelector(modalSelector).style.display = 'flex';
-                });
-            });
-
-            document.querySelector(closeSelector).addEventListener('click', () => {
-                document.querySelector(modalSelector).style.display = 'none';
-            });
-        };
-
-        createModal('.reviews__btn', '.modal--review', '.modal--review .modal__close');
-
-        document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
-            document.querySelector('.modal-search').style.display = 'block';
+        const tabs = document.querySelectorAll('.main__tabs__item');
+        const tabsContent = document.querySelectorAll('.main__tabs__content-item');
+        tabs[0].addEventListener('click', () => {
+            tabs[0].classList.add('main__tabs__item--active');
+            tabs[1].classList.remove('main__tabs__item--active');
+            tabsContent[0].classList.add('main__tabs__content-item--active');
+            tabsContent[1].classList.remove('main__tabs__content-item--active');
         });
-        document.querySelector('.modal-search').addEventListener('mouseleave', () => {
-            document.querySelector('.modal-search').style.display = 'none';
+        tabs[1].addEventListener('click', () => {
+            tabs[1].classList.add('main__tabs__item--active');
+            tabs[0].classList.remove('main__tabs__item--active');
+            tabsContent[1].classList.add('main__tabs__content-item--active');
+            tabsContent[0].classList.remove('main__tabs__content-item--active');
         });
+        // const createModal = (triggersSelector, modalSelector, closeSelector) => {
+        //     document.querySelectorAll(triggersSelector).forEach(trigger => {
+        //         trigger.addEventListener('click', (evt) => {
+        //             evt.preventDefault();
+        //             document.querySelector(modalSelector).style.display = 'flex';
+        //         });
+        //     });
 
-        document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
-            document.querySelector('.modal-city').style.display = 'flex';
-        });
-        document.querySelector('.modal-city').addEventListener('mouseleave', () => {
-            document.querySelector('.modal-city').style.display = 'none';
-        });
+        //     document.querySelector(closeSelector).addEventListener('click', () => {
+        //         document.querySelector(modalSelector).style.display = 'none';
+        //     });
+        // };
+
+        // createModal('.reviews__btn', '.modal--review', '.modal--review .modal__close');
+
+        // document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
+        //     document.querySelector('.modal-search').style.display = 'block';
+        // });
+        // document.querySelector('.modal-search').addEventListener('mouseleave', () => {
+        //     document.querySelector('.modal-search').style.display = 'none';
+        // });
+
+        // document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
+        //     document.querySelector('.modal-city').style.display = 'flex';
+        // });
+        // document.querySelector('.modal-city').addEventListener('mouseleave', () => {
+        //     document.querySelector('.modal-city').style.display = 'none';
+        // });
     </script>
     <div class="decorative decorative__right decorative__right--favorites"></div>
     <div class="decorative decorative__left decorative__left--favorites"></div>

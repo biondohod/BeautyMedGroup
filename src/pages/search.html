@@ -110,9 +110,19 @@
                     <a href="log-in.html" class="first-row__personal-area">Личный кабинет</a>
                 </div>
                 <div class="header__row header__row--second">
+                    <button class="second-row__burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="visually-hidden">Открыть бургер меню</p>
+                    </button>
                     <a href="index.html" class="second-row__main-link">
-                        <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42">
+                        <picture>
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="261" height="42" media="(min-width: 760px)">
+                            <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="149" height="24">
+                           </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -1222,7 +1232,7 @@
             </div>
         </footer>
     </div>
-    <script>
+    <!-- <script>
         document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
             document.querySelector('.modal-search').style.display = 'block';
         });
@@ -1236,7 +1246,7 @@
         document.querySelector('.modal-city').addEventListener('mouseleave', () => {
             document.querySelector('.modal-city').style.display = 'none';
         });
-    </script>
+    </script> -->
     <div class="decorative decorative__right decorative__right--favorites"></div>
     <div class="decorative decorative__left decorative__left--favorites"></div>
     <div class="decorative decorative__right decorative__right--bottom"></div>

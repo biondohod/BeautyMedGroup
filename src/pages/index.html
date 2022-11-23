@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>БьютиМедГрупп</title>
 </head>
@@ -104,9 +105,19 @@
                     <a href="log-in.html" class="first-row__personal-area">Личный кабинет</a>
                 </div>
                 <div class="header__row header__row--second">
+                    <button class="second-row__burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="visually-hidden">Открыть бургер меню</p>
+                    </button>
                     <a href="index.html" class="second-row__main-link">
-                        <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42">
+                        <picture>
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="261" height="42" media="(min-width: 760px)">
+                            <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
+                            width="149" height="24">
+                           </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -280,12 +291,20 @@
                             <h2 class="product__name">Velit aliquet sagittis id consectetur</h2>
                             <a href="#" class="product__more">Подробнее</a>
                         </div>
-                        <img src="./assets/img/product-preview.webp" alt="Товар." class="product__img--preview"
-                            width="261" height="212">
+                        <picture>
+                            <source srcset="./assets/img/product-preview.webp" alt="Товар." class="product__img--preview"
+                            width="261" height="212" media="(min-width: 760px)">
+                            <img srcset="./assets/img/product-preview-mob.webp" alt="Товар." class="product__img--preview"
+                            width="147" height="124">
+                        </picture>
                     </div>
                     <div class="product__decorative-block">
-                        <img src="./assets/img/product-decorative.webp" alt="Пример использования товара."
+                        <picture>
+                            <source srcset="./assets/img/product-decorative.webp" alt="Пример использования товара."
+                            class="product__img--decorative" media="(min-width: 760px)">
+                            <img src="./assets/img/product-decorative-mob.webp" alt="Пример использования товара."
                             class="product__img--decorative">
+                        </picture>
                     </div>
                 </div>
                 <div class="main-slider__pagination">
@@ -1777,6 +1796,12 @@
         <div class="modal__substrate"></div>
     </div>
     <script>
+        document.querySelector('.second-row__burger-btn').addEventListener('click', (evt) => {
+            document.querySelector('.second-row__burger-btn').classList.toggle('second-row__burger-btn--active');
+            document.querySelector('.header__row--third').classList.toggle('header__row--third--active');
+        });
+    </script>
+    <!-- <script>
         const createModal = (triggersSelector, modalSelector, closeSelector) => {
             document.querySelectorAll(triggersSelector).forEach(trigger => {
                 trigger.addEventListener('click', (evt) => {
@@ -1809,7 +1834,7 @@
         document.querySelector('.modal-city').addEventListener('mouseleave', () => {
             document.querySelector('.modal-city').style.display = 'none';
         });
-    </script>
+    </script> -->
 
     <div class="decorative decorative__right decorative__right--main-top"></div>
     <div class="decorative decorative__left decorative__left--main-top"></div>

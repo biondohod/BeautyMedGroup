@@ -216,7 +216,7 @@
         &--products {
             margin-bottom: 77px;
 
-            .main__tabs__item--active::after {
+            .main__tabs__item::after {
                 width: 80px;
             }
         }
@@ -249,19 +249,24 @@
             text-transform: uppercase;
             color: #000000;
             cursor: pointer;
+            &::after {
+                position: absolute;
+                left: 50%;
+                bottom: -11px;
+                width: 100px;
+                height: 4px;
+                opacity: 0;
+                transform: translateX(-50%);
+                background-color: #FFD9DF;
+                border-radius: 4px;
+                transition: 0.4s opacity;
+                cursor: default;
+                content: "";
+            }
 
             &--active {
                 &::after {
-                    position: absolute;
-                    left: 50%;
-                    bottom: -11px;
-                    width: 100px;
-                    height: 4px;
-                    transform: translateX(-50%);
-                    background-color: #FFD9DF;
-                    border-radius: 4px;
-                    cursor: default;
-                    content: "";
+                    opacity: 1;
                 }
             }
 

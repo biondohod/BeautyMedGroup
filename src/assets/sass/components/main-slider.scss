@@ -5,6 +5,13 @@
     height: 616px;
     padding: 176px 22px 0 0;
 
+    @media (max-width: $maxMobWidth) {
+        position: relative;
+        top: 0;
+        height: 683px;
+        padding: 0;
+    }
+
     &__btns {
         position: absolute;
         top: 60px;
@@ -13,6 +20,10 @@
         align-items: center;
         justify-content: space-between;
         width: 210px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 
     &__btn {
@@ -34,6 +45,10 @@
     &__product {
         display: flex;
         height: 380px;
+
+        @media (max-width: $maxMobWidth) {
+            height: 400px;
+        }
     }
 }
 
@@ -45,6 +60,14 @@
 
         padding: 50px 0 162px 307px;
         background-color: #FFF1F4;
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
+            width: 100%;
+            margin-right: 44px;
+            padding: 30px 16px;
+            padding-right: 39px;
+        }
     }
 
     &__name {
@@ -54,6 +77,15 @@
         font-size: 48px;
         margin-bottom: 50px;
         padding-right: 45px;
+
+        @media (max-width: $maxMobWidth) {
+            max-width: none;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            padding: 0;
+            margin-bottom: 150px;
+        }
     }
 
     &__more {
@@ -87,6 +119,14 @@
         top: 34px;
         left: -42px;
         z-index: 10;
+
+        @media (max-width: $maxMobWidth) {
+            position: absolute;
+            z-index: 0;
+            top: 169px;
+            left: auto;
+            right: 10px;
+        }
     }
 
     &__img--decorative {
@@ -95,6 +135,13 @@
         left: 0;
         width: 900px;
         height: 616px;
+
+        @media (max-width: $maxMobWidth) {
+            right: 0;
+            left: auto;
+            width: 360px;
+            height: 391px;
+        }
     }
 
     &__decorative-block {
@@ -107,6 +154,18 @@
         height: 556px;
         border-radius: 4px;
         background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;
+
+        @media (max-width: $maxMobWidth) {
+            position: absolute;
+            top: 364px;
+            right: 0;
+            min-width: 300px;
+            width: 87%;
+            height: 320px;
+            background: none;
+            background-color: #E9E9E9;
+            border-radius: 0;
+        }
     }
 }
 
@@ -118,6 +177,12 @@
         display: flex;
         justify-content: space-between;
         width: 196px;
+
+        @media (max-width: $maxMobWidth) {
+            top: auto;
+            left: 74px;
+            bottom: 16px;
+        }
     }
 
     &__btn {

@@ -1,3 +1,5 @@
+$maxMobWidth: 760px;
+$minMobWidth: 360px;
 @font-face {
     font-family: "Tenor Sans";
     font-style: normal;
@@ -76,6 +78,12 @@ body {
     min-width: 1408px;
     max-width: 1900px;
     margin: 0 auto;
+
+    @media (max-width: $maxMobWidth) {
+        min-width: $minMobWidth;
+        padding: 0 8px;
+        margin: 0 auto;
+    }
 }
 
 header,
