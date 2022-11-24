@@ -8,4 +8,14 @@
     margin-bottom: 100px;
     font-weight: 300;
     line-height: 17px;
+
+    @media (max-width: $maxMobWidth) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+        margin-bottom: 80px;
+        font-size: 12px;
+        line-height: 15px;
+    }
 }

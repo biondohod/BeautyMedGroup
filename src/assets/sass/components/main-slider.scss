@@ -10,6 +10,7 @@
         top: 0;
         height: 683px;
         padding: 0;
+        margin-bottom: 80px;
     }
 
     &__btns {
@@ -47,7 +48,60 @@
         height: 380px;
 
         @media (max-width: $maxMobWidth) {
-            height: 400px;
+            position: relative;
+            right: -8px;
+            height: 684px;
+        }
+    }
+
+    &__links {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        transform: translateY(100%);
+        padding: 16px;
+        padding-bottom: 8px;
+
+        @media (max-width: $maxMobWidth) {
+            display: block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: block;
+        padding-top: 28px;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 140%;
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+
+        &--catalog {
+            background: url('../assets/img/catalog.svg') no-repeat top center;
+            background-size: 24px;
+        }
+
+        &--pa {
+            background: url('../assets/img/user.svg') no-repeat top center;
+            background-size: 24px;
+        }
+
+        &--favorites {
+            background: url('../assets/img/heart.svg') no-repeat top center;
+            background-size: 24px;
+        }
+
+        &--basket {
+            background: url('../assets/img/cart.svg') no-repeat top center;
+            background-size: 24px;
         }
     }
 }
@@ -64,6 +118,7 @@
         @media (max-width: $maxMobWidth) {
             flex-direction: column;
             width: 100%;
+            height: 400px;
             margin-right: 44px;
             padding: 30px 16px;
             padding-right: 39px;
@@ -180,8 +235,29 @@
 
         @media (max-width: $maxMobWidth) {
             top: auto;
-            left: 74px;
+            left: 50%;
             bottom: 16px;
+            transform: translateX(-50%);
+        }
+
+        &--reviews {
+            display: none;
+            top: auto;
+            left: 50%;
+            bottom: 72px;
+            transform: translateX(-50%);
+
+            .pagination__btn {
+                outline: 1px solid #E9E9E9;
+
+                &--current {
+                    outline: none;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+            }
         }
     }
 

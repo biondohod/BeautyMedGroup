@@ -1,6 +1,12 @@
 .main-reviews {
+    position: relative;
     margin-bottom: 196px;
     padding: 0 22px;
+
+    @media (max-width: $maxMobWidth) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
 
     &__list {
         display: grid;
@@ -10,6 +16,11 @@
         max-width: 1408px;
         margin: 0 auto;
         margin-bottom: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            margin-bottom: 58px;
+        }
     }
 
     &__item {
@@ -23,6 +34,14 @@
         &:hover {
             box-shadow: 0px 0px 16px rgba(240, 133, 151, 0.8);
         }
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+            width: 100%;
+            &:nth-child(1) {
+                display: flex;
+            }
+        }
     }
 
     &__info {
@@ -33,11 +52,30 @@
         &--user {
             display: flex;
             flex-direction: column;
+
+            @media (max-width: $maxMobWidth) {
+                text-align: center;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
         }
     }
 
     &__avatar {
         margin-right: 24px;
+
+        @media (max-width: $maxMobWidth) {
+            margin: 0;
+            margin-bottom: 24px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
     }
 
     &__username {
@@ -56,12 +94,20 @@
 
     &__grade {
         margin-left: auto;
+
+        @media (max-width: $maxMobWidth) {
+            margin: 0 auto;
+        }
     }
 
     &__text-content {
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+        }
     }
 
     &__show-all {

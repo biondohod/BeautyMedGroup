@@ -2,11 +2,21 @@
     margin-bottom: 120px;
     padding: 0 22px;
 
+    @media (max-width: $maxMobWidth) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
     &__content {
         display: flex;
         align-items: flex-start;
         max-width: 1408px;
         margin: 0 auto;
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
+            gap: 32px;
+        }
     }
 
     &__list {
@@ -15,11 +25,22 @@
         gap: 32px;
         padding-top: 8px;
 
+        @media (max-width: $maxMobWidth) {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
         &--text {
             display: grid;
             row-gap: 24px;
             max-width: 328px;
             margin-right: 32px;
+
+            @media (max-width: $maxMobWidth) {
+                margin: 0 auto;
+            }
         }
 
         &--blog {

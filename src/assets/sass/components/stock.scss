@@ -4,10 +4,20 @@
     margin-bottom: 120px;
     padding: 0 22px;
 
+    @media (max-width: $maxMobWidth) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 78px 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -37,6 +47,7 @@
         &:nth-child(5) {
             img {
                 left: 29px;
+                bottom: 27px;
             }
         }
 
@@ -46,6 +57,18 @@
             flex-direction: column;
             justify-content: flex-end;
             grid-row: 1 / 3;
+
+            @media (max-width: $maxMobWidth) {
+                display: none;
+            }
+        }
+
+        &--mob {
+            position: relative;
+            display: none;
+            @media (max-width: $maxMobWidth) {
+                display: block;
+            }
         }
     }
 

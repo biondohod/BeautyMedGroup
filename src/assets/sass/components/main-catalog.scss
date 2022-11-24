@@ -4,8 +4,17 @@
     margin-bottom: 120px;
     padding: 0 22px;
 
+    @media (max-width: $maxMobWidth) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
     &__title {
         margin-bottom: 40px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+        }
     }
 
     &__list {
@@ -15,6 +24,13 @@
         width: 100%;
         max-width: 1408px;
         margin: 0 auto;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -23,10 +39,25 @@
                 width: 88px;
                 height: 200px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 101px;
                     height: 230px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 44px;
+                    height: 100px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 44px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -36,10 +67,25 @@
                 width: 55px;
                 height: 132px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 64px;
                     height: 154px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 28px;
+                    height: 66px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 28px;
+                        height: 66px;
+                    }
                 }
             }
         }
@@ -49,10 +95,25 @@
                 width: 33px;
                 height: 156px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 36px;
                     height: 170px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 17px;
+                    height: 78px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 17px;
+                        height: 78px;
+                    }
                 }
             }
         }
@@ -62,10 +123,25 @@
                 width: 120px;
                 height: 92px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 147px;
                     height: 113px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 60px;
+                    height: 46px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 60px;
+                        height: 46px;
+                    }
                 }
             }
         }
@@ -75,10 +151,25 @@
                 width: 112px;
                 height: 98px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 132px;
                     height: 115px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 56px;
+                    height: 49px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 56px;
+                        height: 49px;
+                    }
                 }
             }
         }
@@ -88,10 +179,25 @@
                 width: 81px;
                 height: 205px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 90px;
                     height: 228px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 40px;
+                    height: 102px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 40px;
+                        height: 102px;
+                    }
                 }
             }
         }
@@ -101,10 +207,25 @@
                 width: 33px;
                 height: 209px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 38px;
                     height: 240px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 17px;
+                    height: 105px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 17px;
+                        height: 105px;
+                    }
                 }
             }
         }
@@ -114,10 +235,25 @@
                 width: 78px;
                 height: 200px;
             }
+
             .main-catalog__preview:hover {
                 img {
                     width: 88px;
                     height: 226px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                img {
+                    width: 39px;
+                    height: 100px;
+                }
+
+                .main-catalog__preview:hover {
+                    img {
+                        width: 39px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -128,6 +264,7 @@
         position: relative;
         display: flex;
         align-items: flex-end;
+        justify-content: center;
         height: 300px;
         margin-bottom: 24px;
         padding-bottom: 39px;
@@ -153,6 +290,13 @@
                 background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
             }
         }
+
+        @media (max-width: $maxMobWidth) {
+            width: 164px;
+            height: 150px;
+            margin-bottom: 8px;
+            padding-bottom: 20px;
+        }
     }
 
     &__img {
@@ -174,6 +318,13 @@
         a {
             text-decoration: none;
             color: #000000;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            max-width: 164px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
         }
     }
 }

@@ -1,5 +1,6 @@
-$maxMobWidth: 760px;
+$maxMobWidth: 743px;
 $minMobWidth: 360px;
+
 @font-face {
     font-family: "Tenor Sans";
     font-style: normal;
@@ -75,7 +76,6 @@ body {
     flex-direction: column;
     flex-grow: 1;
     width: 100%;
-    min-width: 1408px;
     max-width: 1900px;
     margin: 0 auto;
 
@@ -83,6 +83,10 @@ body {
         min-width: $minMobWidth;
         padding: 0 8px;
         margin: 0 auto;
+    }
+
+    @media (min-width: 1408px) {
+        min-width: 1408px;
     }
 }
 
@@ -121,5 +125,12 @@ main {
         margin-bottom: 48px;
         font-size: 32px;
         line-height: 37px;
+    }
+
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
     }
 }

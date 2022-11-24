@@ -4,11 +4,29 @@
     margin-bottom: 120px;
     padding: 0 22px;
 
+    @media (max-width: $maxMobWidth) {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
     &__content {
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 32px;
+
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                justify-content: center;
+            }
+        }
+
+        &__item {
+            @media (max-width: $maxMobWidth) {
+                max-width: 328px;
+            }
         }
     }
 
@@ -209,8 +227,23 @@
         display: grid;
         row-gap: 53px;
 
+        @media (max-width: $maxMobWidth) {
+            max-width: 100%;
+            overflow-x: scroll;
+            gap: 33px;
+        }
+
         &--brands {
             margin-bottom: 55px;
+
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 13px;
+
+                ul {
+                    margin-bottom: 20px;
+                }
+            }
+
         }
 
         &--products {
@@ -236,8 +269,18 @@
             }
         }
 
+        &__list {
+            @media (max-width: $maxMobWidth) {
+                max-width: 100%;
+            }
+        }
+
         &__list--secondary {
             margin-bottom: 32px;
+
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 24px;
+            }
         }
 
         &__item {
@@ -249,6 +292,7 @@
             text-transform: uppercase;
             color: #000000;
             cursor: pointer;
+
             &::after {
                 position: absolute;
                 left: 50%;
@@ -262,6 +306,10 @@
                 transition: 0.4s opacity;
                 cursor: default;
                 content: "";
+
+                @media (max-width:$maxMobWidth) {
+                    width: 60px;
+                }
             }
 
             &--active {
@@ -272,6 +320,16 @@
 
             &:not(:last-child) {
                 margin-right: 60px;
+
+                @media (max-width:$maxMobWidth) {
+                    margin-right: 40px;
+                }
+            }
+
+            @media (max-width:$maxMobWidth) {
+                width: max-content;
+                font-size: 12px;
+                line-height: 14px;
             }
 
             &--secondary {
@@ -291,6 +349,11 @@
                 &:hover {
                     color: #000000;
                     filter: drop-shadow(0px 0px 16px rgba(240, 133, 151, 0.8));
+                }
+
+                @media (max-width:$maxMobWidth) {
+                    font-size: 12px;
+                    line-height: 15px;
                 }
             }
         }
