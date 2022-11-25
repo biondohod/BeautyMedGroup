@@ -135,6 +135,10 @@
         flex-direction: column;
         gap: 8px;
         width: 88px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 }
 

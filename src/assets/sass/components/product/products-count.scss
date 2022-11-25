@@ -1,0 +1,39 @@
+.products-count {
+    &__input {
+        width: 56px;
+        height: 48px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__btn {
+        align-self: center;
+        width: 16px;
+        height: 16px;
+        background: url('../assets/img/category/arrow.svg') no-repeat center;
+        background-size: 16px;
+        border: 0;
+        transform: rotate(90deg);
+        cursor: pointer;
+
+        &--minus {
+            transform: rotate(-90deg);
+        }
+    }
+}

@@ -29,6 +29,10 @@
 
 //Продукт
 @import './components/product/product.scss';
+@import './components/product/products-count.scss';
+@import './components/product/products-delivery.scss';
+@import './components/product/products-full-info.scss';
+@import './components/product/products-volume.scss';
 
 //Корзина
 @import './components/basket/basket.scss';

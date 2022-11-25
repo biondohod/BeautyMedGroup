@@ -1,0 +1,50 @@
+.products-volume {
+    &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10.5px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+        color: #888888;
+        cursor: pointer;
+        transition: background-color 0.4s, border-color 0.4s, box-shadow 0.4s, color 0.4s;
+
+        &:hover {
+            color: #fff;
+            border-color: #f08597;
+            background-color: #f08597;
+            box-shadow: 0 0 50px #ffbcc7;
+        }
+
+        &--active {
+            font-weight: 600;
+            line-height: 17px;
+            color: #FFFFFF;
+            background-color: #000000;
+            border-color: #000000;
+            border-radius: 4px;
+            cursor: default;
+
+            &:hover {
+                background-color: #000000;
+                border-color: #000000;
+                box-shadow: none;
+            }
+        }
+    }
+}

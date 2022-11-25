@@ -1,0 +1,28 @@
+.products-full-info {
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__imgs {
+        display: flex;
+        gap: 32px;
+        margin: 24px 0;
+
+        @media (max-width: $maxMobWidth) {
+            margin: 16px 0;
+            justify-content: center;
+        }
+    }
+
+    &-img {
+        @media (max-width: $maxMobWidth) {
+            display: none;
+
+            &--mob {
+                display: block;
+            }
+        }
+    }
+}

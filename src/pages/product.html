@@ -119,17 +119,17 @@
                     </button>
                     <a href="index.html" class="second-row__main-link">
                         <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42" media="(min-width: 760px)">
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп."
+                                class="main-link__logo" width="261" height="42" media="(min-width: 760px)">
                             <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="149" height="24">
-                           </picture>
+                                width="149" height="24">
+                        </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                                        <div class="second-row__search-wrapper">
+                    <div class="second-row__search-wrapper">
                         <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
                         <div class="modal-search">
                             <span class="modal-search__title">
@@ -322,6 +322,20 @@
                     </div>
                 </div>
                 <div class="products__product">
+                    <div class="products__mob">
+                        <h1 class="products__name">БИО крем для рук освежающий с лимонной мятой Alpine Organics 50
+                            мл</h1>
+                        <span class="products__code">
+                            Код товара: <span>25122383</span>
+                        </span>
+                        <div class="products__mob-wrapper">
+                            <div class="main-categories__card__rating">
+                                <span class="visually-hidden">4 звезды.</span>
+                            </div>
+                            <div class="main-categories__card__stock"></div>
+                            <div class="products__rating-count">Отзывов:&ensp;<span>46</span></div>
+                        </div>
+                    </div>
                     <div class="products__preview">
                         <span class="main-categories__card__label products__label">
                             Хит
@@ -330,8 +344,12 @@
                             <span class="visually-hidden">В Избранное.</span>
                         </button>
                         <div class="main-categories__card__slider products__card">
-                            <img src="./assets/img/card.webp" alt="Товар." class="card__slider__img" width="160"
-                                height="363">
+                            <picture>
+                                <source srcset="./assets/img/card.webp" alt="Товар." class="card__slider__img"
+                                    width="160" height="363" media="(min-width: 744px)">
+                                <img src="./assets/img/филлеры.webp" alt="Товар." class="main-catalog__img" width="112"
+                                    height="255">
+                            </picture>
                             <ol class="card__slider__pagination">
                                 <li class="card__slider__btn card__slider__btn--current">
                                     <span class="visually-hidden">Текущий слайд.</span>
@@ -479,10 +497,18 @@
                             желто-золотистые оттенки, а холодные тона становятся ярче.
                         </span>
                         <div class="products-full-info__imgs">
-                            <img src="./assets/img/product/product.webp" alt="Фото товара."
-                                class="products-full-info-img" width="448" height="299">
-                            <img src="./assets/img/product/product.webp" alt="Фото товара."
-                                class="products-full-info-img" width="448" height="299">
+                            <picture>
+                                <source srcset="./assets/img/product/product.webp" alt="Фото товара."
+                                    class="products-full-info-img" width="448" height="299" media="(min-width: 744px)">
+                                <img src="./assets/img/product/product-mob.webp" alt="Товар."
+                                    class="products-full-info-img products-full-info-img--mob" width="344" height="230">
+                            </picture>
+                            <picture>
+                                <source srcset="./assets/img/product/product.webp" alt="Фото товара."
+                                    class="products-full-info-img" width="448" height="299" media="(min-width: 744px)">
+                                <img src="./assets/img/product/product-mob.webp" alt="Товар."
+                                    class="products-full-info-img" width="344" height="230">
+                            </picture>
                         </div>
                         <span class="products-full-info__descr">
                             Роскошный платиновый блонд! Обладательницы блонда знают, что это не только цвет волос, но и
@@ -798,6 +824,48 @@
                         </div>
                     </li>
                 </ul>
+                <ol class="pagination__list pagination__list--reviews">
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn pagination__btn--current">
+                            <span class="visually-hidden">Текущий слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">2 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">3 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">4 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">5 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">6 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">7 слайд.</span>
+                        </button>
+                    </li>
+                    <li class="pagination__item">
+                        <button type="button" class="pagination__btn">
+                            <span class="visually-hidden">8 слайд.</span>
+                        </button>
+                    </li>
+                </ol>
                 <a href="reviews.html" class="main-reviews__show-all">Все отзывы</a>
             </section>
 
@@ -1410,7 +1478,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">

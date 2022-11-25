@@ -251,6 +251,15 @@
 
             .main__tabs__item::after {
                 width: 80px;
+
+                @media (max-width: $maxMobWidth) {
+                    width: 60px;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                padding-bottom: 11px;
+                margin-bottom: 24px;
             }
         }
 
