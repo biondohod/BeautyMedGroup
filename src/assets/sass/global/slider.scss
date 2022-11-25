@@ -10,6 +10,14 @@
 
         &--reviews {
             margin-top: 20px;
+
+            @media (max-width: $maxMobWidth) {
+                margin-top: 58px;
+
+                .slider__btn {
+                    display: none;
+                }
+            }
         }
 
         &--company {
@@ -65,6 +73,12 @@
         margin-left: -15px;
         overflow-x: hidden;
 
+        @media (max-width: $maxMobWidth) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         &--vertical {
             width: 88px;
             height: 376px;
@@ -95,6 +109,11 @@
 
         &--reviews {
             min-width: 509px;
+
+            @media (max-width: $maxMobWidth) {
+                min-width: 1px;
+                // width: 100%;
+            }
         }
 
         &--product {

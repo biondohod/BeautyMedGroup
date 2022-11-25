@@ -47,4 +47,8 @@
             color: #F08597;
         }
     }
+
+    @media (max-width: $maxMobWidth) {
+        display: none;
+    }
 }

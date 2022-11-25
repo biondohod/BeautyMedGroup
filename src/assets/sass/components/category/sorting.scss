@@ -21,6 +21,20 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 140%;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    &__sort-by {
+        @media (max-width: $maxMobWidth) {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 
@@ -28,6 +42,10 @@
         display: flex;
         align-items: center;
         gap: 16px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 }
 
@@ -37,6 +55,45 @@
         flex-wrap: wrap;
         align-items: center;
         gap: 8px;
+
+        @media (max-width: $maxMobWidth) {
+            li {
+                display: none;
+
+                &:nth-child(1) {
+                    display: block;
+                }
+
+                &:nth-child(2) {
+                    display: block;
+                }
+
+                &:nth-child(3) {
+                    display: block;
+                }
+
+                &:nth-child(4) {
+                    display: block;
+                }
+
+                &:nth-child(5) {
+                    display: block;
+                }
+
+                &:nth-child(6) {
+                    display: block;
+                }
+
+                &:nth-child(7) {
+                    display: block;
+                }
+
+            }
+
+            .tags__more--mob {
+                display: block;
+            }
+        }
     }
 
     &__link {
@@ -97,6 +154,11 @@
         line-height: 17px;
         color: #F08597;
         cursor: pointer;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 }
 
@@ -121,6 +183,11 @@
         outline: 0;
         border: 1px solid #888;
         color: #000;
+    }
+
+    @media (max-width: $maxMobWidth) {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 

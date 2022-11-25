@@ -41,6 +41,12 @@
         &--faq {
             margin-top: 0;
         }
+
+        &--mob {
+            @media (max-width: $maxMobWidth) {
+                display: none;
+            }
+        }
     }
 }
 

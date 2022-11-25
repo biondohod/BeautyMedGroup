@@ -119,17 +119,17 @@
                     </button>
                     <a href="index.html" class="second-row__main-link">
                         <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42" media="(min-width: 760px)">
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп."
+                                class="main-link__logo" width="261" height="42" media="(min-width: 760px)">
                             <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="149" height="24">
-                           </picture>
+                                width="149" height="24">
+                        </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                                        <div class="second-row__search-wrapper">
+                    <div class="second-row__search-wrapper">
                         <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
                         <div class="modal-search">
                             <span class="modal-search__title">
@@ -295,9 +295,25 @@
             </div>
 
             <div class="category">
-                <h1 class="section__title category__title">Уход за телом</h1>
+                <div class="category__title-wrapper">
+                    <h1 class="section__title category__title">Уход за телом</h1>
+                    <button class="category__menu-btn">
+                        <span class="visually-hidden">Открыть меню фильтров</span>
+                    </button>
+                </div>
                 <div class="category__wrapper">
                     <div class="category__left-column">
+                        <div class="category__menu-btns">
+                            <button class="second-row__burger-btn second-row__burger-btn--active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p class="visually-hidden">Закрыть меню фильтров.</p>
+                            </button>
+                            <div class="second-row__search-wrapper">
+                                <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                            </div>
+                        </div>
                         <button class="category__btn category__btn--diagnostics">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -625,7 +641,8 @@
                                         </a>
                                         <div class="main-news__textcontent">
                                             <span class="main-news__date">22.10.2021</span>
-                                            <a href="article.html" class="main-news__name">Odio morbi quis commodo odio aenean sed
+                                            <a href="article.html" class="main-news__name">Odio morbi quis commodo odio
+                                                aenean sed
                                                 adipiscing
                                                 diam.</a>
                                             <span class="main-news__description">Turpis nunc eget lorem dolor sed
@@ -642,7 +659,8 @@
                                         </a>
                                         <div class="main-news__textcontent">
                                             <span class="main-news__date">22.10.2021</span>
-                                            <a href="article.html" class="main-news__name">Odio morbi quis commodo odio aenean sed
+                                            <a href="article.html" class="main-news__name">Odio morbi quis commodo odio
+                                                aenean sed
                                                 adipiscing
                                                 diam.</a>
                                             <span class="main-news__description">Turpis nunc eget lorem dolor sed
@@ -695,8 +713,11 @@
                                     <li>
                                         <a href="#" class="tags__link">Питание</a>
                                     </li>
+                                    <li class="tags__more--mob">
+                                        <button class="tags__more">Показать еще</button>
+                                    </li>
                                 </ul>
-                                <button class="tags__more">Показать еще</button>
+
                             </div>
                             <!-- отображение товаров -->
                             <div class="category__display">
@@ -1456,7 +1477,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="results__pagination">
+                            <div class="results__pagination results__pagination--mob">
                                 <button class="category-pagination__btn category-pagination__btn--prev">
                                     <span class="visually-hidden">Предыдущая страница</span>
                                 </button>
@@ -1904,6 +1925,48 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <ol class="pagination__list pagination__list--reviews">
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn pagination__btn--current">
+                                            <span class="visually-hidden">Текущий слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">2 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">3 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">4 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">5 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">6 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">7 слайд.</span>
+                                        </button>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <button type="button" class="pagination__btn">
+                                            <span class="visually-hidden">8 слайд.</span>
+                                        </button>
+                                    </li>
+                                </ol>
                                 <div class="slider__btns slider__btns--reviews">
                                     <button class="slider__btn slider__btn--prev">
                                         <span class="visually-hidden">Предыдущий слайд</span>
@@ -2588,7 +2651,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">

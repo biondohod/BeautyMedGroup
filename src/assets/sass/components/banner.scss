@@ -193,22 +193,39 @@
         .main-banner__content {
             padding-left: 30px;
             padding-right: 338px;
+
+            @media (max-width: $maxMobWidth) {
+                padding: 32px 8px 253px;
+                margin: 0;
+            }
         }
 
         .main-banner__wrapper {
             margin-right: 41px;
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 32px;
+            }
         }
 
         .main-banner__form {
             max-width: 262px;
+            @media (max-width: $maxMobWidth) {
+                max-width: none;
+            }
         }
 
         .main-banner__tel-input {
             padding: 10px 45.5px;
+            @media (max-width: $maxMobWidth) {
+                padding: 0;
+            }
         }
 
         .main-banner__img {
             right: 22.5px;
+            @media (max-width: $maxMobWidth) {
+                right: 50%;
+            }
         }
     }
 

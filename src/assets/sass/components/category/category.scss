@@ -1,4 +1,52 @@
 .category {
+    &__title {
+        @media (max-width: $maxMobWidth) {
+            margin: 0;
+        }
+
+        &-wrapper {
+            position: relative;
+
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__menu {
+        &-btn {
+            display: none;
+
+            @media (max-width: $maxMobWidth) {
+                position: absolute;
+                left: -8px;
+                bottom: 0;
+                display: block;
+                width: 44px;
+                height: 32px;
+                background: #F08597 url('../assets/img/category/menu.svg') no-repeat center right 4px;
+                border-radius: 0px 4px 4px 0px;
+                border: none;
+                filter: drop-shadow(0px 5px 16px rgba(206, 206, 206, 0.8));
+            }
+        }
+
+        &-btns {
+            display: none;
+
+            @media (max-width: $maxMobWidth) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px;
+                border-bottom: 1px solid #E9E9E9;
+            }
+        }
+    }
+
     &__wrapper {
         display: flex;
         gap: 32px;
@@ -7,10 +55,36 @@
 
     &__left-column {
         max-width: 328px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+
+            &--active {
+                position: absolute;
+                z-index: 100;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                max-width: none;
+                padding: 16px;
+                padding-top: 73px;
+                padding-bottom: 26px;
+                background-color: #FFFFFF;
+
+                .category__menu-btns {
+                    display: flex;
+                }
+            }
+        }
     }
 
     &__right-column {
         max-width: 1048px;
+
+        @media (max-width: $maxMobWidth) {
+            max-width: 100%;
+        }
     }
 
     &__btn {
@@ -46,6 +120,7 @@
             border-color: #f08597;
             background-color: #f08597;
             box-shadow: 0 0 50px #ffbcc7;
+
             svg {
                 fill: #FFFFFF;
             }
@@ -60,14 +135,26 @@
 
     &__results {
         margin-bottom: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 80px;
+        }
     }
 
     &__popular {
         margin-bottom: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 
     &__reviews {
         margin-bottom: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            position: relative;
+            margin-bottom: 80px;
+        }
     }
 }
-
