@@ -225,6 +225,38 @@
     &__count {
         display: flex;
         gap: 8px;
+
+        &--basket {
+            @media (max-width: $maxMobWidth) {
+                position: relative;
+                align-items: center;
+                grid-column: 2/3;
+                padding-left: 16px;
+                .products-count__input {
+                    width: 32px;
+                    height: 24px;
+                }
+
+                .products-count__btns {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 64px;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                }
+
+                .products-count__btn {
+                    transform: rotate(0);
+
+                    &--plus {
+                        transform: rotate(180deg);
+                        order: 2;
+                    }
+                }
+            }
+        }
     }
 
     &__to-cart {

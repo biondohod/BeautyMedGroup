@@ -3,15 +3,29 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__wrapper {
         display: flex;
         gap: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
+            gap: 24px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         border-top: 1px solid #E9E9E9;
+
+        @media (max-width: $maxMobWidth) {
+            max-width: 344px;
+            margin: 0 auto;
+        }
 
         &--order {
             .basket__name {
@@ -46,18 +60,39 @@
         padding: 24px 53px;
         padding-left: 0;
         border-bottom: 1px solid #E9E9E9;
+
+        @media (max-width: $maxMobWidth) {
+            display: grid;
+            grid-template-columns: 74px 129px 65px 43px;
+            grid-template-rows: 24px 24px;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px 0;
+        }
     }
 
     &__img {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 88px;
+        min-width: 88px;
         height: 88px;
         margin-right: 24px;
         background: #FFFFFF;
         border: 1px solid #E9E9E9;
         border-radius: 2px;
+
+        @media (max-width: $maxMobWidth) {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+            min-width: 77px;
+            height: 77px;
+
+            img {
+                width: 27px;
+                height: 60px;
+            }
+        }
     }
 
     &__name {
@@ -68,6 +103,13 @@
         line-height: 140%;
         color: #000000;
         text-decoration: none;
+
+        @media (max-width: $maxMobWidth) {
+            grid-column: 2/-2;
+            margin-right: 0;
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     &__price-wrapper {
@@ -76,6 +118,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        @media (max-width: $maxMobWidth) {
+            grid-column: -2 / -1;
+            margin: 0;
+            margin-left: -16px;
+        }
     }
 
     &__price {
@@ -83,6 +131,22 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 160%;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
+
+        &--mob {
+            display: none;
+
+            @media (max-width: $maxMobWidth) {
+                display: block;
+                margin-left: 16px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+            }
+        }
     }
 
     &__delete {
@@ -95,12 +159,17 @@
     }
 
     &__promocode {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
         margin-bottom: 24px;
 
+        @media (max-width: $maxMobWidth) {
+            gap: 16px;
+        }
+
         &-input {
-            width: 208px;
-            margin-right: 24px;
+            width: 100%;
             padding: 19px;
             background: #FFFFFF;
             outline: 2px solid transparent;
@@ -120,13 +189,18 @@
             &:focus-visible {
                 outline: 2px solid #000000;
             }
+
+            @media (max-width: $maxMobWidth) {
+                padding: 13px;
+                font-size: 13px;
+            }
         }
 
         &-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 208px;
+            width: 100%;
             padding: 22px;
             background-color: #FFFFFF;
             border: none;

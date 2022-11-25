@@ -5,6 +5,10 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__descr {
         font-weight: 300;
         font-size: 14px;
@@ -12,6 +16,11 @@
 
         &:not(:last-child) {
             margin-bottom: 16px;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+            line-height: 15px;
         }
     }
 }

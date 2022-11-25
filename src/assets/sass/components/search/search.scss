@@ -6,5 +6,11 @@
         font-size: 20px;
         line-height: 160%;
         text-align: center;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 140%;
+        }
     }
 }
