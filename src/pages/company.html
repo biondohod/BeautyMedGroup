@@ -119,17 +119,17 @@
                     </button>
                     <a href="index.html" class="second-row__main-link">
                         <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42" media="(min-width: 760px)">
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп."
+                                class="main-link__logo" width="261" height="42" media="(min-width: 760px)">
                             <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="149" height="24">
-                           </picture>
+                                width="149" height="24">
+                        </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
                         пом. XLVIII, к. 5–8
                     </div>
-                                        <div class="second-row__search-wrapper">
+                    <div class="second-row__search-wrapper">
                         <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
                         <div class="modal-search">
                             <span class="modal-search__title">
@@ -318,7 +318,12 @@
                     <div class="about-us-slider__content">
                         <div class="about-us-slider__item">
                             <div class="about-us-slider__decorative">
-                                <img src="./assets/img/about-us/slider.webp" alt="Офис компании." width="568" height="404">
+                                <picture>
+                                    <source srcset="./assets/img/about-us/slider.webp" alt="Офис компании." width="568"
+                                        height="404" media="(min-width: 744px)">
+                                    <img src="./assets/img/about-us/slider-mob.webp" alt="Офис компании." width="344"
+                                        height="245">
+                                </picture>
                             </div>
                             <div class="about-us-slider__text">
                                 <span>Congue nisi vitae suscipit tellus mauris a diam maecenas</span>
@@ -345,8 +350,9 @@
                 </span>
                 <div class="about-us-slider__content">
                     <div class="about-us-slider__item">
-                        <div class="about-us-slider__decorative">
-                            <img class="about-us__director-img" src="./assets/img/about-us/director.webp" alt="Основатель компании." width="317" height="424px">
+                        <div class="about-us-slider__decorative about-us-slider__decorative--director">
+                            <img class="about-us__director-img" src="./assets/img/about-us/director.webp"
+                                alt="Основатель компании." width="317" height="424px">
                         </div>
                         <div class="about-us-slider__text">
                             <span class="about-us-slider__name">Name Surname</span>
@@ -874,7 +880,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">

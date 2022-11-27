@@ -10,6 +10,12 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 
     &__slider {
@@ -20,13 +26,27 @@
         position: absolute;
         top: -52px;
         left: 70px;
+
+        @media (max-width: $maxMobWidth) {
+            left: 6px;
+        }
     }
 
     &--director {
         margin-bottom: 140px;
 
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 80px;
+        }
+
         .about-us__descr {
             margin-bottom: 100px;
+        }
+
+        .about-us-slider__decorative {
+            @media (max-width: $maxMobWidth) {
+                min-height: 372px;
+            }
         }
     }
 
@@ -45,6 +65,12 @@
         img {
             display: block;
         }
+
+        @media (max-width: $maxMobWidth) {
+            min-height: 245px;
+            margin: 0;
+            background-size: 232px 204px;
+        }
     }
 
     &__text {
@@ -61,6 +87,15 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            width: auto;
+            height: auto;
+            margin: 0;
+            margin-left: 24px;
+            padding: 16px;
+            font-size: 12px;
+        }
     }
 
     &__name {
@@ -69,5 +104,10 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }

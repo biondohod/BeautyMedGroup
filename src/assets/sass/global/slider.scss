@@ -26,6 +26,14 @@
             left: -112px;
             width: 912px;
             transform: translateY(-50%);
+
+            @media (max-width: $maxMobWidth) {
+                top: 100%;
+                left: 0;
+                transform: translateY(0);
+                width: 100%;
+                margin-top: 16px;
+            }
         }
     }
 
@@ -36,6 +44,11 @@
         background: url('../assets/img/arrow-slider.svg') no-repeat center;
         cursor: pointer;
         background-size: contain;
+
+        @media (max-width: $maxMobWidth) {
+            width: 48px;
+            height: 24px;
+        }
 
         &--prev {
             transform: rotate(180deg);
