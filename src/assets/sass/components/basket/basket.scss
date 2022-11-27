@@ -28,23 +28,45 @@
         }
 
         &--order {
+
             .basket__name {
                 max-width: 248px;
                 margin-right: 75px;
+
+                @media (max-width: $maxMobWidth) {
+                    max-width: none;
+                    margin-right: 0;
+                }
             }
 
             .products__count--digit {
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 140%;
+
+                @media (max-width: $maxMobWidth) {
+                    grid-column: 2 / 3;
+                }
             }
 
             .basket__price-wrapper {
                 margin-left: 100px;
+
+                @media (max-width: $maxMobWidth) {
+                    margin: 0;
+                    grid-column: 3/4;
+                }
             }
 
             .basket__price {
                 margin-bottom: 0;
+
+                @media (max-width: $maxMobWidth) {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                }
             }
         }
 
@@ -64,7 +86,7 @@
         @media (max-width: $maxMobWidth) {
             display: grid;
             grid-template-columns: 74px 129px 65px 43px;
-            grid-template-rows: 24px 24px;
+            grid-template-rows: 30.5px 30.5px;
             align-items: flex-start;
             gap: 16px;
             padding: 16px 0;

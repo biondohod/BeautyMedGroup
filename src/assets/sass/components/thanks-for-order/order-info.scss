@@ -3,6 +3,11 @@
     margin: 0 auto;
     margin-bottom: 156px;
 
+    @media (max-width: $maxMobWidth) {
+        max-width: none;
+        margin-bottom: 80px;
+    }
+
     &__title {
         margin-bottom: 24px;
         font-weight: 500;
@@ -10,6 +15,13 @@
         line-height: 150%;
         text-align: center;
         text-transform: uppercase;
+
+        @media (max-width: $maxMobWidth) {
+            padding: 0 40px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     &__list {
@@ -21,6 +33,14 @@
         padding: 32px 0;
         border-top: 1px solid #535353;
         border-bottom: 1px solid #535353;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            padding: 16px 0;
+            row-gap: 16px;
+            margin-bottom: 16px;
+        }
     }
 
     &__name {
@@ -28,12 +48,21 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     &__descr {
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+        }
     }
 
     &__payment-status {
@@ -58,10 +87,19 @@
                 content: "";
             }
         }
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 
     &__btn {
         width: 272px;
         margin: 0 auto;
+
+        @media (max-width: $maxMobWidth) {
+            width: 100%;
+        }
     }
 }
