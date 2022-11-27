@@ -3,11 +3,23 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: 688px 688px;
         gap: 32px;
         align-items: flex-start;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+
+            .basket__list {
+                display: none;
+            }
+        }
     }
 
     &__form {
@@ -39,6 +51,11 @@
         &:focus-visible {
             outline: 2px solid #000;
         }
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     &__customer {
@@ -54,6 +71,13 @@
         #full-name {
             grid-column: 1 / -1;
         }
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+
     }
 
     &__delivery {
@@ -63,6 +87,10 @@
 
         #customer-city {
             display: none;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
         }
     }
 
@@ -126,10 +154,18 @@
 
     &__payment {
         margin-bottom: 45px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+        }
     }
 
     &__comment {
         margin-bottom: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 16px;
+        }
 
         textarea {
             min-width: 688px;
@@ -149,6 +185,12 @@
             &:focus-visible {
                 outline: 2px solid #000;
             }
+
+            @media (max-width: $maxMobWidth) {
+                min-width: 344px;
+                max-width: 743px;
+                resize: none;
+            }
         }
     }
 
@@ -164,12 +206,21 @@
             margin-bottom: 35px;
             border: 3px solid #000000;
             border-radius: 4px;
+
+
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 16px;
+            }
         }
 
         &-text {
             font-weight: 300;
             font-size: 14px;
             line-height: 140%;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 12px;
+            }
         }
 
         &-old {
@@ -178,12 +229,22 @@
             font-size: 14px;
             line-height: 17px;
             text-decoration-line: line-through;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
 
         &-new {
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 12px;
+                line-height: 15px;
+            }
         }
 
         &:nth-child(2) {
@@ -202,6 +263,12 @@
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 140%;
+
+
+                @media (max-width: $maxMobWidth) {
+                    font-size: 15px;
+                    line-height: 17px;
+                }
             }
         }
     }
@@ -231,6 +298,11 @@
         text-align: center;
         color: #000000;
 
+        @media (max-width: $maxMobWidth) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
     }
 
     &__descr {
@@ -238,6 +310,12 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+        }
     }
 }
 
@@ -248,6 +326,11 @@
         max-width: 661px;
         row-gap: 30px;
         margin-bottom: 24px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -260,6 +343,10 @@
         &:nth-child(1) {
             margin-right: 205px;
             background: url('../assets/img/making-order/post-office.svg') no-repeat center left;
+
+            @media (max-width: $maxMobWidth) {
+                margin-right: 0;
+            }
         }
 
         &:nth-child(2) {
@@ -269,6 +356,10 @@
         &:nth-child(3) {
             margin-right: 110px;
             background: url('../assets/img/making-order/ems.svg') no-repeat center left;
+
+            @media (max-width: $maxMobWidth) {
+                margin-right: 0;
+            }
         }
 
         &:nth-child(4) {
@@ -301,6 +392,12 @@
     &__list {
         display: flex;
         gap: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 
     &__item {
@@ -319,6 +416,10 @@
     &__name {
         max-width: 116px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            max-width: none;
+        }
     }
 }
 
