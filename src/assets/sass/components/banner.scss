@@ -202,6 +202,7 @@
 
         .main-banner__wrapper {
             margin-right: 41px;
+
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 32px;
             }
@@ -209,6 +210,7 @@
 
         .main-banner__form {
             max-width: 262px;
+
             @media (max-width: $maxMobWidth) {
                 max-width: none;
             }
@@ -216,6 +218,7 @@
 
         .main-banner__tel-input {
             padding: 10px 45.5px;
+
             @media (max-width: $maxMobWidth) {
                 padding: 0;
             }
@@ -223,6 +226,7 @@
 
         .main-banner__img {
             right: 22.5px;
+
             @media (max-width: $maxMobWidth) {
                 right: 50%;
             }
@@ -260,6 +264,13 @@
                 font-weight: 400;
                 font-size: 10px;
                 line-height: 12px;
+            }
+
+            @media (max-width: $maxMobWidth) {
+
+                .main-banner__tel-input {
+                    border: 1px solid #E9E9E9;
+                }
             }
         }
     }
