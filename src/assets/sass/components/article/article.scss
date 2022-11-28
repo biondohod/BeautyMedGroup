@@ -4,12 +4,27 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__wrapper {
         max-width: 762px;
     }
 
     &__title {
         text-align: left;
+
+        @media (max-width: $maxMobWidth) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 
     &__descr {
@@ -50,6 +65,10 @@
             line-height: 140%;
             color: #000000;
             text-decoration: none;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
         }
     }
 }

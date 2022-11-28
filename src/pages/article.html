@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />city
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -120,11 +120,11 @@
                     </button>
                     <a href="index.html" class="second-row__main-link">
                         <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42" media="(min-width: 760px)">
+                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп."
+                                class="main-link__logo" width="261" height="42" media="(min-width: 760px)">
                             <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="149" height="24">
-                           </picture>
+                                width="149" height="24">
+                        </picture>
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -321,8 +321,12 @@
                     <div id="2" class="about-us-slider__content article__img">
                         <div class="about-us-slider__item">
                             <div class="about-us-slider__decorative">
-                                <img src="./assets/img/about-us/slider.webp" alt="Офис компании." width="568"
-                                    height="404">
+                                <picture>
+                                    <source srcset="./assets/img/about-us/slider.webp" alt="Офис компании." width="568"
+                                        height="404" media="(min-width: 744px)">
+                                    <img src="./assets/img/about-us/slider-mob.webp" alt="Офис компании." width="344"
+                                        height="245">
+                                </picture>
                             </div>
                             <div class="about-us-slider__text">
                                 <span>Congue nisi vitae suscipit tellus mauris a diam maecenas</span>
@@ -342,14 +346,19 @@
                         porttitor lacus luctus accumsan.
                     </span>
                     <div id="3" class="about-us-slider__content article__autor">
-                        <div class="about-us-slider__item">
-                            <div class="about-us-slider__decorative">
-                                <img class="about-us__director-img" src="./assets/img/about-us/director.webp"
-                                    alt="Основатель компании." width="317" height="424px">
-                            </div>
-                            <div class="about-us-slider__text">
-                                <span class="about-us-slider__name">Name Surname</span>
-                                <span>Основатель компании</span>
+                        <!-- слово основателя -->
+                        <div class="about-us about-us--director">
+                            <div class="about-us-slider__content">
+                                <div class="about-us-slider__item">
+                                    <div class="about-us-slider__decorative">
+                                        <img class="about-us__director-img" src="./assets/img/about-us/director.webp"
+                                            alt="Основатель компании." width="317" height="424px">
+                                    </div>
+                                    <div class="about-us-slider__text">
+                                        <span class="about-us-slider__name">Name Surname</span>
+                                        <span>Основатель компании</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1173,7 +1182,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">
