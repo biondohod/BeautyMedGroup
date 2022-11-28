@@ -266,6 +266,11 @@
         &--reviews {
             position: relative;
             margin-bottom: 52px;
+
+            @media (max-width: $maxMobWidth) {
+                overflow: visible;
+                margin-bottom: 88px;
+            }
         }
 
         &__list,

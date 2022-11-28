@@ -15,6 +15,16 @@
         padding: 12px;
         color: #000;
         text-decoration: none;
+
+        @media (max-width: $maxMobWidth) {
+            display: block;
+            top: 100%;
+            right: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px;
+            margin-top: 24px;
+        }
     }
 
     &-clients {
@@ -22,16 +32,37 @@
             display: grid;
             grid-template-columns: 688px 688px;
             gap: 32px;
+
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+        }
+
+        &__item {
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+            }
         }
 
         &__first-row {
             display: flex;
             margin-bottom: 16px;
+
+            @media (max-width: $maxMobWidth) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         &__info {
             display: flex;
             flex-direction: column;
+
+            @media (max-width: $maxMobWidth) {
+                align-items: center;
+            }
         }
 
         &__grade {
@@ -40,10 +71,16 @@
 
         &__second-row {
             display: flex;
+
+            @media (max-width: $maxMobWidth) {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 16px;
+            }
         }
 
         &__product {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             min-width: 184px;
@@ -51,6 +88,22 @@
             margin-right: 24px;
             border: 1px solid #E9E9E9;
             border-radius: 4px;
+
+            &:nth-child(1) {
+                display: flex;
+            }
+
+            &-wrapper {
+                display: flex;
+                gap: 24px;
+            }
+
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+                min-width: 74px;
+                min-height: 74px;
+                margin: 0;
+            }
         }
     }
 
@@ -61,6 +114,11 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 140%;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 12px;
+                margin-bottom: 32px;
+            }
         }
 
         &__list {
@@ -68,13 +126,17 @@
             flex-wrap: wrap;
             column-gap: 160px;
             row-gap: 48px;
+
+            @media (max-width: $maxMobWidth) {
+                row-gap: 32px;
+                column-gap: 100px;
+            }
         }
 
         &__item {
             display: block;
             min-width: 80px;
             padding-top: 96px;
-
             font-weight: 700;
             font-size: 16px;
             line-height: 140%;
@@ -104,6 +166,13 @@
             &--zoon {
                 background: url('../assets/img/reviews/zoon.svg') no-repeat top left;
                 background-size: 80px;
+            }
+
+            @media (max-width: $maxMobWidth) {
+                min-width: 74px;
+                font-size: 14px;
+                line-height: 17px;
+                background-size: 74px;
             }
         }
     }
