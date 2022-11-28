@@ -3,8 +3,16 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__title {
         margin-bottom: 40px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+        }
     }
 
     &__content {
@@ -13,6 +21,13 @@
         grid-template-columns: repeat(6, 1fr);
         column-gap: 80px;
         row-gap: 64px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+            row-gap: 24px;
+        }
     }
 
     &__wrapper {
