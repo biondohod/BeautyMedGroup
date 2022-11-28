@@ -3,10 +3,20 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 448px);
         gap: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
     }
 
     &__item {
@@ -17,12 +27,29 @@
         padding-top: 0;
         border: 1px solid #E9E9E9;
         border-radius: 4px;
+
+        @media (max-width: $maxMobWidth) {
+            position: relative;
+            padding: 16px;
+            padding-top: 268px;
+            gap: 16px;
+        }
     }
 
     &__img {
         position: relative;
         left: -25px;
         border-radius: 4px 4px 0px 0px;
+
+        @media (max-width: $maxMobWidth) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 252px;
+            object-fit: cover;
+        }
     }
 
     &__textcontent {

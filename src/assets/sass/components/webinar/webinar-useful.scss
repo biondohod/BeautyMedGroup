@@ -3,15 +3,29 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__title {
         margin-bottom: 77px;
         text-align: left;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 24px;
+        }
     }
 
     &__list {
         display: grid;
         grid-template-columns: repeat(4, 328px);
         gap: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
     }
 
     &__block {

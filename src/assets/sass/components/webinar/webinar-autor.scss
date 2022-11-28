@@ -12,6 +12,12 @@
         grid-template-columns: 688px 688px;
         row-gap: 48px;
         column-gap: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
     }
 
     &__img {
@@ -19,6 +25,11 @@
         top: 0;
         left: 0;
         align-self: flex-end;
+
+        @media (max-width: $maxMobWidth) {
+            order: 0;
+            margin-bottom: 16px;
+        }
     }
 
     &__info {
@@ -31,6 +42,11 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
     }
 
     &__portfolio {
@@ -40,6 +56,11 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 32px;
+            font-size: 12px;
+        }
 
         a {
             font-weight: 500;
@@ -53,12 +74,21 @@
         justify-content: space-between;
         margin-bottom: 48px;
 
+        @media (max-width: $maxMobWidth) {
+            max-width: 500px;
+        }
+
         &-link {
             font-weight: 500;
             font-size: 14px;
             line-height: 140%;
             color: #000000;
             text-decoration: none;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
 
         li {
@@ -66,6 +96,10 @@
             align-items: center;
             min-height: 32px;
             padding-left: 48px;
+
+            @media (max-width: $maxMobWidth) {
+                padding-left: 40px;
+            }
         }
     }
 
@@ -84,6 +118,11 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 84px;
         row-gap: 32px;
+
+        @media (max-width: $maxMobWidth) {
+            column-gap: 16px;
+            margin-bottom: 80px;
+        }
     }
 
     &__item {
@@ -92,6 +131,14 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+
+        @media (max-width: $maxMobWidth) {
+            padding-top: 90px;
+            background-size: 74px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 
     &__banner {
@@ -103,6 +150,16 @@
         padding-bottom: 25px;
         background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
         border-radius: 4px;
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            // max-width: 344px;
+            // margin: 0 auto;
+            padding: 24px;
+            padding-bottom: 32px;
+        }
     }
 
     &__advantages {
@@ -115,6 +172,10 @@
             font-weight: 300;
             font-size: 24px;
             line-height: 150%;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -124,6 +185,10 @@
         font-weight: 700;
         font-size: 80px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: -24px;
+        }
 
         &-text {
             margin-bottom: -6px;

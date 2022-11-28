@@ -3,11 +3,20 @@
     margin: 0 auto;
     margin-bottom: 145px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__list {
         max-width: 1351px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media (max-width: $maxMobWidth) {
+            flex-direction: column;
+            gap: 32px;
+        }
     }
 
     &__item {

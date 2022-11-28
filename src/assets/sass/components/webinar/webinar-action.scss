@@ -11,6 +11,26 @@
         padding: 40px;
         padding-top: 24px;
         background: url('../assets/img/webinar/action.webp') no-repeat center left 289px;
+
+        @media (max-width: $maxMobWidth) {
+            position: relative;
+            flex-direction: column;
+            gap: 8px;
+            padding: 24px;
+            padding-top: 143px;
+            padding-bottom: 74px;
+            background: none;
+
+            &::after {
+                position: absolute;
+                top: -13px;
+                right: 24px;
+                width: 132px;
+                height: 148px;
+                background: url('../assets/img/webinar/action.webp') no-repeat center;
+                content: "";
+            }
+        }
     }
 
     &__sale {
@@ -18,11 +38,24 @@
         flex-direction: column;
         margin-right: 250px;
 
+        @media (max-width: $maxMobWidth) {
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 16px;
+            margin: 0;
+        }
+
         &-size {
             font-family: 'Tenor Sans';
             font-weight: 400;
             font-size: 100px;
             line-height: 117px;
+
+            @media (max-width: $maxMobWidth) {
+                flex-direction: row-reverse;
+                gap: 24px;
+                margin: 0;
+            }
         }
 
         &-duration {
@@ -37,6 +70,19 @@
         gap: 24px;
         max-width: 448px;
         margin-right: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            position: absolute;
+            top: 24px;
+            bottom: 24px;
+            left: 24px;
+            right: 0;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0;
+        }
     }
 
     &__title {
@@ -45,12 +91,21 @@
         font-size: 32px;
         line-height: 37px;
         text-transform: uppercase;
+
+        @media (max-width: $maxMobWidth) {
+            padding-right: 161px;
+        }
     }
 
     &__descr {
         font-weight: 300;
         font-size: 18px;
         line-height: 150%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+            line-height: 140%;
+        }
     }
 
     &__link {
@@ -59,6 +114,11 @@
         text-decoration: none;
         text-align: center;
         margin: 0;
+
+        @media (max-width: $maxMobWidth) {
+            display: block;
+            width: 100%;
+        }
     }
 
     &__format {
