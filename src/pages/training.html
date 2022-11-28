@@ -293,9 +293,25 @@
 
             <!-- Обучение -->
             <section class="training">
-                <h1 class="section__title">Обучение от ООО "БьютиМедГрупп"</h1>
+                <div class="training__title-wrapper">
+                    <h1 class="section__title">Обучение от ООО "БьютиМедГрупп"</h1>
+                    <button class="category__menu-btn">
+                        <span class="visually-hidden">Открыть меню фильтров</span>
+                    </button>
+                </div>
                 <div class="training__wrapper">
                     <div class="training__left-col">
+                        <div class="category__menu-btns">
+                            <button class="second-row__burger-btn second-row__burger-btn--active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p class="visually-hidden">Закрыть меню фильтров.</p>
+                            </button>
+                            <div class="second-row__search-wrapper">
+                                <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                            </div>
+                        </div>
                         <!-- категории обучения -->
                         <ul class="training__categories">
                             <li class="training-categories__item">
@@ -384,8 +400,10 @@
                                     <li>
                                         <a href="#" class="tags__link">Питание</a>
                                     </li>
+                                    <li class="tags__more--mob">
+                                        <button class="tags__more">Показать еще</button>
+                                    </li>
                                 </ul>
-                                <button class="tags__more">Показать еще</button>
                             </div>
                             <!-- отображение товаров -->
                             <div class="category__display">
