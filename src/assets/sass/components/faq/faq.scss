@@ -3,6 +3,10 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 80px;
+    }
+
     &__title {
         text-align: left;
         margin-bottom: 40px;
@@ -12,6 +16,11 @@
         display: grid;
         grid-template-columns: 928px 328px;
         gap: 152px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            gap: 0;
+        }
     }
 
     &__descr {
@@ -27,6 +36,14 @@
             margin-bottom: 50px;
             background: url('../assets/img/faq/faq.webp') no-repeat bottom right;
             background-size: 204px;
+
+            @media (max-width: $maxMobWidth) {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;
+                padding-bottom: 228px;
+                background-position: bottom center;
+            }
         }
     }
 
@@ -34,6 +51,10 @@
         display: grid;
         gap: 24px;
         margin-bottom: 40px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 0px;
+        }
     }
 
     &__item {
@@ -61,6 +82,16 @@
                 background: url('../assets/img/faq/arrow.svg') no-repeat;
                 background-size: 70px 54px;
                 content: "";
+
+                @media (max-width: $maxMobWidth) {
+                    left: -40px;
+                    width: 24px;
+                    overflow: hidden;
+                }
+            }
+
+            @media (max-width: $maxMobWidth) {
+                margin-left: 56px;
             }
         }
     }
@@ -70,6 +101,12 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     &__info {
@@ -78,12 +115,22 @@
         font-size: 12px;
         line-height: 15px;
         color: #888888;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 16px;
+        }
     }
 
     &__text {
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+        }
     }
 
     &__wrapper {
@@ -101,6 +148,10 @@
     &__assistant {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 
     &-assistant {
