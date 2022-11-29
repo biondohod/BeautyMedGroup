@@ -4,10 +4,22 @@
         flex-direction: column;
     }
 
+    &__right-column {
+        @media (max-width: $maxMobWidth) {
+            width: 100%;
+        }
+    }
+
     &-basket {
         &__title {
             padding-bottom: 16px;
             border-bottom: 1px solid #E9E9E9;
+
+            @media (max-width: $maxMobWidth) {
+                .footer__application {
+                    display: block;
+                }
+            }
         }
 
         &__price {
@@ -56,6 +68,10 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 140%;
+
+            @media (max-width: $maxMobWidth) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -105,12 +121,21 @@
         align-items: center;
         padding-bottom: 48px;
         border-bottom: 2px solid #000;
+
+        @media (max-width: $maxMobWidth) {
+            padding-bottom: 16px;
+        }
     }
 
     &-data {
         &__photo {
             border-radius: 50%;
             margin-bottom: 24px;
+
+            @media (max-width: $maxMobWidth) {
+                width: 74px;
+                height: 74px;
+            }
         }
 
         &__name {
@@ -119,6 +144,12 @@
             font-size: 20px;
             line-height: 160%;
             color: #321726;
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 16px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 140%;
+            }
         }
 
         &__wrapper {
@@ -127,6 +158,10 @@
             align-items: center;
             width: 100%;
             margin-bottom: 40px;
+
+            @media (max-width: $maxMobWidth) {
+                margin-bottom: 16px;
+            }
         }
 
         &__title {
@@ -139,6 +174,12 @@
             line-height: 140%;
             text-align: center;
 
+            @media (max-width: $maxMobWidth) {
+                width: 343px;
+                margin-bottom: 8px;
+                font-size: 12px;
+            }
+
             &::before,
             &::after {
                 position: absolute;
@@ -147,6 +188,10 @@
                 height: 1px;
                 background-color: #E9E9E9;
                 content: "";
+
+                @media (max-width: $maxMobWidth) {
+                    width: 136px;
+                }
             }
 
             &::before {
@@ -162,6 +207,12 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 150%;
+
+            @media (max-width: $maxMobWidth) {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
     }
 }

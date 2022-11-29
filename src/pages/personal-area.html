@@ -311,7 +311,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="pa-tabs__wrapper">
+                            <div class="pa-tabs__wrapper pa-tabs__wrapper--active">
                                 <h3 class="pa-tabs__title pa-tabs__title--active">Профиль</h3>
                                 <ul class="pa-tabs__list">
                                     <li class="pa-tabs__item pa-tabs__item--active" data-value="personal-area">
@@ -1292,6 +1292,17 @@
     <div class="decorative decorative__left decorative__left--pa"></div>
     <div class="decorative decorative__right decorative__right--bottom"></div>
     <script>
+        const titles = document.querySelectorAll('.pa-tabs__title');
+        const wrappers = document.querySelectorAll('.pa-tabs__wrapper');
+
+        titles.forEach((title, i) => {
+            title.addEventListener('click', () => {
+                wrappers.forEach(wrapper => {
+                    wrapper.classList.remove('pa-tabs__wrapper--active');
+                });
+                wrappers[i].classList.add('pa-tabs__wrapper--active');
+            });
+        });
         // const createModal = (triggersSelector, modalSelector, closeSelector) => {
         //     document.querySelectorAll(triggersSelector).forEach(trigger => {
         //         trigger.addEventListener('click', (evt) => {
