@@ -1,8 +1,16 @@
 .log-in {
     margin-bottom: 200px;
 
+    @media (max-width: $maxMobWidth) {
+        margin-bottom: 90px;
+    }
+
     &__title {
         text-align: left;
+
+        @media (max-width: $maxMobWidth) {
+            text-align: center;
+        }
     }
 
     &__content {
@@ -10,6 +18,11 @@
         max-width: 1174px;
         padding: 60px 246px;
         background-color: #FFF1F4;
+
+        @media (max-width: $maxMobWidth) {
+            padding: 0;
+            padding-top: 16px;
+        }
     }
 
     &__wrapper {
@@ -17,6 +30,55 @@
         align-items: start;
         grid-template-columns: 280px 280px;
         gap: 81px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+    &__tabs {
+        display: none;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 34px;
+            padding: 0 16px;
+        }
+    }
+
+    &__tab-item {
+        position: relative;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: #321726;
+        transition: font-weight 0.4s;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0px;
+            height: 5px;
+            background: #FFFFFF;
+            border-radius: 100px;
+            opacity: 0;
+            transition: opacity 0.4s;
+            content: "";
+        }
+
+        &--active {
+            font-weight: 600;
+
+            &::after {
+                width: 80px;
+                opacity: 1;
+            }
+        }
     }
 
     &__form {
@@ -32,6 +94,22 @@
             width: 1px;
             background-color: #FFFFFF;
             content: "";
+
+            @media (max-width: $maxMobWidth) {
+                display: none;
+            }
+        }
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+            width: 100%;
+            margin-bottom: 46px;
+            padding: 16px;
+            padding-top: 0;
+
+            &--active {
+                display: grid;
+            }
         }
     }
 
@@ -40,6 +118,10 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+
+        @media (max-width: $maxMobWidth) {
+            display: none;
+        }
     }
 
     &__input {
@@ -123,6 +205,10 @@
             font-weight: 400;
             font-size: 10px;
             line-height: 12px;
+
+            @media (max-width: $maxMobWidth) {
+                max-width: 100%;
+            }
         }
 
         .main-banner__checkbox__mark {
@@ -137,10 +223,25 @@
         width: 688px;
         height: 566px;
         background: #e9e9e9 url('../assets/img/product-rose.svg') no-repeat bottom right;
+
         img {
             position: absolute;
             bottom: 0;
             right: 90px;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            position: relative;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 280px;
+            background-size: 272px 250px;
+            background-position: bottom -14px right -30px;
+
+            img {
+                right: 45px;
+            }
         }
     }
 }
