@@ -41,6 +41,13 @@
         align-items: start;
         grid-template-columns: repeat(2, 447px);
         gap: 153px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+        }
     }
 
     .footer__application {
