@@ -1,7 +1,18 @@
 .delivery {
+    @media (max-width: $maxMobWidth) {
+        width: 343px;
+        margin-top: -28px;
+    }
+
     &__list {
         display: grid;
         gap: 16px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     &__item {
@@ -12,11 +23,22 @@
         font-size: 12px;
         line-height: 140%;
 
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
         &--header {
             padding-bottom: 8px;
             font-weight: 400;
             font-size: 10px;
             line-height: 12px;
+
+            @media (max-width: $maxMobWidth) {
+                display: none;
+            }
 
             .delivery__num {
                 margin-right: 71px;
@@ -73,22 +95,124 @@
         // grid-template-columns: 2fr 2fr 2fr 2fr 3fr;
         display: flex;
         align-items: center;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 9px;
+            width: 100%;
+        }
     }
 
     &__num {
         margin-right: 82px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+
+            &::before {
+                margin-right: 130px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                content: "№ заказа";
+            }
+        }
     }
 
     &__date {
         margin-right: 167px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+
+            &::before {
+                margin-right: 70px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                content: "Дата и время заказа";
+            }
+        }
     }
 
     &__status {
         margin-right: 177px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+
+            &::before {
+                margin-right: 145px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                content: "Статус";
+            }
+        }
     }
 
     &__price {
         margin-right: 118px;
+
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+
+            &::before {
+                margin-right: 134px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                content: "Сумма, ₽";
+            }
+
+            &::after {
+                margin-left: 4px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                content: "₽";
+            }
+        }
+    }
+
+    &__payment {
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+
+            &::before {
+                min-width: 83px;
+                margin-right: 98px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                content: "Способ оплаты";
+            }
+        }
     }
 
     &__content {
