@@ -280,6 +280,10 @@
 
             &--reviews {
                 justify-content: flex-start;
+
+                @media (max-width: $maxMobWidth) {
+                    justify-content: center;
+                }
             }
         }
 
