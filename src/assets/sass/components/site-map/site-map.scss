@@ -23,9 +23,8 @@
         row-gap: 64px;
 
         @media (max-width: $maxMobWidth) {
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             row-gap: 24px;
         }
     }
@@ -33,17 +32,29 @@
     &__wrapper {
         display: grid;
         gap: 24px;
+
+        @media (max-width: $maxMobWidth) {
+            gap: 8px;
+        }
     }
 
     &__name {
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+        }
     }
 
     &__list {
         display: grid;
         gap: 16px;
+
+        @media (max-width: $maxMobWidth) {
+            gap: 8px;
+        }
     }
 
     &__link {
@@ -55,6 +66,12 @@
 
         &:hover {
             font-weight: 700;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
         }
     }
 }

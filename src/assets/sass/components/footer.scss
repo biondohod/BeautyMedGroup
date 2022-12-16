@@ -228,6 +228,10 @@
         display: grid;
         row-gap: 4px;
 
+        @media (max-width: $maxMobWidth){
+            row-gap: 16px;
+        }
+
         &--catalog {
             width: 100%;
             max-width: 893px;

@@ -900,6 +900,18 @@
         </div>
         <div class="modal__substrate"></div>
     </div>
+    <script>
+        const tabs = document.querySelectorAll('.log-in__tab-item');
+        const content = document.querySelectorAll('.log-in__form ');
+        tabs[0].addEventListener('click', () => {
+            content[1].style.display = 'none';
+            content[0].style.display = 'grid';
+        });
+        tabs[1].addEventListener('click', () => {
+            content[0].style.display = 'none';
+            content[1].style.display = 'grid';
+        });
+    </script>
     <!-- <script>
                 const createModal = (triggersSelector, modalSelector, closeSelector) => {
             document.querySelectorAll(triggersSelector).forEach(trigger => {

@@ -149,6 +149,7 @@
 
         span {
             margin-left: 24px;
+            font-family: "Montserrat", sans-serif;
             font-size: 48px;
             line-height: 56px;
 
@@ -182,6 +183,10 @@
         margin: 0;
         text-decoration: none;
         color: #000000;
+
+        @media (max-width: $maxMobWidth) {
+            padding: 22px 16px;
+        }
     }
 }
 

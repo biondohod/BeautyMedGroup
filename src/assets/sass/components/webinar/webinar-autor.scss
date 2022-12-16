@@ -5,6 +5,10 @@
 
     &__title {
         text-align: left;
+
+        @media (max-width: $maxMobWidth) {
+            text-align: center;
+        }
     }
 
     &__content {
@@ -76,6 +80,7 @@
 
         @media (max-width: $maxMobWidth) {
             max-width: 500px;
+            padding-right: 34px;
         }
 
         &-link {
@@ -86,6 +91,7 @@
             text-decoration: none;
 
             @media (max-width: $maxMobWidth) {
+                font-weight: 400;
                 font-size: 10px;
                 line-height: 12px;
             }

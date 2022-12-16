@@ -281,6 +281,10 @@
         margin: 0 auto;
         margin-bottom: 8px;
 
+        @media (max-width: $maxMobWidth) {
+            width: 100%;
+        }
+
         &-descr {
             margin: 0 auto;
             max-width: 272px;
@@ -349,11 +353,16 @@
 
             @media (max-width: $maxMobWidth) {
                 margin-right: 0;
+                background-position: center left 36px;
             }
         }
 
         &:nth-child(2) {
             background: url('../assets/img/making-order/sdek.svg') no-repeat center left;
+
+            @media (max-width: $maxMobWidth) {
+                background-position: center left 36px;
+            }
         }
 
         &:nth-child(3) {
@@ -362,11 +371,24 @@
 
             @media (max-width: $maxMobWidth) {
                 margin-right: 0;
+                background-position: center left 36px;
             }
         }
 
         &:nth-child(4) {
             background: url('../assets/img/making-order/pickup.svg') no-repeat center left;
+
+            @media (max-width: $maxMobWidth) {
+                background-position: center left 36px;
+            }
+        }
+
+        @media (max-width: $maxMobWidth) {
+            padding-left: 0;
+
+            .making-order__radio {
+                margin-right: 72px;
+            }
         }
     }
 
@@ -413,6 +435,15 @@
 
         &:nth-child(3) {
             background-image: url('../assets/img/making-order/cash.svg');
+        }
+
+        @media (max-width: $maxMobWidth) {
+            padding-left: 0;
+            background-position: center left 36px;
+
+            .making-order__radio {
+                margin-right: 72px;
+            }
         }
     }
 

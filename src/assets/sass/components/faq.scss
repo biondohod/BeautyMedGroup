@@ -15,6 +15,29 @@
         margin: 0 auto;
 
         &--webinar {
+
+            .main-faq__question {
+                @media (max-width: $maxMobWidth) {
+
+                    &--cases {
+                        margin-bottom: 62px;
+
+                        + .case-study {
+                            top: auto;
+                            bottom: 16px;
+                        }
+
+                        &--active {
+                            margin-bottom: 72px;
+
+                            + .case-study {
+                                top: 16%;
+                            }
+                        }
+                    }
+                }
+            }
+
             .main-faq__answer {
                 max-width: 568px;
             }
@@ -45,6 +68,11 @@
                 width: 180px;
                 padding: 12px;
                 margin: 0;
+
+                @media (max-width: $maxMobWidth) {
+                    display: block;
+                    left: 0;
+                }
             }
         }
     }

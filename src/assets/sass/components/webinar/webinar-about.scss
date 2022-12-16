@@ -10,6 +10,10 @@
 
     &__title {
         text-align: left;
+
+        @media (max-width: $maxMobWidth) {
+            text-align: center;
+        }
     }
 
     &__digits {

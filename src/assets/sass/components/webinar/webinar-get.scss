@@ -69,11 +69,24 @@
             font-size: 14px;
             line-height: 140%;
         }
+
+        @media (max-width: $maxMobWidth) {
+            text-transform: uppercase;
+        }
     }
 
     &__descr {
         font-weight: 300;
         font-size: 14px;
         line-height: 140%;
+    }
+
+    &__btn {
+        @media (max-width: $maxMobWidth) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
     }
 }

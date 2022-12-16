@@ -6,6 +6,10 @@
 
     @media (max-width: $maxMobWidth) {
         margin-bottom: 80px;
+
+        ~ .webinar-action__format {
+            display: none;
+        }
     }
 
     &__wrapper {
@@ -36,6 +40,11 @@
     &__img {
         max-width: 688px;
         margin: 48px 0;
+
+        @media (max-width: $maxMobWidth) {
+            position: relative;
+            margin-bottom: 64px;
+        }
     }
 
     &__autor {

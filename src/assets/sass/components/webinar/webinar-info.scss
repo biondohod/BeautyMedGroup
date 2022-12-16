@@ -27,21 +27,50 @@
         &:nth-child(1) {
             background: url('../assets/img/webinar/info1.svg') no-repeat top left;
             background-size: 80px;
+
+            @media (max-width: $maxMobWidth) {
+                background-size: 74px;
+                background-position: center left;
+            }
         }
 
         &:nth-child(2) {
             background: url('../assets/img/webinar/info2.svg') no-repeat top left;
             background-size: 80px;
+
+            @media (max-width: $maxMobWidth) {
+                background-size: 74px;
+                background-position: center left;
+            }
         }
 
         &:nth-child(3) {
             background: url('../assets/img/webinar/info3.svg') no-repeat top left;
             background-size: 80px;
+
+            @media (max-width: $maxMobWidth) {
+                background-size: 74px;
+                background-position: center left;
+            }
         }
 
         &:nth-child(4) {
             background: url('../assets/img/webinar/info4.svg') no-repeat top left;
             background-size: 80px;
+
+            @media (max-width: $maxMobWidth) {
+                background-size: 74px;
+                background-position: center left;
+            }
+        }
+
+        @media (max-width: $maxMobWidth) {
+            min-height: 74px;
+            align-items: start;
+            align-content: center;
+            gap: 8px;
+            padding-top: 0;
+            padding-left: 90px;
         }
     }
 
@@ -49,6 +78,10 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 140%;
+
+        @media (max-width: $maxMobWidth) {
+            font-size: 12px;
+        }
     }
 
     &__descr {

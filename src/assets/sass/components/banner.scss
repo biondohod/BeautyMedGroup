@@ -240,6 +240,13 @@
             .main-banner__tel-input {
                 width: 100%;
                 height: 60px;
+
+                @media (max-width: $maxMobWidth) {
+                    border: 1px solid #E9E9E9;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 160%;
+                }
             }
 
             .basket__buy {
@@ -264,13 +271,6 @@
                 font-weight: 400;
                 font-size: 10px;
                 line-height: 12px;
-            }
-
-            @media (max-width: $maxMobWidth) {
-
-                .main-banner__tel-input {
-                    border: 1px solid #E9E9E9;
-                }
             }
         }
     }

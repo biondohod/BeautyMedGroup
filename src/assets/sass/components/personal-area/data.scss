@@ -44,6 +44,7 @@
             @media (max-width: $maxMobWidth) {
                 width: 74px;
                 height: 74px;
+                align-self: flex-start;
 
                 img {
                     width: 74px;

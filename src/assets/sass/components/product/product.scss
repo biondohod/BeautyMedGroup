@@ -321,6 +321,10 @@
         max-width: 1408px;
         margin: 0 auto;
         margin-bottom: 120px;
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 80px;
+        }
     }
 
     &__mob {

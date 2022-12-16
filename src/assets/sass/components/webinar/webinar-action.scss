@@ -62,6 +62,10 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
+
+            @media (max-width: $maxMobWidth) {
+                max-width: 92px;
+            }
         }
     }
 
@@ -128,6 +132,10 @@
 
         .main-news__item {
             min-height: 1px;
+        }
+
+        .main-news__name {
+            text-transform: uppercase;
         }
     }
 }
