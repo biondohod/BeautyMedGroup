@@ -239,6 +239,10 @@
             padding-left: 30px;
             padding-right: 338px;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                padding: 47px 40px 40px;
+            }
+
             @media (max-width: $maxMobWidth) {
                 padding: 32px 8px 253px;
                 margin: 0;
@@ -248,6 +252,10 @@
         .main-banner__wrapper {
             margin-right: 41px;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                margin: 0;
+            }
+
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 32px;
             }
@@ -255,6 +263,10 @@
 
         .main-banner__form {
             max-width: 262px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                max-width: none;
+            }
 
             @media (max-width: $maxMobWidth) {
                 max-width: none;

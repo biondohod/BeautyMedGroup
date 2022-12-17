@@ -6,10 +6,18 @@
 
         &--category {
             margin-top: 17px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                display: none;
+            }
         }
 
         &--reviews {
             margin-top: 20px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                margin-right: 20px;
+            }
 
             @media (max-width: $maxMobWidth) {
                 margin-top: 58px;
@@ -86,6 +94,10 @@
         margin-left: -15px;
         overflow-x: hidden;
 
+        @media (max-width: $maxTabletWidth) {
+            width: 100%;
+        }
+
         @media (max-width: $maxMobWidth) {
             width: 100%;
             margin: 0;
@@ -158,6 +170,10 @@
 ul.category__slider {
     display: flex;
     gap: 32px;
+
+    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        column-gap: 26px;
+    }
 }
 
 ul.reviews__slider {

@@ -3,6 +3,10 @@
         display: grid;
         gap: 16px;
         margin-bottom: 24px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            padding: 0 24px;
+        }
     }
 
     &__tags {

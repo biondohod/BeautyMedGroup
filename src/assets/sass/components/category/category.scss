@@ -1,6 +1,6 @@
 .category {
     &__title {
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             margin: 0;
         }
 
@@ -10,6 +10,12 @@
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 16px;
             }
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+                max-width: 1408px;
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
         }
     }
 
@@ -17,7 +23,7 @@
         &-btn {
             display: none;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 position: absolute;
                 left: -8px;
                 bottom: 0;
@@ -34,7 +40,7 @@
         &-btns {
             display: none;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -56,7 +62,7 @@
     &__left-column {
         max-width: 328px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: none;
 
             &--active {
@@ -81,6 +87,11 @@
 
     &__right-column {
         max-width: 1048px;
+
+        @media (max-width: $maxTabletWidth) {
+            max-width: 1408px;
+            width: 100%;
+        }
 
         @media (max-width: $maxMobWidth) {
             max-width: 100%;
@@ -136,13 +147,18 @@
     &__results {
         margin-bottom: 120px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             margin-bottom: 80px;
         }
     }
 
     &__popular {
         margin-bottom: 120px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            margin-bottom: 80px;
+        }
+
 
         @media (max-width: $maxMobWidth) {
             display: none;
@@ -152,7 +168,11 @@
     &__reviews {
         margin-bottom: 120px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            padding-left: 24px;
+        }
+
+        @media (max-width: $maxTabletWidth) {
             position: relative;
             margin-bottom: 80px;
         }
