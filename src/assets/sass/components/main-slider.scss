@@ -5,12 +5,16 @@
     height: 616px;
     padding: 176px 22px 0 0;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         position: relative;
         top: 0;
-        height: 683px;
+        height: 1010px;
         padding: 0;
         margin-bottom: 80px;
+    }
+
+    @media (max-width: $maxMobWidth) {
+        height: 683px;
     }
 
     &__btns {
@@ -24,6 +28,17 @@
 
         @media (max-width: $maxMobWidth) {
             display: none;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            z-index: 1;
+            top: 69px;
+            right: 63px;
+            left: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: auto;
         }
     }
 
@@ -47,9 +62,9 @@
         display: flex;
         height: 380px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             position: relative;
-            right: -8px;
+            right: 0px;
             height: 684px;
         }
     }
@@ -64,14 +79,26 @@
         padding: 16px;
         padding-bottom: 8px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: block;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            padding: 10px 80px;
         }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
+
+        li {
+            &:nth-child(3) {
+                @media (max-width: $maxMobWidth) {
+                    display: none;
+                }
+            }
+        }
     }
 
     &__link {
@@ -103,6 +130,11 @@
             background: url('../assets/img/cart.svg') no-repeat top center;
             background-size: 24px;
         }
+
+        &--search {
+            background: url('../assets/img/search.svg') no-repeat top center;
+            background-size: 24px;
+        }
     }
 }
 
@@ -115,9 +147,15 @@
         padding: 50px 0 162px 307px;
         background-color: #FFF1F4;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             flex-direction: column;
             width: 100%;
+            height: 686px;
+            padding: 72px 100px 24px 75px;
+            margin-right: 204px;
+        }
+
+        @media (max-width: $maxMobWidth) {
             height: 400px;
             margin-right: 44px;
             padding: 30px 16px;
@@ -133,13 +171,18 @@
         margin-bottom: 50px;
         padding-right: 45px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             max-width: none;
-            font-weight: 400;
+            padding: 0;
+            margin-bottom: 24px;
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            margin-bottom: 150px;
             font-size: 24px;
             line-height: 28px;
-            padding: 0;
-            margin-bottom: 150px;
         }
     }
 
@@ -175,8 +218,14 @@
         left: -42px;
         z-index: 10;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             position: absolute;
+            z-index: 1;
+            top: 332px;
+            left: 64px;
+        }
+
+        @media (max-width: $maxMobWidth) {
             z-index: 0;
             top: 169px;
             left: auto;
@@ -191,9 +240,14 @@
         width: 900px;
         height: 616px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             right: 0;
             left: auto;
+            width: 668px;
+            height: auto;
+        }
+
+        @media (max-width: $maxMobWidth) {
             width: 360px;
             height: 391px;
         }
@@ -210,10 +264,18 @@
         border-radius: 4px;
         background: #E9E9E9 url('../assets/img/product-rose.svg') no-repeat bottom right;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             position: absolute;
-            top: 364px;
+            top: 350px;
             right: 0;
+            min-width: 540px;
+            width: 72.5%;
+            height: 660px;
+            background: #E9E9E9 url('../assets/img/product-rose-tablet.svg') no-repeat bottom right;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            top: 364px;
             min-width: 300px;
             width: 87%;
             height: 320px;
@@ -233,7 +295,7 @@
         justify-content: space-between;
         width: 196px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             top: auto;
             left: 50%;
             bottom: 16px;

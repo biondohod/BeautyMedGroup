@@ -268,6 +268,29 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="third-row__products-navigation third-row__products-navigation--tablet">
+                        <li class="products-navigation__item">
+                            <a href="company.html" class="products-navigation__link">О компании</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="blog.html" class="products-navigation__link">Блог</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="delivery.html" class="products-navigation__link">Доставка</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="payment.html" class="products-navigation__link">Оплата</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="contacts.html" class="products-navigation__link">Контакты</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="training.html" class="products-navigation__link">Обучение</a>
+                        </li>
+                        <li class="products-navigation__item">
+                            <a href="reviews.html" class="products-navigation__link">Отзывы</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -293,15 +316,20 @@
                         </div>
                         <picture>
                             <source srcset="./assets/img/product-preview.webp" alt="Товар."
-                                class="product__img--preview" width="261" height="212" media="(min-width: 744px)">
-                            <img src="./assets/img/product-preview-mob.webp" alt="Товар."
-                                class="product__img--preview" width="147" height="124">
+                                class="product__img--preview" width="261" height="212" media="(min-width: 1700px)">
+                            <source srcset="./assets/img/product-preview-tablet.webp" alt="Товар."
+                                class="product__img--preview" width="251" height="212" media="(min-width: 744px)">
+                            <img src="./assets/img/product-preview-mob.webp" alt="Товар." class="product__img--preview"
+                                width="147" height="124">
                         </picture>
                     </div>
                     <div class="product__decorative-block">
                         <picture>
                             <source srcset="./assets/img/product-decorative.webp" alt="Пример использования товара."
-                                class="product__img--decorative" media="(min-width: 744px)">
+                                class="product__img--decorative" media="(min-width: 1700px)">
+                            <source srcset="./assets/img/product-decorative-tablet.webp"
+                                alt="Пример использования товара." class="product__img--decorative"
+                                media="(min-width: 744px)">
                             <img src="./assets/img/product-decorative-mob.webp" alt="Пример использования товара."
                                 class="product__img--decorative">
                         </picture>
@@ -358,6 +386,9 @@
                         </li>
                         <li>
                             <a class="main-slider__link main-slider__link--pa" href="log-in.html">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <a class="main-slider__link main-slider__link--search">Поиск</a>
                         </li>
                         <li>
                             <a class="main-slider__link main-slider__link--favorites"
@@ -1143,6 +1174,14 @@
                         </button>
                     </li>
                 </ol>
+                <div class="main-reviews__btns">
+                    <button type="button" class="main-slider__btn main-slider__btn--prev">
+                        <span class="visually-hidden">Предыдущий слайд.</span>
+                    </button>
+                    <button type="button" class="main-slider__btn main-slider__btn--next">
+                        <span class="visually-hidden">Следующий слайд.</span>
+                    </button>
+                </div>
                 <a href="reviews.html" class="main-reviews__show-all">Все отзывы</a>
             </section>
 
@@ -1335,6 +1374,42 @@
                         </li>
                     </ul>
                     <ul class="main-news__list">
+                        <li class="main-news__item main-news__item--tablet">
+                            <ul class="main-news__list--text">
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">Odio morbi quis commodo odio aenean sed
+                                        adipiscing
+                                        diam.</span>
+                                </li>
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">Pellentesque diam volutpat commodo sed egestas
+                                        egestas
+                                        fringilla phasellus faucibus.</span>
+                                </li>
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">Gravida rutrum quisque non tellus orci.</span>
+                                </li>
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">At elementum eu facilisis sed. Diam donec
+                                        adipiscing
+                                        tristique risus.</span>
+                                </li>
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">Odio morbi quis commodo odio aenean sed
+                                        adipiscing diam.
+                                    </span>
+                                </li>
+                                <li class="main-news__item--text">
+                                    <span class="main-news__date">22.10.2021</span>
+                                    <span class="main-news__name--text">Gravida rutrum quisque non tellus orci.</span>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="main-news__item">
                             <img src="./assets/img/news1.webp" alt="Превью новости." class="main-news__img" width="328"
                                 height="240">
@@ -1695,7 +1770,7 @@
                             </ul>
                         </div>
                         <div class="footer__tabs-content">
-                            <div class="footer__tabs-item footer__tabs-item--active" data-value="company">
+                            <div class="footer__tabs-item" data-value="company">
                                 <ul class="footer__list">
                                     <li class="footer__item">
                                         <a href="company.html" class="footer__link">О нас</a>
@@ -1723,7 +1798,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer__tabs-item" data-value="catalog">
+                            <div class="footer__tabs-item footer__tabs-item--active" data-value="catalog">
                                 <ul class="footer__list footer__list--catalog">
                                     <li class="footer__item">
                                         <a href="category.html" class="footer__link">Бальзамы</a>
@@ -1930,7 +2005,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">

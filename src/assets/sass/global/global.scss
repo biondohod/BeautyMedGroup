@@ -1,6 +1,7 @@
 $maxMobWidth: 743px;
-// $maxMobWidth: 1899px;
 $minMobWidth: 360px;
+$minTabletWidth: 744px;
+$maxTabletWidth: 1699px;
 
 @font-face {
     font-family: "Tenor Sans";
@@ -128,9 +129,14 @@ main {
         line-height: 37px;
     }
 
+    @media (max-width: $maxTabletWidth) {
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+
     @media (max-width: $maxMobWidth) {
         margin-bottom: 24px;
-        font-weight: 400;
         font-size: 24px;
         line-height: 28px;
     }

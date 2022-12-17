@@ -1,7 +1,13 @@
 .main-reviews {
     position: relative;
     margin-bottom: 196px;
-    padding: 0 22px;
+    padding: 0 24px;
+
+    @media (max-width: $maxTabletWidth) {
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        margin-bottom: 256px;
+    }
 
     @media (max-width: $maxMobWidth) {
         padding: 0;
@@ -16,6 +22,14 @@
         max-width: 1408px;
         margin: 0 auto;
         margin-bottom: 32px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            position: relative;
+            left: 0;
+            display: flex;
+            gap: 24px;
+            transition: left 0.8s;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -35,9 +49,14 @@
             box-shadow: 0px 0px 16px rgba(240, 133, 151, 0.8);
         }
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            min-width: 448px;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: none;
             width: 100%;
+
             &:nth-child(1) {
                 display: flex;
             }
@@ -133,6 +152,20 @@
             outline: none;
             background: #F08597;
             box-shadow: 0px 0px 50px #FFBCC7;
+        }
+    }
+
+    &__btns {
+        display: none;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: absolute;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 696px;
         }
     }
 }

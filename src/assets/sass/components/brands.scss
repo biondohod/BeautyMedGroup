@@ -1,10 +1,13 @@
 .main-brands {
-    padding: 0 22px;
+    padding: 0 24px;
     margin-bottom: 120px;
+
+    @media (max-width: $maxTabletWidth) {
+        margin-bottom: 80px;
+    }
 
     @media (max-width: $maxMobWidth) {
         padding: 0;
-        margin-bottom: 80px;
     }
 
     &__title {
@@ -19,8 +22,13 @@
             max-width: 1350px;
             margin: 0 auto;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @media (max-width: $maxMobWidth) {
                 overflow-x: scroll;
                 overflow-y: hidden;
             }

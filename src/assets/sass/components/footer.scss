@@ -1,5 +1,9 @@
 .footer {
-    padding: 0 22px;
+    padding: 0 24px;
+
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding-top: 24px;
+    }
 
     @media (max-width: $maxMobWidth) {
         display: flex;
@@ -28,6 +32,13 @@
 
         &--first {
             align-items: center;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 40px;
+            }
         }
 
         &--second,
@@ -36,7 +47,7 @@
         }
 
         &--second {
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 display: none;
             }
         }
@@ -44,6 +55,36 @@
         &--mob {
             display: none;
             max-width: 100%;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: flex;
+
+                .footer__tabs-wrapper {
+                    display: flex;
+                    gap: 40px;
+                }
+
+                .footer__tabs-list {
+                    flex-direction: column;
+                    gap: 24px;
+                }
+
+                .footer__title,
+                .footer__offer,
+                .footer__map{
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: #888888;
+                }
+
+                .footer__tabs--active {
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+
 
             @media (max-width: $maxMobWidth) {
                 display: flex;
@@ -131,6 +172,11 @@
             }
         }
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin-right: 97px;
+            margin-left: auto;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: none;
         }
@@ -170,6 +216,14 @@
             box-shadow: 0px 0px 50px #FFBCC7;
         }
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            grid-column: 2 / -1;
+            grid-row: 1 / 2;
+            width: 177px;
+            margin-right: 112px;
+            margin-left: auto;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: none;
         }
@@ -188,6 +242,12 @@
 
     &__social {
         display: flex;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: absolute;
+            top: 35px;
+            right: 0;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: none;
@@ -228,7 +288,7 @@
         display: grid;
         row-gap: 4px;
 
-        @media (max-width: $maxMobWidth){
+        @media (max-width: $maxMobWidth) {
             row-gap: 16px;
         }
 
@@ -237,6 +297,11 @@
             max-width: 893px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             column-gap: 70px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                row-gap: 11px;
+                column-gap: 32px;
+            }
         }
     }
 
@@ -314,10 +379,18 @@
     &__tabs {
         &-wrapper {
             margin-bottom: 40px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                margin: 0;
+            }
         }
 
         &-header {
             margin-bottom: 16px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                margin: 0;
+            }
         }
 
         &-list {

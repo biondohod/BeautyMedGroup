@@ -2,11 +2,14 @@
     max-width: 1452px;
     margin: 0 auto;
     margin-bottom: 120px;
-    padding: 0 22px;
+    padding: 0 24px;
+
+    @media (max-width: $maxTabletWidth) {
+        margin-bottom: 80px;
+    }
 
     @media (max-width: $maxMobWidth) {
         padding: 0;
-        margin-bottom: 80px;
     }
 
     &__content {
@@ -15,16 +18,20 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 32px;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 24px;
+                gap: 32px;
                 justify-content: center;
+            }
+
+            @media (max-width: $maxMobWidth) {
+                gap: 16px;
             }
         }
 
         &__item {
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 max-width: 328px;
             }
         }
@@ -227,7 +234,7 @@
         display: grid;
         row-gap: 53px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             max-width: 100%;
             overflow-x: scroll;
             gap: 33px;
@@ -236,7 +243,7 @@
         &--brands {
             margin-bottom: 55px;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 margin-bottom: 13px;
 
                 ul {
@@ -257,7 +264,7 @@
                 }
             }
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 padding-bottom: 11px;
                 margin-bottom: 24px;
             }
@@ -267,7 +274,7 @@
             position: relative;
             margin-bottom: 52px;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 overflow: visible;
                 margin-bottom: 88px;
             }
@@ -344,8 +351,11 @@
                 }
             }
 
-            @media (max-width:$maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 width: max-content;
+            }
+
+            @media (max-width:$maxMobWidth) {
                 font-size: 12px;
                 line-height: 14px;
             }

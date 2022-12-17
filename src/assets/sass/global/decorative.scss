@@ -6,7 +6,7 @@
     height: 623px;
     background: url('../assets/img/main-decorative.webp') no-repeat;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         display: none;
         background: none;
     }
@@ -35,7 +35,7 @@
             height: 502px;
             background-image: url('../assets/img/footer-rose.svg');
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 display: none;
                 background: none;
             }
@@ -68,7 +68,7 @@
         left: 0;
         background: url('../assets/img/decorative-left.webp') no-repeat;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: none;
             background: none;
         }

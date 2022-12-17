@@ -12,6 +12,10 @@
     &__title {
         margin-bottom: 40px;
 
+        @media (max-width: $maxTabletWidth) {
+            margin-bottom: 32px;
+        }
+
         @media (max-width: $maxMobWidth) {
             margin-bottom: 24px;
         }
@@ -25,11 +29,15 @@
         max-width: 1408px;
         margin: 0 auto;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 32px;
             justify-content: center;
+        }
+
+        @media (max-width: $maxMobWidth) {
+            gap: 16px;
         }
     }
 
@@ -289,6 +297,11 @@
                 height: 100%;
                 background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
             }
+        }
+
+        @media (max-width: $maxTabletWidth) {
+            width: 328px;
+            height: 300px;
         }
 
         @media (max-width: $maxMobWidth) {
