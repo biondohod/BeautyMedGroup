@@ -48,7 +48,7 @@
         }
     }
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         display: none;
     }
 }

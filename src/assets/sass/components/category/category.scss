@@ -50,6 +50,16 @@
                 padding: 16px;
                 border-bottom: 1px solid #E9E9E9;
             }
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                .second-row__search-wrapper {
+                    display: flex;
+                }
+
+                .second-row__search {
+                    display: block;
+                }
+            }
         }
     }
 

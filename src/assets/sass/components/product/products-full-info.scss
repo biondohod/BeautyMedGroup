@@ -10,6 +10,10 @@
         gap: 32px;
         margin: 24px 0;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            justify-content: center;
+        }
+
         @media (max-width: $maxMobWidth) {
             margin: 16px 0;
             justify-content: center;

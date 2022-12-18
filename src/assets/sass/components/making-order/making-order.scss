@@ -3,6 +3,10 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        margin-bottom: 420px;
+    }
+
     @media (max-width: $maxMobWidth) {
         margin-bottom: 80px;
     }
@@ -12,6 +16,14 @@
         grid-template-columns: 688px 688px;
         gap: 32px;
         align-items: flex-start;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -292,6 +304,27 @@
             font-size: 10px;
             line-height: 12px;
             text-align: center;
+        }
+    }
+
+    &__tablet {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            position: absolute;
+            top: calc(100% + 40px);
+            width: 688px;
+
+            .making-order__btn {
+                width: 100%;
+                max-width: none;
+                margin-bottom: 16px;
+
+                &-descr {
+                    max-width: none;
+                }
+            }
         }
     }
 }

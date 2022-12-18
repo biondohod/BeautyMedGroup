@@ -3,6 +3,10 @@
         display: grid;
         gap: 64px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            gap: 40px;
+        }
+
         @media (max-width: $maxMobWidth) {
             gap: 24px;
             padding: 24px 14px;

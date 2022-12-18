@@ -6,7 +6,11 @@
     @media (max-width: $maxTabletWidth) {
         overflow-x: hidden;
         padding-bottom: 1px;
-        margin-bottom: 256px;
+        margin-bottom: 80px;
+
+        &--main {
+            margin-bottom: 256px;
+        }
     }
 
     @media (max-width: $maxMobWidth) {

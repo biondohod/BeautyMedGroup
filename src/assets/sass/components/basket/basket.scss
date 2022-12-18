@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -11,7 +11,11 @@
         display: flex;
         gap: 120px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            padding: 0 24px;
+        }
+
+        @media (max-width: $maxTabletWidth) {
             flex-direction: column;
             gap: 24px;
         }

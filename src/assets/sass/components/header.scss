@@ -257,7 +257,7 @@
             outline: none;
         }
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             &::placeholder {
                 color: transparent;
             }
@@ -280,7 +280,7 @@
             max-width: 620px;
             margin-right: 16px;
 
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 flex-grow: 0;
                 margin-right: 0;
             }
