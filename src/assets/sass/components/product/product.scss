@@ -377,7 +377,7 @@
         margin: 0 auto;
         margin-bottom: 120px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             margin-bottom: 80px;
         }
     }

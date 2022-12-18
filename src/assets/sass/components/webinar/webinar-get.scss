@@ -3,7 +3,11 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 22px;
+    }
+
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -11,6 +15,14 @@
         display: grid;
         grid-template-columns: repeat(3, 448px);
         gap: 32px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            overflow-x: scroll;
+            padding: 1px;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -27,6 +39,10 @@
         padding-top: 0;
         border: 1px solid #E9E9E9;
         border-radius: 4px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 448px;
+        }
 
         @media (max-width: $maxMobWidth) {
             position: relative;

@@ -22,6 +22,14 @@
         column-gap: 80px;
         row-gap: 64px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 0;
+            row-gap: 48px;
+            padding: 0 24px;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: grid;
             grid-template-columns: 1fr 1fr;

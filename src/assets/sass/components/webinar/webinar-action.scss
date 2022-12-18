@@ -5,12 +5,38 @@
     background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
     border-radius: 4px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        margin-bottom: 80px;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
         padding: 40px;
         padding-top: 24px;
         background: url('../assets/img/webinar/action.webp') no-repeat center left 289px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
+            display: grid;
+            grid-template-columns: 189px 1fr;
+            align-items: flex-end;
+            row-gap: 0;
+            column-gap: 39px;
+            background: none;
+
+            &::after {
+                position: absolute;
+                z-index: 0;
+                top: -24px;
+                left: 40px;
+                width: 184px;
+                height: 206px;
+                background: url('../assets/img/webinar/action.webp') no-repeat center;
+                background-size: 184px 206px;
+                content: "";
+            }
+        }
 
         @media (max-width: $maxMobWidth) {
             position: relative;
@@ -37,6 +63,13 @@
         display: flex;
         flex-direction: column;
         margin-right: 250px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
+            z-index: 1;
+            grid-row: 2 / 3;
+            margin: 0;
+        }
 
         @media (max-width: $maxMobWidth) {
             flex-direction: row-reverse;
@@ -75,6 +108,14 @@
         max-width: 448px;
         margin-right: 120px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
+            top: 57px;
+            grid-column: 2 / -1;
+            max-width: none;
+            margin: 0;
+        }
+
         @media (max-width: $maxMobWidth) {
             position: absolute;
             top: 24px;
@@ -106,6 +147,10 @@
         font-size: 18px;
         line-height: 150%;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            padding-right: 80px;
+        }
+
         @media (max-width: $maxMobWidth) {
             font-size: 12px;
             line-height: 140%;
@@ -119,6 +164,10 @@
         text-align: center;
         margin: 0;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            grid-row: 2 / 3;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: block;
             width: 100%;
@@ -130,8 +179,30 @@
         margin: 0 auto;
         margin-bottom: 120px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin-bottom: 80px;
+            padding: 0 22px;
+        }
+
+        .main-news__list {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: start;
+                max-width: 100%;
+                overflow-x: scroll;
+                padding: 1px;
+                margin-bottom: 80px;
+            }
+        }
+
         .main-news__item {
             min-height: 1px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                min-width: 448px;
+                max-width: 448px;
+            }
         }
 
         .main-news__name {

@@ -3,6 +3,18 @@
     margin: 0 auto;
     margin-bottom: 156px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        margin-bottom: 80px;
+
+        .basket__item {
+            padding-right: 0;
+        }
+
+        .basket__price-wrapper {
+            margin-left: auto
+        }
+    }
+
     @media (max-width: $maxMobWidth) {
         max-width: none;
         margin-bottom: 80px;

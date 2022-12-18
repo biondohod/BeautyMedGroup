@@ -3,6 +3,11 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 24px;
+        margin-bottom: 80px;
+    }
+
     &__title {
         text-align: left;
 
@@ -17,11 +22,12 @@
         row-gap: 48px;
         column-gap: 32px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-direction: column;
             gap: 0;
         }
+
     }
 
     &__img {
@@ -29,6 +35,10 @@
         top: 0;
         left: 0;
         align-self: flex-end;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            align-self: start;
+        }
 
         @media (max-width: $maxMobWidth) {
             order: 0;
@@ -39,6 +49,10 @@
     &__info {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin-bottom: 80px;
+        }
     }
 
     &__name {
@@ -157,6 +171,14 @@
         background: linear-gradient(270deg, #FFF1F4 0%, #F9F9F9 100%);
         border-radius: 4px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 243px 272px;
+            row-gap: 32px;
+            column-gap: 72px;
+            padding-left: 40px;
+        }
+
         @media (max-width: $maxMobWidth) {
             flex-direction: column;
             align-items: flex-start;
@@ -171,6 +193,10 @@
     &__advantages {
         display: grid;
         gap: 24px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            grid-column: 1 / -1;
+        }
 
         li {
             padding-left: 56px;

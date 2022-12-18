@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-bottom: 218px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -29,6 +29,13 @@
         column-gap: 32px;
         row-gap: 48px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 0 24px;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: flex;
             flex-direction: column;
@@ -41,6 +48,17 @@
         flex-direction: column;
         border-bottom: 1px solid #E9E9E9;
         padding-bottom: 24px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            &:nth-child(1) {
+                padding-top: 24px;
+                border-top: 1px solid #E9E9E9;
+            }
+        }
 
         @media (max-width: $maxMobWidth) {
             align-items: center;
@@ -74,11 +92,21 @@
 
         &--line {
             background: url('../assets/img/contacts/line.svg') no-repeat center left;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 1 / 3 ;
+                background-position: top left;
+            }
         }
 
         &--mail {
             margin-bottom: 28px;
             background: url('../assets/img/contacts/mail.svg') no-repeat center left;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                background-position: top left;
+                margin: 0;
+            }
 
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 16px;
@@ -88,6 +116,12 @@
         &--social {
             margin-bottom: 33px;
             background: url('../assets/img/contacts/social.svg') no-repeat center left;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                background-position: top left;
+                margin: 0;
+            }
+
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 16px;
             }
@@ -95,10 +129,26 @@
 
         &--phone {
             background: url('../assets/img/contacts/phone.svg') no-repeat center left;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 1 / 3;
+                background-position: top left;
+            }
         }
 
         &--requisites {
             background: url('../assets/img/contacts/requisites.svg') no-repeat center left;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                background-position: top left;
+                grid-row: 1 / 7;
+            }
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            align-self: flex-start;
+            padding-left: 0;
+            padding-top: 64px;
         }
 
         @media (max-width: $maxMobWidth) {

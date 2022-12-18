@@ -35,11 +35,21 @@
             width: 912px;
             transform: translateY(-50%);
 
-            @media (max-width: $maxMobWidth) {
+
+
+            @media (max-width: $maxTabletWidth) {
                 top: 100%;
                 left: 0;
                 transform: translateY(0);
                 width: 100%;
+                margin-top: 24px;
+            }
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                padding: 0 24px;
+            }
+
+            @media (max-width: $maxMobWidth) {
                 margin-top: 16px;
             }
         }

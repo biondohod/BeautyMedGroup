@@ -3,6 +3,13 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        max-width: 1408px;
+        width: 100%;
+        margin-bottom: 80px;
+        padding: 0 24px;
+    }
+
     @media (max-width: $maxMobWidth) {
         width: 100%;
         margin-bottom: 80px;
@@ -10,6 +17,12 @@
 
     &__title {
         text-align: left;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin-bottom: 8px;
+            font-size: 28px;
+            line-height: 33px;
+        }
 
         @media (max-width: $maxMobWidth) {
             text-align: center;
@@ -19,7 +32,7 @@
     &__digits {
         margin-bottom: 120px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             margin-bottom: 80px;
         }
     }
@@ -31,6 +44,11 @@
         flex-wrap: wrap;
         gap: 120px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            flex-wrap: nowrap;
+            gap: 95px;
+        }
+
         @media (max-width: $maxMobWidth) {
             flex-direction: column;
             gap: 32px;
@@ -41,6 +59,12 @@
         display: flex;
         flex-direction: column;
         max-width: 448px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            &:nth-child(2) {
+                margin-top: -41px;
+            }
+        }
     }
 
     &__name {
@@ -61,6 +85,11 @@
         font-weight: 300;
         font-size: 24px;
         line-height: 150%;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            font-size: 16px;
+            line-height: 140%;
+        }
 
         @media (max-width: $maxMobWidth) {
             font-size: 14px;
@@ -84,6 +113,11 @@
         grid-template-columns: 692px 688px;
         align-items: stretch;
         gap: 27px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: flex;
+            flex-direction: column;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -112,8 +146,12 @@
         font-size: 24px;
         line-height: 150%;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            min-height: 260px;
+        }
+
         @media (max-width: $maxMobWidth) {
-            height: 390px;
+            min-height: 390px;
         }
     }
 }

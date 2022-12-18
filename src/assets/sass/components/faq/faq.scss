@@ -3,7 +3,11 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 24px;
+    }
+
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -21,7 +25,7 @@
         grid-template-columns: 928px 328px;
         gap: 152px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             gap: 0;
         }
@@ -40,6 +44,12 @@
             margin-bottom: 50px;
             background: url('../assets/img/faq/faq.webp') no-repeat bottom right;
             background-size: 204px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-template-columns: 1fr;
+                padding-right: 360px;
+                background-position: bottom right 66px;
+            }
 
             @media (max-width: $maxMobWidth) {
                 display: flex;
@@ -153,8 +163,31 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: none;
+        }
+
+        &--tablet {
+            display: none;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                margin-bottom: 40px;
+
+                &-left-col {
+                    .faq-assistant__decorative {
+                        margin: 0;
+                    }
+                }
+
+                &-right-col {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-end;
+                }
+            }
         }
     }
 

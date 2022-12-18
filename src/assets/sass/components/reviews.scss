@@ -53,7 +53,7 @@
             box-shadow: 0px 0px 16px rgba(240, 133, 151, 0.8);
         }
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             min-width: 448px;
         }
 

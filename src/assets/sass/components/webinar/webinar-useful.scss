@@ -3,7 +3,14 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        position: relative;
+        overflow-x: hidden;
+        padding: 0 24px;
+        padding-bottom: 64px;
+    }
+
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -21,6 +28,13 @@
         display: grid;
         grid-template-columns: repeat(4, 328px);
         gap: 32px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
+            left: -1px;
+            gap: 34px;
+            transition: left 0.8s;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;

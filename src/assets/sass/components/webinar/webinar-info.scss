@@ -3,6 +3,13 @@
     margin: 0 auto;
     margin-bottom: 145px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        max-width: 631px;
+        margin: 0;
+        margin-bottom: 80px;
+        padding: 0 24px;
+    }
+
     @media (max-width: $maxMobWidth) {
         margin-bottom: 80px;
     }
@@ -12,6 +19,12 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+        }
 
         @media (max-width: $maxMobWidth) {
             flex-direction: column;

@@ -1,6 +1,22 @@
 .results {
     &__list {
         grid-template-columns: 1fr 1fr 1fr;
+
+        @media (max-width: 743px) and (min-width: 688px) {
+            grid-template-columns: repeat(2, 328px);
+        }
+
+        @media (max-width: 1699px) and (min-width: 744px) {
+            grid-template-columns: repeat(2, 328px);
+        }
+
+        @media (max-width: 1699px) and (min-width: 1096px) {
+            grid-template-columns: repeat(3, 328px);
+        }
+
+        @media (max-width: 1699px) and (min-width: 1456px) {
+            grid-template-columns: repeat(4, 328px);
+        }
     }
 
     &__pagination {

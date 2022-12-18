@@ -3,7 +3,11 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 24px;
+    }
+
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -12,7 +16,7 @@
         grid-template-columns: 328px 1fr;
         gap: 32px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,7 +24,7 @@
     }
 
     &__left-col {
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             position: absolute;
             z-index: 100;
             top: 0;
@@ -32,6 +36,7 @@
             padding-top: 73px;
             padding-bottom: 26px;
             background-color: #FFFFFF;
+            text-align: center;
 
             &--active {
                 display: block;
@@ -49,6 +54,10 @@
         .category__menu-btn {
             top: 0;
             bottom: auto;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                left: -24px;
+            }
         }
     }
 
@@ -57,12 +66,32 @@
         border-top: 1px solid #E9E9E9;
     }
 
+    &__list {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 328px 328px;
+            column-gap: 32px;
+            row-gap: 24px;
+            justify-content: center;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: 1200px)
+         {
+            grid-template-columns: repeat(3, 328px);
+         }
+    }
+
     &__item {
         display: grid;
         grid-template-columns: 328px 1fr;
         gap: 32px;
         padding: 16px 0;
         border-bottom: 1px solid #E9E9E9;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: flex;
+            flex-direction: column;
+        }
 
         @media (max-width: $maxMobWidth) {
             position: relative;
@@ -162,6 +191,11 @@
     &__price-city {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: flex;
+            flex-direction: column;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;

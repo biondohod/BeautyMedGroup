@@ -294,6 +294,13 @@
         &--contacts {
             max-width: none;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: flex;
+                flex-direction: column;
+                max-width: 336px;
+                margin: 0 auto;
+            }
+
             .main-banner__tel-input {
                 width: 100%;
                 height: 60px;

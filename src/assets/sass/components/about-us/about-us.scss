@@ -35,8 +35,23 @@
     &--director {
         margin-bottom: 140px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             margin-bottom: 80px;
+        }
+
+        .slider__btns--company {
+            display: none;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            .slider__btns--company {
+                display: flex;
+                padding: 0;
+
+                .main-reviews__show-all {
+                    width: 203px;
+                }
+            }
         }
 
         .about-us__descr {
@@ -108,6 +123,12 @@
         @media (max-width: $maxMobWidth) {
             font-size: 14px;
             line-height: 16px;
+        }
+    }
+
+    &__item {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
         }
     }
 }

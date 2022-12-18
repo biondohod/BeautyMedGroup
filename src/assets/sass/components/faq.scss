@@ -207,4 +207,12 @@
 
 .main-faq#program {
     margin-bottom: 120px;
+
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        margin-bottom: 80px;
+
+        .case-study {
+             display: none;
+        }
+    }
 }

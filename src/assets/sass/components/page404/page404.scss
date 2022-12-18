@@ -6,6 +6,11 @@
     margin: 0 auto;
     margin-bottom: 80px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
     @media (max-width: $maxMobWidth) {
         flex-direction: column;
     }

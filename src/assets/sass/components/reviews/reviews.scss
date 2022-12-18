@@ -3,6 +3,12 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        max-width: 1456px;
+        padding: 0 24px;
+        margin-bottom: 80px;
+    }
+
     &__title {
         text-align: left;
 
@@ -17,6 +23,7 @@
         right: 0;
         width: 208px;
         padding: 12px;
+        margin: 0;
         color: #000;
         text-decoration: none;
 
@@ -36,6 +43,16 @@
             display: grid;
             grid-template-columns: 688px 688px;
             gap: 32px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: grid;
+                grid-template-columns: 696px;
+                justify-content: center;
+            }
+
+            @media (max-width: $maxTabletWidth) and (min-width: 1456px) {
+                grid-template-columns: 688px 688px;
+            }
 
             @media (max-width: $maxMobWidth) {
                 display: flex;

@@ -4,6 +4,10 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 24px;
+    }
+
     @media (max-width: $maxMobWidth) {
         margin-bottom: 80px;
 
@@ -41,6 +45,14 @@
         max-width: 688px;
         margin: 48px 0;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            position: relative;
+            margin-bottom: 104px;
+            .slider__btns--company {
+                padding: 0;
+            }
+        }
+
         @media (max-width: $maxMobWidth) {
             position: relative;
             margin-bottom: 64px;
@@ -76,7 +88,7 @@
             text-decoration: none;
         }
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: none;
         }
     }
