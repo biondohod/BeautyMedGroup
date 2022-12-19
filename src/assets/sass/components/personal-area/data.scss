@@ -2,6 +2,7 @@
     &__section {
         padding-bottom: 16px;
         border-bottom: 2px solid #000;
+
         @media (max-width: $maxMobWidth) {
             min-width: 343px;
             width: 100%;
@@ -28,6 +29,11 @@
             gap: 32px;
             align-items: center;
             width: 100%;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+            max-width: 696px;
         }
     }
 
@@ -135,8 +141,12 @@
         &__wrapper {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             margin-top: 8px;
+            gap: 30px;
+
+            @media (max-width: $maxMobWidth) {
+                gap: 16px;
+            }
         }
 
         &__input {
@@ -183,5 +193,10 @@
     &__right-column {
         display: grid;
         gap: 48px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+            max-width: 696px;
+        }
     }
 }

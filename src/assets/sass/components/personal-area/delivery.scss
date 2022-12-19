@@ -1,4 +1,8 @@
 .delivery {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        width: 100%;
+    }
+
     @media (max-width: $maxMobWidth) {
         margin-top: -28px;
     }
@@ -6,6 +10,10 @@
     &__list {
         display: grid;
         gap: 16px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            justify-items: center;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -22,6 +30,11 @@
         font-weight: 300;
         font-size: 12px;
         line-height: 140%;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+            width: 672px;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -41,21 +54,41 @@
                 display: none;
             }
 
-            .delivery__num {
-                margin-right: 71px;
-            }
+            // .delivery__num {
+            //     margin-right: 71px;
+
+            //     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            //         margin-right: 31px;
+            //     }
+            // }
 
             .delivery__date {
-                margin-right: 125px;
+                // margin-right: 125px;
+
+                // @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                //     margin-right: 55px;
+                // }
+
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    max-width: 70px;
+                }
             }
 
-            .delivery__status {
-                margin-right: 184px;
-            }
+            // .delivery__status {
+            //     margin-right: 184px;
 
-            .delivery__price {
-                margin-right: 104px;
-            }
+            //     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            //         margin-right: 79px;
+            //     }
+            // }
+
+            // .delivery__price {
+            //     margin-right: 104px;
+
+            //     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            //         margin-right: 57px;
+            //     }
+            // }
 
             .delivery__content {
                 padding: 16px 12px;
@@ -76,6 +109,11 @@
             border: none;
             outline: 2px solid #F08597;
             border-radius: 8px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                left: 0;
+                width: 696px;
+            }
 
             .delivery__content {
                 display: grid;
@@ -113,10 +151,14 @@
     }
 
     &__wrapper {
-        // display: grid;
-        // grid-template-columns: 2fr 2fr 2fr 2fr 3fr;
-        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 3fr;
+        // display: flex;
         align-items: center;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            align-items: flex-start;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: flex;
@@ -137,7 +179,11 @@
     }
 
     &__num {
-        margin-right: 82px;
+        // margin-right: 82px;
+
+        // @media (max-width: $maxTabletWidth) {
+        //     margin-right: 42px;
+        // }
 
         @media (max-width: $maxMobWidth) {
 
@@ -152,7 +198,12 @@
     }
 
     &__date {
-        margin-right: 167px;
+        // margin-right: 167px;
+
+        // @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        //     margin-right: 61px;
+        //     max-width: 70px;
+        // }
 
         @media (max-width: $maxMobWidth) {
             &::before {
@@ -166,7 +217,11 @@
     }
 
     &__status {
-        margin-right: 177px;
+        // margin-right: 177px;
+
+        // @media (max-width: $maxTabletWidth) {
+        //     margin-right: 72px;
+        // }
 
         @media (max-width: $maxMobWidth) {
 
@@ -181,7 +236,11 @@
     }
 
     &__price {
-        margin-right: 118px;
+        // margin-right: 118px;
+
+        // @media (max-width: $maxTabletWidth) {
+        //     margin-right: 60px;
+        // }
 
         @media (max-width: $maxMobWidth) {
             font-weight: 600;
@@ -284,6 +343,12 @@
             padding-bottom: 16px;
             border-bottom: 1px solid #E9E9E9;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: grid;
+                grid-template-columns: 88px 288px 56px 36px 20px 70px;
+                gap: 16px;
+            }
+
             @media (max-width: $maxMobWidth) {
                 display: grid;
                 align-items: flex-start;
@@ -294,6 +359,12 @@
 
             .basket__img {
                 margin-right: 16px;
+
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    grid-row: 1 / 3;
+                    grid-column: 1 / 2;
+                    margin: 0;
+                }
 
                 @media (max-width: $maxMobWidth) {
                     grid-row: 1 / 4;
@@ -325,6 +396,12 @@
             max-width: 288px;
             margin-right: 88px;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 1 / 3;
+                grid-column: 2 / 3;
+                margin: 0;
+            }
+
             @media (max-width: $maxMobWidth) {
                 gap: 8px;
                 max-width: 100%;
@@ -344,6 +421,12 @@
         &__count {
             margin-right: 62px;
 
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 1 / 2;
+                grid-column: 4 / 5;
+                margin: 0;
+            }
+
             @media (max-width: $maxMobWidth) {
                 display: none;
             }
@@ -351,6 +434,12 @@
 
         &__price {
             margin-right: 104px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 1 / 2;
+                grid-column: 6 / 7;
+                margin: 0;
+            }
 
             @media (max-width: $maxMobWidth) {
                 margin: 0;
@@ -371,6 +460,12 @@
             font-size: 10px;
             line-height: 12px;
             cursor: pointer;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                grid-row: 2 / 3;
+                grid-column: 4 / 7;
+                margin: 0;
+            }
 
             @media (max-width: $maxMobWidth) {
                 grid-column: 1 / -1;
@@ -416,6 +511,7 @@
 
             @media (max-width: $maxMobWidth) {
                 width: 100%;
+
                 p {
                     font-weight: 600;
                     font-size: 10px;

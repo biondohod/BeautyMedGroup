@@ -3,7 +3,11 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+        padding: 0 24px;
+    }
+
+    @media (max-width: $maxTabletWidth) {
         margin-bottom: 80px;
     }
 
@@ -27,7 +31,7 @@
         grid-template-columns: 202px 1fr;
         gap: 158px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -41,12 +45,16 @@
         grid-template-columns: repeat(2, 447px);
         gap: 153px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-direction: column;
             gap: 32px;
             align-items: center;
             width: 100%;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            gap: 48px;
         }
     }
 
@@ -56,11 +64,15 @@
         grid-template-columns: repeat(2, 447px);
         gap: 153px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             display: flex;
             flex-direction: column;
             gap: 32px;
             align-items: center;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            gap: 48px;
         }
     }
 
@@ -84,13 +96,27 @@
         display: grid;
         gap: 44px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            max-width: 592px;
+            justify-items: center;
+            margin-bottom: 22px;
+        }
+
+        @media (max-width: $maxTabletWidth) {
             position: relative;
             width: 100%;
             align-items: flex-end;
             grid-template-columns: 1fr 1fr;
             gap: 0;
             padding-bottom: 36px;
+        }
+    }
+
+    &__wrapper {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            &:nth-child(1) {
+                justify-self: end;
+            }
         }
     }
 
@@ -136,10 +162,19 @@
                 border-radius: 4px;
                 content: "";
 
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
                 @media (max-width: $maxMobWidth) {
                     content: none;
                 }
             }
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin: 0;
         }
     }
 
@@ -151,9 +186,10 @@
         }
 
         &--active {
-            @media (max-width: $maxMobWidth) {
+            @media (max-width: $maxTabletWidth) {
                 .pa-tabs__list {
                     display: flex;
+                    justify-content: center;
                 }
             }
         }
@@ -164,7 +200,7 @@
         gap: 8px;
         padding-left: 16px;
 
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -174,6 +210,13 @@
             padding: 0;
             padding-bottom: 8px;
             border-bottom: 1px solid #E9E9E9;
+        }
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            bottom: -20px;
+            gap: 60px;
+            border: none;
+            justify-content: center;
         }
     }
 
@@ -198,6 +241,13 @@
             @media (max-width: $maxMobWidth) {
                 color: #000;
             }
+        }
+    }
+
+    &__content {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+            max-width: 696px;
         }
     }
 

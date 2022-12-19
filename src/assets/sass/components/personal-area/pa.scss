@@ -2,10 +2,15 @@
     &__left-column {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+            max-width: 696px;
+        }
     }
 
     &__right-column {
-        @media (max-width: $maxMobWidth) {
+        @media (max-width: $maxTabletWidth) {
             width: 100%;
         }
     }
@@ -144,6 +149,7 @@
             font-size: 20px;
             line-height: 160%;
             color: #321726;
+
             @media (max-width: $maxMobWidth) {
                 margin-bottom: 16px;
                 font-weight: 300;
@@ -188,6 +194,10 @@
                 height: 1px;
                 background-color: #E9E9E9;
                 content: "";
+
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    width: 312px;
+                }
 
                 @media (max-width: $maxMobWidth) {
                     width: 136px;
