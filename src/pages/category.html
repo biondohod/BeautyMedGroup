@@ -78,7 +78,7 @@
                             </ul>
                         </div>
                     </div>
-                    <select name="city" id="city">
+                    <select name="city" id="city-select">
                         <option value="Moscow">Москва</option>
                         <option value="Saint-Petersburg">Санкт-Петербург</option>
                         <option value="Yekaterinburg">Екатеринбург</option>
@@ -115,15 +115,10 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        <p class="visually-hidden">Открыть бургер меню</p>
+                        <span class="visually-hidden">Открыть бургер меню</span>
                     </button>
                     <a href="index.html" class="second-row__main-link">
-                        <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп."
-                                class="main-link__logo" width="261" height="42" media="(min-width: 760px)">
-                            <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                                width="149" height="24">
-                        </picture>
+                        <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo">
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -308,10 +303,10 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <p class="visually-hidden">Закрыть меню фильтров.</p>
+                                <span class="visually-hidden">Закрыть меню фильтров.</span>
                             </button>
                             <div class="second-row__search-wrapper">
-                                <input type="text" id="search" class="second-row__search" placeholder="Крем для лица">
+                                <input type="text" id="search-burger" class="second-row__search" placeholder="Крем для лица">
                             </div>
                         </div>
                         <button class="category__btn category__btn--diagnostics">
@@ -332,7 +327,7 @@
                         <!-- фильтры -->
                         <form action="" method="post" class="category__filters-form">
                             <fieldset class="filter filter--price">
-                                <legend class="filter__name">Цена</legend>
+                                <span class="filter__name">Цена</span>
                                 <div class="price__wrapper">
                                     <label class="filter__label">
                                         <span class="filter__text">от</span>
@@ -349,7 +344,7 @@
                             </fieldset>
                             <fieldset class="filter filter--opened">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Акции</legend>
+                                    <span class="filter__name">Акции</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">скрыть фильтры</span>
                                     </button>
@@ -375,7 +370,7 @@
                             </fieldset>
                             <fieldset class="filter filter--opened">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Тип кожи</legend>
+                                    <span class="filter__name">Тип кожи</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">скрыть фильтры</span>
                                     </button>
@@ -408,7 +403,7 @@
                             </fieldset>
                             <fieldset class="filter filter--opened">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Бренд</legend>
+                                    <span class="filter__name">Бренд</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">скрыть фильтры</span>
                                     </button>
@@ -439,7 +434,7 @@
                             </fieldset>
                             <fieldset class="filter filter--opened">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Тип продукта</legend>
+                                    <span class="filter__name">Тип продукта</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">скрыть фильтры</span>
                                     </button>
@@ -475,7 +470,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Линии</legend>
+                                    <span class="filter__name">Линии</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -496,7 +491,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Компоненты</legend>
+                                    <span class="filter__name">Компоненты</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -517,7 +512,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Объем</legend>
+                                    <span class="filter__name">Объем</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -538,7 +533,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Действие</legend>
+                                    <span class="filter__name">Действие</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -559,7 +554,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Зона ухода</legend>
+                                    <span class="filter__name">Зона ухода</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -580,7 +575,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Для кого</legend>
+                                    <span class="filter__name">Для кого</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -601,7 +596,7 @@
                             </fieldset>
                             <fieldset class="filter filter--closed">
                                 <div class="filter__wrapper">
-                                    <legend class="filter__name">Срок годности</legend>
+                                    <span class="filter__name">Срок годности</span>
                                     <button type="button" class="filter__open-close">
                                         <span class="visually-hidden">показать фильтры</span>
                                     </button>
@@ -800,11 +795,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -860,11 +855,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -921,8 +916,8 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
                                             <button class="main-categories__card__buy">Купить в 1 клик</button>
                                             <div class="main-categories__card__stock"></div>
@@ -981,11 +976,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1041,11 +1036,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1101,72 +1096,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
-                                            <div class="main-categories__card__stock"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="main-categories__content__item">
-
-                                    <div class="main-categories__card">
-                                        <div class="main-categories__card__preview">
-                                            <span class="main-categories__card__label">
-                                                Хит
-                                            </span>
-                                            <button type="button" class="main-categories__card__favorite">
-                                                <span class="visually-hidden">В Избранное.</span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
                                             </button>
-                                            <div class="main-categories__card__slider">
-                                                <img src="./assets/img/card.webp" alt="Товар."
-                                                    class="card__slider__img">
-                                                <ol class="card__slider__pagination">
-                                                    <li class="card__slider__btn card__slider__btn--current">
-                                                        <span class="visually-hidden">Текущий слайд.</span>
-                                                    </li>
-                                                    <li class="card__slider__btn">
-                                                        <span class="visually-hidden">Второй слайд.</span>
-                                                    </li>
-                                                    <li class="card__slider__btn">
-                                                        <span class="visually-hidden">Третий слайд.</span>
-                                                    </li>
-                                                    <li class="card__slider__btn">
-                                                        <span class="visually-hidden">Четвертый слайд.</span>
-                                                    </li>
-                                                    <li class="card__slider__btn">
-                                                        <span class="visually-hidden">Пятый слайд.</span>
-                                                    </li>
-                                                    <li class="card__slider__btn">
-                                                        <span class="visually-hidden">Шестой слайд.</span>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                        <div class="main-categories__card__summary">
-                                            <div class="main-categories__card__rating">
-                                                <span class="visually-hidden">4 звезды.</span>
-                                            </div>
-                                            <span class="main-categories__card__code">Код товара: 25122383</span>
-                                        </div>
-                                        <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной
-                                            мятой
-                                            Alpine Organics 50 мл</span>
-                                        <span class="main-categories__card__description">Крем для рук освежающий с
-                                            лимонной
-                                            мятой
-                                            Alpine Organics</span>
-                                        <div class="main-categories__card__price">
-                                            <span class="main-categories__card__price--new">1 939 ₽</span>
-                                            <span class="main-categories__card__price--old">2 093 ₽</span>
-                                        </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
-                                        <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1223,11 +1157,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1284,11 +1218,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1345,11 +1279,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1406,11 +1340,11 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
-                                            </span>
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -1467,11 +1401,72 @@
                                             <span class="main-categories__card__price--new">1 939 ₽</span>
                                             <span class="main-categories__card__price--old">2 093 ₽</span>
                                         </div>
-                                        <span type="button" class="main-categories__card__to-cart">В корзину
-                                        </span>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
                                         <div class="main-categories__card__availability">
-                                            <span type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
+                                            <div class="main-categories__card__stock"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-categories__content__item">
+
+                                    <div class="main-categories__card">
+                                        <div class="main-categories__card__preview">
+                                            <span class="main-categories__card__label">
+                                                Хит
                                             </span>
+                                            <button type="button" class="main-categories__card__favorite">
+                                                <span class="visually-hidden">В Избранное.</span>
+                                            </button>
+                                            <div class="main-categories__card__slider">
+                                                <img src="./assets/img/card.webp" alt="Товар."
+                                                    class="card__slider__img">
+                                                <ol class="card__slider__pagination">
+                                                    <li class="card__slider__btn card__slider__btn--current">
+                                                        <span class="visually-hidden">Текущий слайд.</span>
+                                                    </li>
+                                                    <li class="card__slider__btn">
+                                                        <span class="visually-hidden">Второй слайд.</span>
+                                                    </li>
+                                                    <li class="card__slider__btn">
+                                                        <span class="visually-hidden">Третий слайд.</span>
+                                                    </li>
+                                                    <li class="card__slider__btn">
+                                                        <span class="visually-hidden">Четвертый слайд.</span>
+                                                    </li>
+                                                    <li class="card__slider__btn">
+                                                        <span class="visually-hidden">Пятый слайд.</span>
+                                                    </li>
+                                                    <li class="card__slider__btn">
+                                                        <span class="visually-hidden">Шестой слайд.</span>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="main-categories__card__summary">
+                                            <div class="main-categories__card__rating">
+                                                <span class="visually-hidden">4 звезды.</span>
+                                            </div>
+                                            <span class="main-categories__card__code">Код товара: 25122383</span>
+                                        </div>
+                                        <span class="main-categories__card__name">БИО крем для рук освежающий с лимонной
+                                            мятой
+                                            Alpine Organics 50 мл</span>
+                                        <span class="main-categories__card__description">Крем для рук освежающий с
+                                            лимонной
+                                            мятой
+                                            Alpine Organics</span>
+                                        <div class="main-categories__card__price">
+                                            <span class="main-categories__card__price--new">1 939 ₽</span>
+                                            <span class="main-categories__card__price--old">2 093 ₽</span>
+                                        </div>
+                                        <button type="button" class="main-categories__card__to-cart">В корзину
+                                        </button>
+                                        <div class="main-categories__card__availability">
+                                            <button type="button" class="main-categories__card__buy">Купить в 1 клик
+                                            </button>
                                             <div class="main-categories__card__stock"></div>
                                         </div>
                                     </div>
@@ -2093,7 +2088,7 @@
                                     d="M19.5 20C21.982 20 24 17.98 24 15.5V12C24 5.382 18.618 0 12 0C5.382 0 0 5.382 0 12C0 18.618 5.382 24 12 24C12.828 24 13.5 23.328 13.5 22.5C13.5 21.672 12.828 21 12 21C7.038 21 3 16.962 3 12C3 7.03799 7.038 3 12 3C16.962 3 21 7.03799 21 12V15.5C21 16.326 20.328 17 19.5 17C18.672 17 18 16.326 18 15.5V12C18 8.69199 15.308 6 12 6C8.692 6 6 8.69199 6 12C6 15.308 8.692 18 12 18C13.212 18 14.336 17.632 15.28 17.014C15.906 18.748 17.552 20 19.5 20ZM11.9531 15C13.5841 15 14.9062 13.6359 14.9062 11.9531C14.9062 10.2704 13.5841 8.90625 11.9531 8.90625C10.3222 8.90625 9 10.2704 9 11.9531C9 13.6359 10.3222 15 11.9531 15Z" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_3546_8953">
+                                <clipPath id="clip0_3546_8954">
                                     <rect width="24" height="24" fill="white" />
                                 </clipPath>
                             </defs>
@@ -2602,22 +2597,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- <script>
-        document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
-            document.querySelector('.modal-search').style.display = 'block';
-        });
-        document.querySelector('.modal-search').addEventListener('mouseleave', () => {
-            document.querySelector('.modal-search').style.display = 'none';
-        });
-
-        document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
-            document.querySelector('.modal-city').style.display = 'flex';
-        });
-        document.querySelector('.modal-city').addEventListener('mouseleave', () => {
-            document.querySelector('.modal-city').style.display = 'none';
-        });
-    </script> -->
     <div class="decorative decorative__right decorative__right--main-top"></div>
     <div class="decorative decorative__left decorative__left--main-top"></div>
     <div class="decorative decorative__right decorative__right--main-middle"></div>

@@ -219,7 +219,11 @@
 .webinar__title {
     display: none;
 
-    @media (max-width: $maxMobWidth) {
+    @media (max-width: $maxTabletWidth) {
         display: block;
     }
+
+    // @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+    //     width: 100%;
+    // }
 }

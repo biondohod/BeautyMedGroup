@@ -141,3 +141,18 @@ main {
         line-height: 28px;
     }
 }
+
+.main-link__logo {
+    width: 261px;
+    height: 42px;
+
+    @media (max-width: $maxTabletWidth) {
+        width: 199px;
+        height: 32px;
+    }
+
+    @media (max-width: $maxMobWidth) {
+        width: 149px;
+        height: 24px;
+    }
+}

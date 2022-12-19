@@ -78,7 +78,7 @@
                             </ul>
                         </div>
                     </div>
-                    <select name="city" id="city">
+                    <select name="city" id="city-select">
                         <option value="Moscow">Москва</option>
                         <option value="Saint-Petersburg">Санкт-Петербург</option>
                         <option value="Yekaterinburg">Екатеринбург</option>
@@ -115,15 +115,10 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        <p class="visually-hidden">Открыть бургер меню</p>
+                        <span class="visually-hidden">Открыть бургер меню</span>
                     </button>
                     <a href="index.html" class="second-row__main-link">
-                        <picture>
-                            <source src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="261" height="42" media="(min-width: 760px)">
-                            <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo"
-                            width="149" height="24">
-                           </picture>
+                        <img src="./assets/img/main-logo.svg" alt="Логотип бьюти мед групп." class="main-link__logo">
                     </a>
                     <div class="second-row__address">
                         Москва, ул. Прянишникова, д. 23А
@@ -538,11 +533,21 @@
                                                     </div>
                                                     <div class="delivery-content__info">
                                                         <div class="delivery-info__left-column">
-                                                            <div><p>Получатель:&nbsp;</p>rustle_92@yandex.ru</div>
-                                                            <div><p>Телефон:&nbsp;</p>+79000886666</div>
-                                                            <div><p>Адрес доставки:&nbsp;</p><span>не указан</span></div>
-                                                            <div><p>Оплата:&nbsp;</p>Наложенный платеж</div>
-                                                            <div><p>Способ доставки:&nbsp;</p> Почтой России</div>
+                                                            <div>
+                                                                <p>Получатель:&nbsp;</p>rustle_92@yandex.ru
+                                                            </div>
+                                                            <div>
+                                                                <p>Телефон:&nbsp;</p>+79000886666
+                                                            </div>
+                                                            <div>
+                                                                <p>Адрес доставки:&nbsp;</p><span>не указан</span>
+                                                            </div>
+                                                            <div>
+                                                                <p>Оплата:&nbsp;</p>Наложенный платеж
+                                                            </div>
+                                                            <div>
+                                                                <p>Способ доставки:&nbsp;</p> Почтой России
+                                                            </div>
                                                         </div>
                                                         <div class="delivery-info__right-column">
                                                             <div>
@@ -659,7 +664,7 @@
                                     d="M19.5 20C21.982 20 24 17.98 24 15.5V12C24 5.382 18.618 0 12 0C5.382 0 0 5.382 0 12C0 18.618 5.382 24 12 24C12.828 24 13.5 23.328 13.5 22.5C13.5 21.672 12.828 21 12 21C7.038 21 3 16.962 3 12C3 7.03799 7.038 3 12 3C16.962 3 21 7.03799 21 12V15.5C21 16.326 20.328 17 19.5 17C18.672 17 18 16.326 18 15.5V12C18 8.69199 15.308 6 12 6C8.692 6 6 8.69199 6 12C6 15.308 8.692 18 12 18C13.212 18 14.336 17.632 15.28 17.014C15.906 18.748 17.552 20 19.5 20ZM11.9531 15C13.5841 15 14.9062 13.6359 14.9062 11.9531C14.9062 10.2704 13.5841 8.90625 11.9531 8.90625C10.3222 8.90625 9 10.2704 9 11.9531C9 13.6359 10.3222 15 11.9531 15Z" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_3546_8953">
+                                <clipPath id="clip0_3546_8954">
                                     <rect width="24" height="24" fill="white" />
                                 </clipPath>
                             </defs>
@@ -1154,7 +1159,8 @@
                                 <span class="visually-hidden">Телеграм.</span>
                             </a>
                         </div>
-                        <button type="button" class="footer__application footer__application--mob">Оставить заявку</button>
+                        <button type="button" class="footer__application footer__application--mob">Оставить
+                            заявку</button>
                     </div>
                 </div>
                 <div class="footer__row footer__row--third">
@@ -1178,7 +1184,8 @@
                 <input type="text" class="modal__input" name="name" placeholder="Имя">
                 <input type="text" class="modal__input" name="surname" placeholder="Фамилия">
                 <input type="text" class="modal__input" name="patronymic" placeholder="Отчество">
-                <input type="text" class="modal__input" name="birth-date" placeholder="Дата рождения" onclick="(this.type='date')" >
+                <input type="text" class="modal__input" name="birth-date" placeholder="Дата рождения"
+                    onclick="(this.type='date')">
                 <div class="modal__radio-wrapper">
                     <div class="modal__radio">
                         <span>Пол</span>
@@ -1257,24 +1264,24 @@
                 <div class="data__password data__section">
                     <span class="data-password__descr">Введите старый пароль</span>
                     <div class="data-password__wrapper">
-                        <input type="password" name="old-pass" id="modal-old-pass"
-                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <input type="password" name="old-pass" id="modal-old-pass" class="data-password__input"
+                            placeholder="Пароль" value="abcdefg">
                         <button class="data-password__btn data-password__btn--hide">
                             <span class="visually-hidden">Скрыть пароль</span>
                         </button>
                     </div>
                     <span class="data-password__descr">Введите новый пароль</span>
                     <div class="data-password__wrapper">
-                        <input type="password" name="new-pass" id="modal-new-pass"
-                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <input type="password" name="new-pass" id="modal-new-pass" class="data-password__input"
+                            placeholder="Пароль" value="abcdefg">
                         <button class="data-password__btn data-password__btn--show">
                             <span class="visually-hidden">Показать пароль</span>
                         </button>
                     </div>
                     <span class="data-password__descr">Подтверждение пароля</span>
                     <div class="data-password__wrapper">
-                        <input type="password" name="new-pass" id="modal-check-pass"
-                            class="data-password__input" placeholder="Пароль" value="abcdefg">
+                        <input type="password" name="new-pass" id="modal-check-pass" class="data-password__input"
+                            placeholder="Пароль" value="abcdefg">
                         <button class="data-password__btn data-password__btn--show">
                             <span class="visually-hidden">Показать пароль</span>
                         </button>
@@ -1304,23 +1311,6 @@
                 wrappers[i].classList.add('pa-tabs__wrapper--active');
             });
         });
-        // const createModal = (triggersSelector, modalSelector, closeSelector) => {
-        //     document.querySelectorAll(triggersSelector).forEach(trigger => {
-        //         trigger.addEventListener('click', (evt) => {
-        //             evt.preventDefault();
-        //             document.querySelector(modalSelector).style.display = 'flex';
-        //         });
-        //     });
-
-        //     document.querySelector(closeSelector).addEventListener('click', () => {
-        //         document.querySelector(modalSelector).style.display = 'none';
-        //     });
-        // };
-
-        // createModal('#data-change', '.modal--personal-data', '.modal--personal-data .modal__close');
-        // createModal('#delivery-change', '.modal--delivery', '.modal--delivery .modal__close');
-        // createModal('#phone-change', '.modal--phone', '.modal--phone .modal__close');
-        // createModal('#password-change', '.modal--password', '.modal--password .modal__close');
 
 
         const personalArea = document.querySelector('.pa-tabs__item[data-value="personal-area"');
@@ -1354,19 +1344,6 @@
         delivery.addEventListener('click', () => {
             showCurrentTab(delivery.getAttribute('data-value'))
         });
-        // document.querySelector('.second-row__search-wrapper').addEventListener('mouseenter', () => {
-        //     document.querySelector('.modal-search').style.display = 'block';
-        // });
-        // document.querySelector('.modal-search').addEventListener('mouseleave', () => {
-        //     document.querySelector('.modal-search').style.display = 'none';
-        // });
-
-        // document.querySelector('.first-row__city-select').addEventListener('mouseenter', () => {
-        //     document.querySelector('.modal-city').style.display = 'flex';
-        // });
-        // document.querySelector('.modal-city').addEventListener('mouseleave', () => {
-        //     document.querySelector('.modal-city').style.display = 'none';
-        // });
     </script>
 </body>
 
