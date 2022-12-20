@@ -140,7 +140,7 @@
         text-decoration: none;
 
         &:hover {
-            font-weight: 700;
+            text-shadow: 0 0 0.7px black;
         }
     }
 }
@@ -392,6 +392,12 @@
 
             @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 display: grid;
+            }
+
+            @media (max-width: $maxMobWidth) {
+                display: grid;
+                margin-top: 16px;
+                padding-top: 16px;
             }
         }
     }

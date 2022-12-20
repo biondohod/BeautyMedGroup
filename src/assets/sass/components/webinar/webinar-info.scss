@@ -4,8 +4,6 @@
     margin-bottom: 145px;
 
     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
-        max-width: 631px;
-        margin: 0;
         margin-bottom: 80px;
         padding: 0 24px;
     }

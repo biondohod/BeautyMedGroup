@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-bottom: 156px;
 
-    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         margin-bottom: 80px;
 
         .basket__item {

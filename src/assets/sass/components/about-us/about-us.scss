@@ -46,7 +46,8 @@
         @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             .slider__btns--company {
                 display: flex;
-                padding: 0;
+                max-width: 1408px;
+                padding: 0 24px;
 
                 .main-reviews__show-all {
                     width: 203px;

@@ -17,6 +17,13 @@
         &--webinar {
 
             .main-faq__question {
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    &--cases,
+                    &--cases--active {
+                        padding-right: 160px;
+                    }
+                }
+
                 @media (max-width: $maxMobWidth) {
 
                     &--cases {
@@ -68,6 +75,10 @@
                 width: 180px;
                 padding: 12px;
                 margin: 0;
+
+                @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                    right: 60px;
+                }
 
                 @media (max-width: $maxMobWidth) {
                     display: block;
@@ -210,9 +221,5 @@
 
     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         margin-bottom: 80px;
-
-        .case-study {
-             display: none;
-        }
     }
 }

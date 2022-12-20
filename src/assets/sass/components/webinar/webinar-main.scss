@@ -9,7 +9,9 @@
 
     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         gap: 22px;
+        max-width: 1408px;
         padding: 0 24px;
+        margin: 0 auto;
         margin-bottom: 80px;
     }
 
@@ -111,17 +113,17 @@
         img {
             position: absolute;
             top: -60px;
-            left: 87px;
+            right: 172px;
 
             @media (max-width: $maxMobWidth) {
                 top: -32px;
-                left: auto;
                 right: 14px;
             }
         }
 
         @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             position: relative;
+            width: 100%;
         }
 
         @media (max-width: $maxMobWidth) {
@@ -143,8 +145,8 @@
 
         @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             min-width: 696px;
-            width: 100%;
             padding: 0;
+            margin: 0 auto;
             margin-bottom: 67px;
         }
 

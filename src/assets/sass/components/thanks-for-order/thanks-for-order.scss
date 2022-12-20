@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-bottom: 48px;
 
-    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         max-width: 744px;
     }
 
@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             padding: 0 24px;
         }
 
@@ -33,7 +33,7 @@
         line-height: 140%;
         text-align: center;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             font-weight: 400;
             font-size: 10px;
             line-height: 12px;
@@ -47,7 +47,7 @@
             max-width: 301px;
             background: url('../assets/img/thanks-for-order/phone.svg') no-repeat top center;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 max-width: 179px;
             }
         }
@@ -57,7 +57,7 @@
             margin-left: -72px;
             background: url('../assets/img/thanks-for-order/computer.svg') no-repeat top center;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 max-width: 185px;
                 margin-left: -15px;
             }
@@ -71,7 +71,7 @@
             max-width: 257px;
             background: url('../assets/img/thanks-for-order/mail.svg') no-repeat top center;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 max-width: 119px;
             }
         }

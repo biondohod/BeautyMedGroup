@@ -11,6 +11,11 @@
     &__title {
         text-align: left;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
         @media (max-width: $maxMobWidth) {
             text-align: center;
         }
@@ -88,13 +93,19 @@
     }
 
     &__social {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 84px;
         margin-bottom: 48px;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 84px;
+        }
+
         @media (max-width: $maxMobWidth) {
-            max-width: 500px;
-            padding-right: 34px;
+            column-gap: 16px;
         }
 
         &-link {

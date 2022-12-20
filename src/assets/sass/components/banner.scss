@@ -47,7 +47,6 @@
 
         @media (max-width: $maxMobWidth) {
             margin: 0;
-            margin-bottom: 32px;
         }
     }
 
@@ -91,7 +90,6 @@
             grid-template-columns: 296px 296px;
             column-gap: 22px;
             row-gap: 16px;
-            justify-content: center;
             max-width: none;
         }
     }
@@ -239,7 +237,7 @@
             padding-left: 30px;
             padding-right: 338px;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 padding: 47px 40px 40px;
             }
 
@@ -252,19 +250,19 @@
         .main-banner__wrapper {
             margin-right: 41px;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 margin: 0;
             }
 
             @media (max-width: $maxMobWidth) {
-                margin-bottom: 32px;
+                margin: 0;
             }
         }
 
         .main-banner__form {
             max-width: 262px;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 max-width: none;
             }
 
@@ -275,6 +273,10 @@
 
         .main-banner__tel-input {
             padding: 10px 45.5px;
+
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                padding: 13px 70px;
+            }
 
             @media (max-width: $maxMobWidth) {
                 padding: 0;

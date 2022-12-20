@@ -7,6 +7,10 @@
 
     @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         margin-bottom: 80px;
+
+        &-tablet {
+            padding: 0 24px;
+        }
     }
 
     &__wrapper {
@@ -206,8 +210,10 @@
             }
         }
 
-        .main-news__name {
-            text-transform: uppercase;
+        &--uppercase {
+            .main-news__name {
+                text-transform: uppercase;
+            }
         }
     }
 }

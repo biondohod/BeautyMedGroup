@@ -75,10 +75,9 @@
             justify-content: center;
         }
 
-        @media (max-width: $maxTabletWidth) and (min-width: 1200px)
-         {
+        @media (max-width: $maxTabletWidth) and (min-width: 1200px) {
             grid-template-columns: repeat(3, 328px);
-         }
+        }
     }
 
     &__item {
@@ -91,6 +90,11 @@
         @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             display: flex;
             flex-direction: column;
+            gap: 16px;
+
+            .basket__buy {
+                padding: 16px 22px;
+            }
         }
 
         @media (max-width: $maxMobWidth) {
@@ -169,7 +173,6 @@
         margin-bottom: -8px;
 
         @media (max-width: $maxMobWidth) {
-            width: 344px;
             height: 240px;
             object-fit: cover;
         }
@@ -181,6 +184,12 @@
         line-height: 140%;
         color: #000000;
         text-decoration: none;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
 
         @media (max-width: $maxMobWidth) {
             font-weight: 500;

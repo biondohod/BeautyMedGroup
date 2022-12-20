@@ -18,6 +18,10 @@
 
     &__wrapper {
         max-width: 762px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin: 0 auto;
+        }
     }
 
     &__title {

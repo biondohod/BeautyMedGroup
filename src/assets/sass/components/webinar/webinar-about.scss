@@ -19,9 +19,8 @@
         text-align: left;
 
         @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
-            margin-bottom: 8px;
-            font-size: 28px;
-            line-height: 33px;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         @media (max-width: $maxMobWidth) {
@@ -31,6 +30,15 @@
 
     &__digits {
         margin-bottom: 120px;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            .webinar-about__title {
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 33px;
+                text-align: left;
+            }
+        }
 
         @media (max-width: $maxTabletWidth) {
             margin-bottom: 80px;

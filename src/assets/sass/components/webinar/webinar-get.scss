@@ -82,6 +82,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
+        text-transform: uppercase;
 
         span {
             margin-top: 8px;
@@ -102,6 +103,10 @@
     }
 
     &__btn {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            width: 100%;
+        }
+
         @media (max-width: $maxMobWidth) {
             display: flex;
             align-items: center;

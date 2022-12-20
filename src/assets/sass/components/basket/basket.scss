@@ -11,7 +11,7 @@
         display: flex;
         gap: 120px;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             padding: 0 24px;
         }
 
@@ -83,9 +83,13 @@
 
     &__item {
         display: flex;
-        padding: 24px 53px;
+        padding: 24px 32px;
         padding-left: 0;
         border-bottom: 1px solid #E9E9E9;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            padding-right: 0;
+        }
 
         @media (max-width: $maxMobWidth) {
             display: grid;
@@ -129,6 +133,10 @@
         line-height: 140%;
         color: #000000;
         text-decoration: none;
+
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            margin-right: 53px;
+        }
 
         @media (max-width: $maxMobWidth) {
             grid-column: 2/-2;

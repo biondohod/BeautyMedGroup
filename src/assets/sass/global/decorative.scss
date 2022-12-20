@@ -35,7 +35,11 @@
             height: 502px;
             background-image: url('../assets/img/footer-rose.svg');
 
-            @media (max-width: $maxTabletWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+                display: block;
+            }
+
+            @media (max-width: $maxMobWidth) {
                 display: none;
                 background: none;
             }

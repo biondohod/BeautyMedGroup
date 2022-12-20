@@ -18,6 +18,10 @@
         margin-bottom: 77px;
         text-align: left;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            text-align: center;
+        }
+
         @media (max-width: $maxMobWidth) {
             margin-bottom: 24px;
             text-align: center;
@@ -38,7 +42,15 @@
 
         @media (max-width: $maxMobWidth) {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        @media (max-width: $maxMobWidth) and (min-width: 672px) {
+            display: grid;
+            grid-template-columns: 328px 328px;
+            justify-content: center;
             gap: 16px;
         }
     }

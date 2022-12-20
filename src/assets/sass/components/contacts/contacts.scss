@@ -276,6 +276,10 @@
         line-height: 33px;
         text-transform: uppercase;
 
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
+            text-align: center;
+        }
+
         @media (max-width: $maxMobWidth) {
             margin: 0 auto;
             margin-bottom: 24px;

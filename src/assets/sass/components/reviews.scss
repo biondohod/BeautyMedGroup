@@ -15,6 +15,7 @@
 
     @media (max-width: $maxMobWidth) {
         padding: 0;
+        padding-bottom: 1px;
         margin-bottom: 80px;
     }
 
@@ -27,12 +28,13 @@
         margin: 0 auto;
         margin-bottom: 32px;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             position: relative;
             left: 0;
             display: flex;
             gap: 24px;
             transition: left 0.8s;
+            overflow-y: scroll;
         }
 
         @media (max-width: $maxMobWidth) {
@@ -137,7 +139,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 203px;
+        width: 203px;
         margin: 0 auto;
         padding: 16px;
         outline: 1px solid #000000;
@@ -169,7 +171,9 @@
             transform: translateX(-50%);
             display: flex;
             justify-content: space-between;
-            width: 696px;
+            width: 100%;
+            max-width: 1456px;
+            padding: 0 24px;
         }
     }
 }

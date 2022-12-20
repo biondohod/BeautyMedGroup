@@ -7,7 +7,7 @@
         &--category {
             margin-top: 17px;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 display: none;
             }
         }
@@ -15,7 +15,7 @@
         &--reviews {
             margin-top: 20px;
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 margin-right: 20px;
             }
 
@@ -181,7 +181,7 @@ ul.category__slider {
     display: flex;
     gap: 32px;
 
-    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         column-gap: 26px;
     }
 }

@@ -11,7 +11,7 @@
                 margin-bottom: 16px;
             }
 
-            @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+            @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
                 max-width: 1408px;
                 margin: 0 auto;
                 margin-bottom: 32px;
@@ -165,7 +165,7 @@
     &__popular {
         margin-bottom: 120px;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             margin-bottom: 80px;
 
             .slider__carousel {
@@ -199,7 +199,7 @@
     &__reviews {
         margin-bottom: 120px;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             padding-left: 24px;
         }
 

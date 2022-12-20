@@ -71,7 +71,7 @@
 
                 .footer__title,
                 .footer__offer,
-                .footer__map{
+                .footer__map {
                     margin: 0;
                     font-weight: 500;
                     font-size: 14px;
@@ -332,7 +332,7 @@
         text-decoration: none;
 
         &:hover {
-            font-weight: 700;
+            text-shadow: 0 0 0.7px black;
         }
     }
 
@@ -397,7 +397,10 @@
             display: flex;
             gap: 24px;
             max-width: 95.5vw;
-            overflow-y: scroll;
+
+            @media (max-width: $maxMobWidth) {
+                overflow-y: scroll;
+            }
         }
 
         &--active {
@@ -408,7 +411,10 @@
         &-item {
             display: none;
             max-width: 95.5vw;
-            overflow-y: scroll;
+
+            @media (max-width: $maxMobWidth) {
+                overflow-y: scroll;
+            }
 
             &--active {
                 display: block;

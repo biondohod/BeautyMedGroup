@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-bottom: 120px;
 
-    @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+    @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
         margin-bottom: 420px;
     }
 
@@ -17,7 +17,7 @@
         gap: 32px;
         align-items: flex-start;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -311,7 +311,7 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width: $maxTabletWidth) and (min-width: $minMobWidth) {
+        @media (max-width: $maxTabletWidth) and (min-width: $minTabletWidth) {
             position: absolute;
             top: calc(100% + 40px);
             width: 688px;
@@ -361,10 +361,11 @@
 
 .making-order-delivery {
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 661px;
+        display: grid;
+        grid-template-columns: 340px 1fr;
+        column-gap: 80px;
         row-gap: 30px;
+        max-width: 661px;
         margin-bottom: 24px;
 
         @media (max-width: $maxMobWidth) {
@@ -381,11 +382,9 @@
         cursor: pointer;
 
         &:nth-child(1) {
-            margin-right: 205px;
             background: url('../assets/img/making-order/post-office.svg') no-repeat center left;
 
             @media (max-width: $maxMobWidth) {
-                margin-right: 0;
                 background-position: center left 36px;
             }
         }
@@ -399,11 +398,9 @@
         }
 
         &:nth-child(3) {
-            margin-right: 110px;
             background: url('../assets/img/making-order/ems.svg') no-repeat center left;
 
             @media (max-width: $maxMobWidth) {
-                margin-right: 0;
                 background-position: center left 36px;
             }
         }
